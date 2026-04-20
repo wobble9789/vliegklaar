@@ -1,140 +1,118 @@
 import Link from 'next/link';
-import Button from '@/components/ui/Button';
 
 export default function OverOnsPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-100 py-16 md:py-24">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Over MeeReizen
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-              Wij maken reizen weer leuk en ontspannen
+    <main>
+      {/* Hero */}
+      <section className="bg-primary-600 text-white py-20 text-center px-4">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-4xl font-bold mb-4">Over MeeReizen</h1>
+          <p className="text-xl text-primary-100">
+            Een persoonlijk verhaal over waarom elke oudere een mooie vakantie verdient.
+          </p>
+        </div>
+      </section>
+
+      {/* Persoonlijk verhaal */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl font-bold text-primary-700 mb-6">Hoe MeeReizen ontstond</h2>
+            <p className="text-gray-700 text-lg leading-relaxed mb-5">
+              MeeReizen is opgericht door Ivo, die zag hoe zijn eigen oma stopte met reizen omdat het te ingewikkeld werd.
+              Ze vond vliegtuigtickets verwarrend, bagageregels onduidelijk en inchecken stressvol. Terwijl ze altijd zo
+              graag had gereisd.
+            </p>
+            <p className="text-gray-700 text-lg leading-relaxed mb-5">
+              Ivo besloot dat dit anders moest. Niet alleen voor zijn oma, maar voor iedereen die in dezelfde situatie zit.
+              Reizen zou plezier moeten zijn — geen bron van stress of afhankelijkheid.
+            </p>
+            <p className="text-gray-700 text-lg leading-relaxed">
+              Vandaag helpt MeeReizen ouderen door heel Nederland om weer volop te genieten van reizen. Met een vertrouwde
+              begeleider aan hun zijde, van deur tot deur.
             </p>
           </div>
-        </div>
-      </div>
-
-      <div className="container mx-auto px-4 md:px-6 py-16">
-        <div className="max-w-4xl mx-auto">
-          <section className="bg-white rounded-3xl p-8 md:p-12 shadow-sm mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Onze missie
-            </h2>
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              Reizen zou plezier moeten zijn, geen stress. Maar voor veel mensen wordt een 
-              reis al snel ingewikkeld: tickets boeken, hotels zoeken, vervoer regelen, 
-              door de luchthaven navigeren... Het stapelt zich op.
-            </p>
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              Wij geloven dat iedereen moet kunnen genieten van een mooie reis, zonder 
-              alle zorgen en gedoe. Daarom hebben wij MeeReizen opgericht: om het 
-              reizen weer simpel en plezierig te maken.
-            </p>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              U vertelt ons waar u naartoe wilt, en wij regelen de rest. Van A tot Z. 
-              Zo simpel is het.
-            </p>
-          </section>
-
-          <section className="bg-white rounded-3xl p-8 md:p-12 shadow-sm mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-              Waarom voor ons kiezen?
-            </h2>
-            <div className="space-y-8">
-              <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl">
-                  👥
-                </div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">
-                    Persoonlijke service
-                  </h3>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Geen automatische systemen of wachtrijen. U krijgt een vast contactpersoon 
-                    die u van begin tot eind helpt.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl">
-                  🎯
-                </div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">
-                    Op maat gemaakt
-                  </h3>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Elke reis is anders. We luisteren naar uw wensen en maken een reis die 
-                    perfect bij u past.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl">
-                  🤝
-                </div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">
-                    Begeleiding van A tot Z
-                  </h3>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Van het ophalen bij u thuis tot het begeleiden op de luchthaven - wij zijn 
-                    er voor u.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl">
-                  ✓
-                </div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">
-                    Alles uit handen
-                  </h3>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    U hoeft nergens meer aan te denken. Wij zorgen dat elk detail geregeld is, 
-                    zodat u kunt genieten.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl">
-                  💬
-                </div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">
-                    Altijd bereikbaar
-                  </h3>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Heeft u een vraag tijdens uw reis? Wij zijn altijd bereikbaar om u te helpen.
-                  </p>
-                </div>
-              </div>
+          <div className="rounded-2xl overflow-hidden shadow-lg">
+            <div className="bg-primary-500 h-80 flex items-center justify-center text-white text-2xl font-bold">
+              Ivo — oprichter
             </div>
-          </section>
-
-          <section className="bg-blue-600 rounded-3xl p-8 md:p-12 text-white text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Klaar om kennis te maken?
-            </h2>
-            <p className="text-xl mb-8 leading-relaxed">
-              Neem contact met ons op voor een vrijblijvend gesprek over uw droomreis
-            </p>
-            <Link href="/contact">
-              <Button variant="secondary" size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                Contact opnemen
-              </Button>
-            </Link>
-          </section>
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Missie */}
+      <section className="py-16 bg-primary-50">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-primary-700 mb-6">Onze missie</h2>
+          <p className="text-xl text-gray-700 leading-relaxed">
+            Reizen zou plezier moeten zijn — voor iedereen, ongeacht leeftijd of beperking.
+            Elke oudere verdient een mooie vakantie, met iemand die echt voor hen zorgt.
+          </p>
+        </div>
+      </section>
+
+      {/* Werkwijze */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-primary-700 mb-12">Waarom voor ons kiezen?</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              {
+                icon: '👥',
+                titel: 'Persoonlijke service',
+                tekst: 'Geen automatische systemen, geen callcenters. Altijd een echt mens die naar u luistert.',
+              },
+              {
+                icon: '🎯',
+                titel: 'Op maat gemaakt',
+                tekst: 'Iedere reis is anders, net als iedere reiziger. Wij maken uw reis precies zoals u het wilt.',
+              },
+              {
+                icon: '🤝',
+                titel: 'Begeleiding van A tot Z',
+                tekst: 'U heeft altijd dezelfde begeleider — iemand die u kent en begrijpt, van begin tot eind.',
+              },
+              {
+                icon: '✓',
+                titel: 'Alles uit handen',
+                tekst: 'Tickets, hotel, vervoer, inchecken — wij regelen het allemaal. U hoeft nergens aan te denken.',
+              },
+              {
+                icon: '💬',
+                titel: 'Altijd bereikbaar',
+                tekst: 'Heeft u een vraag of gaat er iets niet goed? Wij zijn er altijd voor u.',
+              },
+            ].map((item) => (
+              <div key={item.titel} className="flex gap-5 p-6 bg-primary-50 rounded-2xl">
+                <div className="text-3xl flex-shrink-0">{item.icon}</div>
+                <div>
+                  <h3 className="font-bold text-primary-800 text-xl mb-2">{item.titel}</h3>
+                  <p className="text-gray-600">{item.tekst}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-gray-500 mt-8 italic">
+            Geen automatische systemen, geen callcenters. U heeft altijd een vast contactpersoon die uw situatie kent.
+          </p>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 bg-primary-600 text-white text-center px-4">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6">Klaar om kennis te maken?</h2>
+          <p className="text-xl text-primary-100 mb-8">
+            Bel ons of stuur een berichtje. We drinken graag een kopje koffie met u — telefonisch of in het echt.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block bg-white text-primary-700 font-bold text-xl px-10 py-5 rounded-xl hover:bg-primary-50 transition-colors shadow-lg"
+          >
+            Contact opnemen
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }

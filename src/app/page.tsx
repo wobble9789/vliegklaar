@@ -1,167 +1,218 @@
+'use client';
+
 import Link from 'next/link';
-import ServiceCard from '@/components/ui/ServiceCard';
-import Button from '@/components/ui/Button';
 
 export default function HomePage() {
-  const services = [
-    {
-      title: 'Complete Reizen',
-      description: 'Volledig verzorgde reizen naar de mooiste bestemmingen. Wij regelen alles voor u.',
-      icon: '✈️',
-      link: '/diensten/complete-reizen'
-    },
-    {
-      title: 'Vervoer & Begeleiding',
-      description: 'Wij halen u op en brengen u veilig naar de luchthaven. Ook begeleiding ter plaatse.',
-      icon: '🚗',
-      link: '/diensten/vervoer'
-    },
-    {
-      title: 'Tickets & Arrangementen',
-      description: 'Vliegtickets, hotels, excursies - wij boeken het allemaal voor u.',
-      icon: '🎫',
-      link: '/diensten/tickets'
-    },
-    {
-      title: 'Persoonlijk Contact',
-      description: 'Altijd bereikbaar voor al uw vragen. Geen gedoe, gewoon goed geregeld.',
-      icon: '📞',
-      link: '/contact'
-    }
-  ];
-
   return (
-    <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Reizen zonder gedoe
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-              Droomt u van een mooie reis, maar vindt u alle regelingen te ingewikkeld? 
-              Wij nemen het werk uit handen. Van A tot Z geregeld.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/diensten">
-                <Button size="lg" className="w-full sm:w-auto">
-                  Bekijk onze diensten
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-                  Neem contact op
-                </Button>
-              </Link>
-            </div>
+    <main>
+      {/* Hero */}
+      <section className="relative min-h-[85vh] flex items-center justify-center text-white">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=80"
+            alt="Gelukkig stel op reis"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            Uw droomreis. Wij regelen alles.
+          </h1>
+          <p className="text-xl md:text-2xl mb-10 text-gray-100">
+            Van uw voordeur tot uw hotelkamer — wij zijn er bij.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:0850608333"
+              className="bg-primary-500 hover:bg-primary-600 text-white text-xl font-bold px-10 py-5 rounded-xl shadow-lg transition-colors"
+            >
+              Bel ons: 085-0608333
+            </a>
+            <a
+              href="#hoe-werkt-het"
+              className="bg-white/20 hover:bg-white/30 border-2 border-white text-white text-xl font-semibold px-10 py-5 rounded-xl transition-colors"
+            >
+              Bekijk hoe het werkt
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Vertrouwensbar */}
+      <section className="bg-primary-600 text-white py-6">
+        <div className="max-w-5xl mx-auto px-4">
+          <ul className="flex flex-wrap justify-center gap-6 text-lg font-medium">
+            <li>✓ Persoonlijke begeleiding</li>
+            <li>✓ Al 5 jaar ervaring</li>
+            <li>✓ 100% tevredenheidsgarantie</li>
+            <li>✓ Altijd bereikbaar</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Voor wie is MeeReizen? */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              Wat wij voor u doen
-            </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-              Alles wat u nodig heeft voor een zorgeloze reis
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                title={service.title}
-                description={service.description}
-                icon={service.icon}
-                link={service.link}
-              />
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-primary-700 mb-4">
+            Voor wie is MeeReizen?
+          </h2>
+          <p className="text-center text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
+            MeeReizen is er voor iedereen die reizen weer leuk wil maken — zonder gedoe.
+          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: '✈️',
+                title: 'U reist graag maar vindt het ingewikkeld geworden',
+                text: 'Inchecken, bagage, overstappen — wij nemen al het gedoe van u over zodat u kunt genieten.',
+              },
+              {
+                icon: '🤝',
+                title: 'U wil niet afhankelijk zijn van familie voor elke reis',
+                text: 'Met MeeReizen reist u zelfstandig, op uw eigen tempo, zonder uw kinderen te belasten.',
+              },
+              {
+                icon: '❤️',
+                title: 'U zoekt iemand die echt voor u zorgt',
+                text: 'Onze begeleiders zijn geduldig, betrokken en zorg voor u als een vertrouwde vriend.',
+              },
+            ].map((card) => (
+              <div key={card.title} className="bg-primary-50 rounded-2xl p-8 text-center shadow-sm">
+                <div className="text-5xl mb-4">{card.icon}</div>
+                <h3 className="text-xl font-bold text-primary-800 mb-3">{card.title}</h3>
+                <p className="text-gray-600">{card.text}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* How It Works Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              Zo werkt het
-            </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-              In drie simpele stappen op reis
-            </p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-12">
-              <div className="flex flex-col md:flex-row gap-6 items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
-                  1
+      {/* Hoe werkt het */}
+      <section id="hoe-werkt-het" className="py-20 bg-primary-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-primary-700 mb-12">Hoe werkt het?</h2>
+          <div className="grid md:grid-cols-3 gap-10">
+            {[
+              {
+                stap: '1',
+                titel: 'U belt of mailt ons',
+                tekst: 'We luisteren naar uw wensen, uw tempo en uw behoeften. Geen formulieren, gewoon een gesprek.',
+              },
+              {
+                stap: '2',
+                titel: 'Wij regelen alles',
+                tekst: 'Tickets, hotel, vervoer, begeleiding — wij zorgen voor elk detail zodat u nergens aan hoeft te denken.',
+              },
+              {
+                stap: '3',
+                titel: 'U geniet',
+                tekst: 'Wij zijn er bij, van begin tot eind. Van uw voordeur tot uw bestemming en weer terug.',
+              },
+            ].map((step) => (
+              <div key={step.stap} className="text-center">
+                <div className="w-16 h-16 rounded-full bg-primary-500 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-5">
+                  {step.stap}
                 </div>
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-3">
-                    Vertel ons uw wensen
-                  </h3>
-                  <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                    Bel of mail ons en vertel waar u naartoe wilt. Wij luisteren naar al uw wensen 
-                    en behoeften voor de perfecte reis.
-                  </p>
-                </div>
+                <h3 className="text-xl font-bold text-primary-800 mb-3">{step.titel}</h3>
+                <p className="text-gray-600">{step.tekst}</p>
               </div>
-
-              <div className="flex flex-col md:flex-row gap-6 items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
-                  2
-                </div>
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-3">
-                    Wij regelen alles
-                  </h3>
-                  <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                    Van vliegtickets tot hotels, van vervoer tot begeleiding. Wij zorgen dat 
-                    alles tot in de puntjes geregeld is.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex flex-col md:flex-row gap-6 items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
-                  3
-                </div>
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-3">
-                    Geniet van uw reis
-                  </h3>
-                  <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                    U hoeft nergens meer aan te denken. Wij begeleiden u en zorgen dat u 
-                    zorgeloos kunt genieten van uw vakantie.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Klaar voor een zorgeloze reis?
-            </h2>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8">
-              Neem vandaag nog contact met ons op en vertel ons over uw droomreis
-            </p>
-            <Link href="/contact">
-              <Button variant="secondary" size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                Gratis gesprek plannen
-              </Button>
+      {/* Testimonials */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-primary-700 mb-12">Wat onze reizigers zeggen</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                initialen: 'CV',
+                naam: 'Corrie',
+                details: '72 jaar, Utrecht',
+                kleur: 'bg-primary-400',
+                tekst:
+                  'Mijn dochter maakte zich altijd zorgen als ik alleen op reis ging. Met MeeReizen durven we het gewoon aan. Ze haalden me op, hielpen me inchecken en waren er ook weer bij de terugkeer.',
+              },
+              {
+                initialen: 'JR',
+                naam: 'Jan & Riet',
+                details: '68 & 71 jaar, Haarlem',
+                kleur: 'bg-accent-400',
+                tekst:
+                  'We hadden al jaren geen vakantie meer durven plannen. Te veel gedoe met onze beperkingen. MeeReizen heeft dat compleet opgelost.',
+              },
+              {
+                initialen: 'DV',
+                naam: 'Mevrouw De Vries',
+                details: '79 jaar, Rotterdam',
+                kleur: 'bg-primary-600',
+                tekst:
+                  'De begeleider was zo aardig en geduldig. Ik voelde me geen last, maar een gewaardeerde klant.',
+              },
+            ].map((r) => (
+              <div key={r.naam} className="bg-gray-50 rounded-2xl p-8 shadow-sm flex flex-col gap-4">
+                <div className="flex items-center gap-4">
+                  <div
+                    className={`w-14 h-14 rounded-full ${r.kleur} text-white text-xl font-bold flex items-center justify-center flex-shrink-0`}
+                  >
+                    {r.initialen}
+                  </div>
+                  <div>
+                    <div className="font-bold text-primary-800">{r.naam}</div>
+                    <div className="text-sm text-gray-500">{r.details}</div>
+                    <div className="text-accent-500">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-gray-700 italic">"{r.tekst}"</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Diensten overzicht */}
+      <section className="py-20 bg-primary-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-primary-700 mb-12">Wat wij voor u doen</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { icon: '🌍', titel: 'Complete Reizen', tekst: 'Van A tot Z georganiseerd, inclusief begeleiding op maat.' },
+              { icon: '🚗', titel: 'Vervoer & Begeleiding', tekst: 'Wij halen u op aan de voordeur en brengen u veilig terug.' },
+              { icon: '🧭', titel: 'Persoonlijke Gids', tekst: 'Een vertrouwd gezicht dat u overal bij begeleidt.' },
+              { icon: '🎫', titel: 'Tickets & Arrangementen', tekst: 'Vluchten, hotels en uitstapjes — alles geregeld.' },
+            ].map((d) => (
+              <div key={d.titel} className="bg-white rounded-2xl p-6 shadow-sm text-center">
+                <div className="text-4xl mb-3">{d.icon}</div>
+                <h3 className="font-bold text-primary-800 text-lg mb-2">{d.titel}</h3>
+                <p className="text-gray-600 text-sm">{d.tekst}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA sectie */}
+      <section className="py-20 bg-primary-600 text-white text-center">
+        <div className="max-w-2xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Klaar voor uw volgende avontuur?</h2>
+          <p className="text-xl text-primary-100 mb-10">
+            Bel ons vrijblijvend. We denken graag met u mee over uw droomreis.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:0850608333"
+              className="bg-white text-primary-700 font-bold text-2xl px-10 py-5 rounded-xl hover:bg-primary-50 transition-colors shadow-lg"
+            >
+              085-0608333
+            </a>
+            <Link
+              href="/contact"
+              className="bg-primary-500 border-2 border-white text-white font-semibold text-xl px-10 py-5 rounded-xl hover:bg-primary-400 transition-colors"
+            >
+              Of stuur een bericht
             </Link>
           </div>
         </div>

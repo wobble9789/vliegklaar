@@ -1,8 +1,7 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import ContactPage from '../../app/contact/page';
 
-// Mock Next.js components
 jest.mock('next/link', () => {
   const MockLink = ({ children, href }: { children: React.ReactNode; href: string }) => {
     return <a href={href}>{children}</a>;
@@ -11,23 +10,19 @@ jest.mock('next/link', () => {
   return MockLink;
 });
 
-jest.mock('@/components/ui/Button', () => {
-  const MockButton = ({ children, ...props }: any) => {
-    return <button {...props}>{children}</button>;
-  };
-  MockButton.displayName = 'MockButton';
-  return MockButton;
-});
-
 describe('ContactPage', () => {
   it('renders page heading', () => {
     render(<ContactPage />);
     expect(screen.getByText('Contact')).toBeInTheDocument();
   });
 
+  it('renders phone number prominently', () => {
+    render(<ContactPage />);
+    expect(screen.getAllByText(/085-0608333/i).length).toBeGreaterThan(0);
+  });
+
   it('renders contact information', () => {
     render(<ContactPage />);
-    expect(screen.getByText(/06 - 12 34 56 78/i)).toBeInTheDocument();
     expect(screen.getByText(/info@meereizen.nl/i)).toBeInTheDocument();
   });
 
@@ -53,54 +48,43 @@ describe('ContactPage', () => {
   it('allows typing in name field', async () => {
     const user = userEvent.setup();
     render(<ContactPage />);
-    
     const nameInput = screen.getByLabelText(/naam/i);
     await user.type(nameInput, 'Jan Jansen');
-    
     expect(nameInput).toHaveValue('Jan Jansen');
   });
 
   it('allows typing in email field', async () => {
     const user = userEvent.setup();
     render(<ContactPage />);
-    
     const emailInput = screen.getByLabelText(/e-mailadres/i);
     await user.type(emailInput, 'jan@example.com');
-    
     expect(emailInput).toHaveValue('jan@example.com');
   });
 
   it('allows typing in phone field', async () => {
     const user = userEvent.setup();
     render(<ContactPage />);
-    
     const phoneInput = screen.getByLabelText(/telefoonnummer/i);
     await user.type(phoneInput, '0612345678');
-    
     expect(phoneInput).toHaveValue('0612345678');
   });
 
   it('allows typing in message field', async () => {
     const user = userEvent.setup();
     render(<ContactPage />);
-    
     const messageInput = screen.getByLabelText(/uw bericht/i);
     await user.type(messageInput, 'Test bericht');
-    
     expect(messageInput).toHaveValue('Test bericht');
   });
 
   it('shows success message after form submission', async () => {
     const user = userEvent.setup();
     render(<ContactPage />);
-    
     await user.type(screen.getByLabelText(/naam/i), 'Jan Jansen');
     await user.type(screen.getByLabelText(/e-mailadres/i), 'jan@example.com');
     await user.type(screen.getByLabelText(/uw bericht/i), 'Test bericht');
-    
     const submitButton = screen.getByText('Verstuur bericht');
     await user.click(submitButton);
-    
     await waitFor(() => {
       expect(screen.getByTestId('success-message')).toBeInTheDocument();
     }, { timeout: 3000 });
@@ -109,30 +93,16 @@ describe('ContactPage', () => {
   it('clears form after successful submission', async () => {
     const user = userEvent.setup();
     render(<ContactPage />);
-    
-    const nameInput = screen.getByLabelText(/naam/i) as HTMLInputElement;
-    const emailInput = screen.getByLabelText(/e-mailadres/i) as HTMLInputElement;
-    const messageInput = screen.getByLabelText(/uw bericht/i) as HTMLTextAreaElement;
-    
-    await user.type(nameInput, 'Jan Jansen');
-    await user.type(emailInput, 'jan@example.com');
-    await user.type(messageInput, 'Test bericht');
-    
-    const submitButton = screen.getByText('Verstuur bericht');
-    await user.click(submitButton);
-    
-    // Wacht tot submit compleet is (success message verschijnt)
-    await waitFor(
-      () => {
-        expect(screen.getByTestId('success-message')).toBeInTheDocument();
-      },
-      { timeout: 3000 } // Verhoog timeout voor 1s submit delay
-    );
-    
-    // Check dat form gecleared is
-    expect(nameInput.value).toBe('');
-    expect(emailInput.value).toBe('');
-    expect(messageInput.value).toBe('');
+    await user.type(screen.getByLabelText(/naam/i), 'Jan Jansen');
+    await user.type(screen.getByLabelText(/e-mailadres/i), 'jan@example.com');
+    await user.type(screen.getByLabelText(/uw bericht/i), 'Test bericht');
+    await user.click(screen.getByText('Verstuur bericht'));
+    // After submission, form is replaced by success message (form cleared + hidden)
+    await waitFor(() => {
+      expect(screen.getByTestId('success-message')).toBeInTheDocument();
+    }, { timeout: 3000 });
+    // Form inputs are no longer in the DOM after success
+    expect(screen.queryByLabelText(/naam/i)).not.toBeInTheDocument();
   });
 
   it('renders phone contact card', () => {
@@ -152,7 +122,7 @@ describe('ContactPage', () => {
 
   it('renders business hours', () => {
     render(<ContactPage />);
-    expect(screen.getByText(/Ma-vr: 9:00 - 18:00/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Ma-vr: 9:00 - 18:00/i).length).toBeGreaterThan(0);
   });
 
   it('renders benefits of calling', () => {

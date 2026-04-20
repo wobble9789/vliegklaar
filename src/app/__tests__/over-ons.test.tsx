@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import OverOnsPage from '../../app/over-ons/page';
 
-// Mock Next.js components
 jest.mock('next/link', () => {
   const MockLink = ({ children, href }: { children: React.ReactNode; href: string }) => {
     return <a href={href}>{children}</a>;
@@ -10,16 +9,15 @@ jest.mock('next/link', () => {
   return MockLink;
 });
 
-jest.mock('@/components/ui/Button', () => {
-  return function MockButton({ children, ...props }: any) {
-    return <button {...props}>{children}</button>;
-  };
-});
-
 describe('OverOnsPage', () => {
   it('renders page heading', () => {
     render(<OverOnsPage />);
     expect(screen.getByText('Over MeeReizen')).toBeInTheDocument();
+  });
+
+  it('renders personal story about Ivo', () => {
+    render(<OverOnsPage />);
+    expect(screen.getByText(/MeeReizen is opgericht door Ivo/i)).toBeInTheDocument();
   });
 
   it('renders mission section', () => {
@@ -29,7 +27,7 @@ describe('OverOnsPage', () => {
 
   it('explains the company mission', () => {
     render(<OverOnsPage />);
-    expect(screen.getByText(/Reizen zou plezier moeten zijn/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Reizen zou plezier moeten zijn/i).length).toBeGreaterThan(0);
   });
 
   it('renders why choose us section', () => {
@@ -64,10 +62,11 @@ describe('OverOnsPage', () => {
 
   it('renders all benefit icons', () => {
     render(<OverOnsPage />);
-    const icons = ['👥', '🎯', '🤝', '✓', '💬'];
-    icons.forEach(icon => {
-      expect(screen.getByText(icon)).toBeInTheDocument();
-    });
+    expect(screen.getByText('👥')).toBeInTheDocument();
+    expect(screen.getByText('🎯')).toBeInTheDocument();
+    expect(screen.getByText('🤝')).toBeInTheDocument();
+    expect(screen.getByText('✓')).toBeInTheDocument();
+    expect(screen.getByText('💬')).toBeInTheDocument();
   });
 
   it('renders final CTA section', () => {
@@ -83,7 +82,7 @@ describe('OverOnsPage', () => {
 
   it('explains no automatic systems', () => {
     render(<OverOnsPage />);
-    expect(screen.getByText(/Geen automatische systemen/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Geen automatische systemen/i).length).toBeGreaterThan(0);
   });
 
   it('explains fixed contact person', () => {
