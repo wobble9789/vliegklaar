@@ -8,8 +8,35 @@ export const metadata: Metadata = {
 };
 
 export default function RotterdamSEOPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Biedt Vliegklaar reisbegeleiding in heel Rotterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij bieden persoonlijke reisbegeleiding voor ouderen in alle wijken van Rotterdam en omliggende gemeenten zoals Schiedam, Vlaardingen en Capelle aan den IJssel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleidt Vliegklaar ook vanaf Rotterdam The Hague Airport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker, wij begeleiden senioren vanaf huis naar Rotterdam The Hague Airport (RTM), Schiphol of andere luchthavens, inclusief hulp bij het inchecken en de security."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <section className="bg-primary-50 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-12 items-center">
