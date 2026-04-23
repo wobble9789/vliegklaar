@@ -1,0 +1,127 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Reisbegeleiding voor ouderen in Arnhem | Vliegklaar',
+  description: 'Persoonlijke reisbegeleiding voor senioren in Arnhem. Wij helpen u veilig en comfortabel op reis vanaf Arnhem en omgeving naar elke bestemming.',
+};
+
+export default function ArnhemSEOPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Biedt Vliegklaar reisbegeleiding in heel Arnhem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij bieden persoonlijke reisbegeleiding voor ouderen in alle wijken van Arnhem en omliggende gemeenten zoals Velp, Oosterbeek, Elst en Huissen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe regelt Vliegklaar vervoer vanaf Arnhem naar de luchthaven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wij kunnen u thuis in Arnhem ophalen en begeleiden u per trein of privéchauffeur naar Schiphol, Düsseldorf Airport of Eindhoven Airport, inclusief volledige ondersteuning bij de incheck- en beveiligingsprocedures."
+        }
+      }
+    ]
+  };
+
+  return (
+    <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <section className="bg-primary-50 py-16 md:py-24">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="flex-1 text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
+                Reisbegeleiding voor ouderen in Arnhem
+              </h1>
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                Woont u in de regio Arnhem en wilt u graag op reis, maar ziet u op tegen de drukte op vliegvelden of de logistiek? 
+                Vliegklaar biedt persoonlijke begeleiding op maat voor senioren in de Gelderse hoofdstad.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a
+                  href="tel:0618769492"
+                  className="bg-primary-600 hover:bg-primary-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-colors text-center"
+                >
+                  Bel Arnhem: 06-18769492
+                </a>
+                <Link
+                  href="/contact"
+                  className="bg-white border-2 border-primary-600 text-primary-600 font-bold px-8 py-4 rounded-xl hover:bg-primary-50 transition-colors text-center"
+                >
+                  Stuur een bericht
+                </Link>
+              </div>
+            </div>
+            <div className="flex-1 relative h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="https://images.unsplash.com/photo-1619853381611-39c280540455?w=800&q=80"
+                alt="Arnhem Skyline Eusebiuskerk"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary-800 mb-8">Waarom kiezen voor Vliegklaar in Arnhem?</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-primary-700">✓ Van deur tot deur</h3>
+              <p className="text-gray-600">
+                Wij halen u thuis op in Arnhem (of regio zoals Velp, Oosterbeek, Zevenaar) 
+                en begeleiden u gedurende de hele reis tot aan uw eindbestemming.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-primary-700">✓ Vertrouwd & Dichtbij</h3>
+              <p className="text-gray-600">
+                Onze begeleiders hebben ervaring met reizen vanaf Arnhem naar zowel Nederlandse als Duitse vliegvelden (zoals Düsseldorf).
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-primary-700">✓ Maatwerk</h3>
+              <p className="text-gray-600">
+                Of u nu een bezoek brengt aan familie in het buitenland of geniet van een welverdiende vakantie, wij regelen de details.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-primary-700">✓ Geen stress</h3>
+              <p className="text-gray-600">
+                U hoeft zich geen zorgen te maken over koffers, instapkaarten of lange rijen; wij zijn uw vaste steunpilaar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-primary-900 text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Start uw zorgeloze reis vanuit Arnhem</h2>
+          <p className="text-xl mb-10 text-primary-100">
+            Benieuwd wat wij voor u kunnen betekenen? Bel ons voor een kennismaking bij u in Arnhem of omgeving.
+          </p>
+          <a
+            href="tel:0618769492"
+            className="inline-block bg-primary-500 hover:bg-primary-600 text-white font-bold text-2xl px-12 py-6 rounded-2xl shadow-xl transition-all hover:scale-105"
+          >
+            06-18769492
+          </a>
+        </div>
+      </section>
+    </main>
+  );
+}
