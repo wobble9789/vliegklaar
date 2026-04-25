@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Reisbegeleiding voor ouderen in Hilversum | Vliegklaar',
-  description: 'Persoonlijke reisbegeleiding voor senioren in Hilversum. Wij helpen u veilig en comfortabel op reis, van deur tot deur in de regio 't Gooi.',
+  description: "Persoonlijke reisbegeleiding voor senioren in Hilversum. Wij helpen u veilig en comfortabel op reis, van deur tot deur in de regio 't Gooi.",
 };
 
 export default function HilversumSEOPage() {
@@ -18,7 +18,7 @@ export default function HilversumSEOPage() {
                 Reisbegeleiding voor ouderen in Hilversum
               </h1>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                Woont u in Hilversum of 't Gooi en wilt u graag op reis, maar ziet u op tegen de logistiek? 
+                Woont u in Hilversum of &apos;t Gooi en wilt u graag op reis, maar ziet u op tegen de logistiek? 
                 Vliegklaar biedt persoonlijke begeleiding op maat voor senioren in de mediastad.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -62,7 +62,7 @@ export default function HilversumSEOPage() {
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-primary-700">✓ Vertrouwd & Dichtbij</h3>
               <p className="text-gray-600">
-                Onze begeleiders kennen de regio 't Gooi en Schiphol als hun broekzak, wat zorgt voor een zorgeloze reis.
+                Onze begeleiders kennen de regio &apos;t Gooi en Schiphol als hun broekzak, wat zorgt voor een zorgeloze reis.
               </p>
             </div>
             <div className="space-y-4">

@@ -47,7 +47,7 @@ export default function BlogReizenVervelendPage() {
             Waarom reizen op leeftijd zo vermoeiend kan zijn — en wat je eraan kunt doen
           </h1>
           <p className="text-xl text-gray-700 leading-relaxed">
-            "Vroeger ging ik elk jaar naar Spanje. Nu zie ik er gewoon tegenop." Een zin die we
+            &ldquo;Vroeger ging ik elk jaar naar Spanje. Nu zie ik er gewoon tegenop.&rdquo; Een zin die we
             wekelijks horen. Reizen — ooit een hoogtepunt — is voor veel ouderen veranderd in een
             obstakel. In dit artikel: waarom dat zo is, en wat je eraan kunt doen.
           </p>
@@ -87,7 +87,7 @@ export default function BlogReizenVervelendPage() {
           Niet de koffer zelf — maar uw kracht. Kracht in armen en rug neemt na ons 60e met
           ongeveer <strong>1,5% per jaar af</strong>. Een koffer van 20 kilo voelt op uw 75e als 30.
           En dan die hoge bagagebanden, het tillen op de transportband, het inhalen van de juiste
-          band tussen 200 anderen… Begrijpelijk dat veel mensen "het volgende jaar misschien wel"
+          band tussen 200 anderen… Begrijpelijk dat veel mensen &ldquo;het volgende jaar misschien wel&rdquo;
           gaan zeggen.
         </p>
 
@@ -107,11 +107,11 @@ export default function BlogReizenVervelendPage() {
         <p className="text-gray-700 leading-relaxed mb-6">
           Vroeger reisde u met uw partner. Of met de buren. Nu zijn de buren overleden, zit uw
           partner thuis, of woont uw zoon in Australië en kan hij niet meekomen. Alleen reizen op
-          uw 78e is een heel ander verhaal dan met z'n tweeën in 1985.
+          uw 78e is een heel ander verhaal dan met z&apos;n tweeën in 1985.
         </p>
 
         <h2 className="text-2xl md:text-3xl font-bold text-primary-800 mt-12 mb-4">
-          5. De angst voor "wat als"
+          5. De angst voor &ldquo;wat als&rdquo;
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
           Wat als ik val? Wat als ik mijn pillen vergeet? Wat als de aansluiting niet lukt en ik
@@ -126,7 +126,7 @@ export default function BlogReizenVervelendPage() {
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
           Hier komt Vliegklaar in beeld. Wij doen precies wat een goede zoon of dochter zou doen
-          — alleen dan professioneel:
+          &mdash; alleen dan professioneel:
         </p>
         <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
           <li>We halen u thuis op</li>
@@ -143,10 +143,10 @@ export default function BlogReizenVervelendPage() {
 
         <div className="bg-primary-50 border-l-4 border-primary-600 p-6 my-8 rounded-r-lg">
           <p className="text-lg text-primary-900 font-semibold mb-2">
-            "Mijn moeder durfde niet meer alleen te vliegen. Met Vliegklaar gaat ze nu twee keer
-            per jaar naar mijn zus in Portugal. Dat is goud waard."
+            &ldquo;Mijn moeder durfde niet meer alleen te vliegen. Met Vliegklaar gaat ze nu twee keer
+            per jaar naar mijn zus in Portugal. Dat is goud waard.&rdquo;
           </p>
-          <p className="text-sm text-gray-600">— Karin, dochter (Utrecht)</p>
+          <p className="text-sm text-gray-600">&mdash; Karin, dochter (Utrecht)</p>
         </div>
 
         {/* CTA */}
