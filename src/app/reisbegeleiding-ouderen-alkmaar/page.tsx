@@ -7,9 +7,44 @@ export const metadata: Metadata = {
   description: 'Persoonlijke reisbegeleiding voor senioren in Alkmaar. Wij helpen u veilig en comfortabel op reis, van deur tot deur.',
 };
 
+const faqData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Word ik echt bij mijn voordeur in Alkmaar opgehaald?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, onze begeleiding begint direct bij u thuis in Alkmaar of omliggende plaatsen zoals Bergen en Heiloo. We helpen met de koffers en zorgen voor vervoer naar de luchthaven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen jullie ook helpen bij medische behoeften tijdens de reis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hoewel wij geen medische handelingen verrichten, ondersteunen we wel bij het tijdig innemen van medicatie en zorgen we voor rust en assistentie bij mobiliteitsproblemen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Begeleiden jullie ook op de terugreis naar Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zeker. We kunnen u ophalen bij de gate van de luchthaven van aankomst en brengen u veilig terug tot in uw woonkamer in Alkmaar."
+      }
+    }
+  ]
+};
+
 export default function AlkmaarSEOPage() {
   return (
     <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+      />
       <section className="bg-primary-50 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -77,6 +112,20 @@ export default function AlkmaarSEOPage() {
                 U hoeft zich geen zorgen te maken over bagage, overstappen of navigatie; wij zijn er voor uw rust en veiligheid.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary-800 mb-10 text-center">Veelgestelde vragen over reisbegeleiding in Alkmaar</h2>
+          <div className="space-y-8">
+            {faqData.mainEntity.map((item, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                <h3 className="text-xl font-semibold text-primary-700 mb-3">{item.name}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.acceptedAnswer.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
