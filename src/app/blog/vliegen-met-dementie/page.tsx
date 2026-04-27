@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Vliegen met Dementie: Tips voor een Rustige Reis | Vliegklaar',
@@ -9,12 +9,16 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-8">
-      <Breadcrumbs items={[
-        { label: 'Home', href: '/' },
-        { label: 'Blog', href: '/blog' },
-        { label: 'Vliegen met dementie', href: '/blog/vliegen-met-dementie' }
-      ]} />
-      
+      <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+        <ol className="flex items-center gap-2">
+          <li><Link href="/" className="hover:text-blue-600">Home</Link></li>
+          <li className="text-gray-300">/</li>
+          <li><Link href="/blog" className="hover:text-blue-600">Blog</Link></li>
+          <li className="text-gray-300">/</li>
+          <li className="text-gray-700">Vliegen met dementie</li>
+        </ol>
+      </nav>
+
       <h1 className="text-4xl font-bold mb-6">Vliegen met dementie: 7 tips voor een zorgeloze reis</h1>
       
       <p className="text-lg mb-6">
@@ -33,7 +37,7 @@ export default function Page() {
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">3. Kies voor een directe vlucht</h2>
       <p className="mb-4">
-        Overstappen zorgt for extra prikkels en vermoeidheid. Probeer, indien mogelijk, altijd voor een rechtstreekse vlucht te kiezen om de reisduur en de complexiteit te beperken.
+        Overstappen zorgt voor extra prikkels en vermoeidheid. Probeer, indien mogelijk, altijd voor een rechtstreekse vlucht te kiezen om de reisduur en de complexiteit te beperken.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">4. Behoud vertrouwde routines</h2>
@@ -48,7 +52,7 @@ export default function Page() {
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">6. Bereid de bestemming voor</h2>
       <p className="mb-4">
-        Kies op de bestemming voor een rustige omgeving. Een hotel of appartement waar de indeling overzichtelijk is, helpt om desoriëntatie te voorkomen.
+        Kies op de bestemming voor een rustige omgeving. Een hotel of appartement waar de indeling overzichtelijk is, helpt om desori&euml;ntatie te voorkomen.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">7. Overweeg een reisbegeleider</h2>
