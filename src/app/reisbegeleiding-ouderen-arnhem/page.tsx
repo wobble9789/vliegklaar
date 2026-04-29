@@ -27,6 +27,30 @@ export default function ArnhemSEOPage() {
           "@type": "Answer",
           "text": "Wij kunnen u thuis in Arnhem ophalen en begeleiden u per trein of privéchauffeur naar Schiphol, Düsseldorf Airport of Eindhoven Airport, inclusief volledige ondersteuning bij de incheck- en beveiligingsprocedures."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan Vliegklaar ook helpen bij medische behoeften tijdens de reis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Onze begeleiders in Arnhem zijn getraind om te ondersteunen bij niet-medische zorg, zoals het herinneren aan medicatie, assistentie bij mobiliteit en het bieden van emotionele rust tijdens spannende reismomenten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Worden koffers ook gedragen door de begeleider?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absoluut. Een van de kerntaken van onze reisbegeleiders in Arnhem is het volledig ontzorgen van de bagage, zodat u zonder fysieke belasting door de luchthaven of het station kunt bewegen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is er ook begeleiding beschikbaar voor reizen met de trein vanuit Arnhem Centraal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker, Arnhem Centraal is een belangrijk knooppunt voor zowel nationale als internationale treinen (zoals de ICE). Wij begeleiden u graag vanaf het perron tot aan uw zitplaats en eindbestemming."
+        }
       }
     ]
   };
