@@ -7,9 +7,44 @@ export const metadata: Metadata = {
   description: 'Persoonlijke reisbegeleiding voor senioren in Almere. Wij helpen u veilig en comfortabel op reis vanaf Lelystad of Schiphol.',
 };
 
+const faqData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Word ik in Almere thuis opgehaald?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zeker, onze begeleiding begint bij u aan de voordeur in Almere Stad, Buiten of Haven. We helpen met de bagage en zorgen voor een comfortabele transfer naar de luchthaven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen jullie ook vanaf vliegveld Lelystad begeleiden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, gezien onze centrale ligging in Flevoland begeleiden wij senioren zowel vanaf Schiphol als vanaf Lelystad Airport naar hun bestemming."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat kost reisbegeleiding in Almere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De kosten zijn afhankelijk van uw specifieke wensen en de duur van de reis. Neem contact met ons op voor een vrijblijvende offerte op maat voor uw situatie in Almere."
+      }
+    }
+  ]
+};
+
 export default function AlmereSEOPage() {
   return (
     <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+      />
       <section className="bg-primary-50 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -76,6 +111,20 @@ export default function AlmereSEOPage() {
                 Van inchecken tot het vinden van de juiste gate; wij regelen alles zodat u alleen maar hoeft te genieten.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary-800 mb-10 text-center">Veelgestelde vragen over reisbegeleiding in Almere</h2>
+          <div className="space-y-8">
+            {faqData.mainEntity.map((item, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                <h3 className="text-xl font-semibold text-primary-700 mb-3">{item.name}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.acceptedAnswer.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
