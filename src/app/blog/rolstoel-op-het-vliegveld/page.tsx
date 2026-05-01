@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
-import { Article, WebPage, Organization } from 'schema-dts';
 
 export const metadata: Metadata = {
   title: 'Reizen met een rolstoel op het vliegveld: Tips & Begeleiding',
