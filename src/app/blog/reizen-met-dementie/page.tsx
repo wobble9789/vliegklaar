@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Vliegen met Dementie: Tips voor een Rustige Reis | Vliegklaar',
@@ -9,12 +8,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-8">
-      <Breadcrumbs items={[
-        { label: 'Home', href: '/' },
-        { label: 'Blog', href: '/blog' },
-        { label: 'Reizen met dementie', href: '/blog/reizen-met-dementie' }
-      ]} />
-      
       <h1 className="text-4xl font-bold mb-6">Reizen met dementie: Tips voor een zorgeloze vakantie</h1>
       
       <p className="text-lg mb-6">
