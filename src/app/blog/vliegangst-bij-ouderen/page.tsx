@@ -1,94 +1,139 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Veilig vliegen met vliegangst bij ouderen | Vliegklaar',
-  description: 'Tips en persoonlijke begeleiding voor senioren met vliegangst. Ontdek hoe u weer zorgeloos en comfortabel kunt vliegen met professionele hulp.',
+  description: 'Tips en persoonlijke begeleiding voor senioren met vliegangst. Lees hoe u weer ontspannen het vliegtuig in stapt met de juiste voorbereiding.',
 };
 
-export default function VliegangstOuderenPage() {
+export default function VliegangstOuderenBlog() {
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Komt vliegangst vaker voor bij ouderen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vliegangst kan op elke leeftijd ontstaan of verergeren. Bij ouderen speelt vaak een verhoogde behoefte aan controle en fysiek comfort een rol, evenals angst voor medische complicaties tijdens de vlucht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan persoonlijke reisbegeleiding helpen bij vliegangst?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absoluut. Een rustige, ervaren begeleider neemt de logistieke stress weg en biedt een luisterend oor. Dit zorgt voor afleiding en een gevoel van veiligheid, wat de symptomen van vliegangst aanzienlijk vermindert."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn er natuurlijke middelen tegen vliegangst voor senioren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Er zijn diverse milde, natuurlijke supplementen zoals valeriaan of passiebloem die rustgevend werken. Overleg echter altijd eerst met uw huisarts, zeker als u ook andere medicatie gebruikt."
+        }
+      }
+    ]
+  };
+
   return (
-    <article className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center text-white">
-        <Image
-          src="https://images.unsplash.com/photo-1506012733851-bb07551842e6?w=1600&q=80"
-          alt="Senioren op het vliegveld"
-          fill
-          className="object-cover brightness-50"
-          priority
-        />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Vliegangst bij Ouderen: Weer Zorgeloos op Reis</h1>
-          <p className="text-xl md:text-2xl text-gray-200">
-            Hoe persoonlijke begeleiding en de juiste voorbereiding het verschil maken.
+    <main className="pt-20">
+      <section className="bg-primary-50 py-12 md:py-20">
+        <div className="max-w-4xl mx-auto px-4">
+          <Link href="/blog" className="text-primary-600 hover:text-primary-700 font-medium mb-4 inline-block">
+            ← Terug naar alle artikelen
+          </Link>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6 leading-tight">
+            Vliegangst bij ouderen: Zo reist u weer met een gerust hart
+          </h1>
+          <p className="text-xl text-gray-700 mb-8 leading-relaxed italic">
+            Ziet u er tegenop om het vliegtuig in te stappen? U bent niet de enige. Vliegangst bij senioren komt vaak voor, maar het hoeft uw droomreis niet in de weg te staan.
           </p>
-        </div>
-      </section>
+          <div className="relative h-[300px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-xl mb-12">
+            <Image
+              src="https://images.unsplash.com/photo-1506013391221-ce841399738d?w=1200&q=80"
+              alt="Ontspannen reizen in het vliegtuig"
+              fill
+              className="object-cover"
+            />
+          </div>
 
-      {/* Content */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-4">
-          <div className="prose prose-lg prose-primary mx-auto">
-            <p className="lead text-xl text-gray-600 mb-8">
-              Vliegangst is een veelvoorkomend verschijnsel, ook bij senioren die vroeger misschien zonder problemen de wereld over vlogen. Naarmate we ouder worden, kunnen fysieke ongemakken, een verminderd evenwichtsgevoel of een grotere behoefte aan controle ervoor zorgen dat een vliegreis plotseling een bron van spanning wordt.
+          <div className="prose prose-lg prose-primary max-w-none">
+            <p>
+              Voor veel senioren is vliegen niet meer zo vanzelfsprekend als vroeger. Waar men vroeger zonder nadenken in het toestel stapte, kunnen er nu zorgen ontstaan over de hoogte, de besloten ruimte of het gebrek aan controle. Vliegangst kan zich op latere leeftijd ontwikkelen, soms zelfs na jarenlang probleemloos reizen.
             </p>
 
-            <h2 className="text-3xl font-bold text-primary-900 mt-12 mb-6">Waarom ontstaat vliegangst op latere leeftijd?</h2>
-            <p className="text-gray-700 mb-6">
-              Het is een misverstand dat vliegangst altijd een irrationele angst is voor neerstorten. Bij ouderen heeft het vaak te maken met andere factoren:
+            <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">Oorzaken van vliegangst op latere leeftijd</h2>
+            <p>
+              Vliegangst bij ouderen heeft vaak een andere bron dan bij jongere reizigers. Het gaat vaker om een combinatie van factoren:
             </p>
-            <ul className="list-disc pl-6 mb-8 space-y-3 text-gray-700">
-              <li><strong>Controleverlies:</strong> De drukte op vliegvelden zoals Schiphol kan overweldigend zijn.</li>
-              <li><strong>Fysieke kwetsbaarheid:</strong> De angst om te vallen of onwel te worden in een kleine ruimte zonder directe hulp.</li>
-              <li><strong>Medische zorgen:</strong> Hoe reageert mijn lichaam op de luchtdruk? Wat als ik mijn medicijnen vergeet?</li>
-              <li><strong>Eenzaamheid:</strong> Alleen reizen vergroot de onzekerheid.</li>
+            <ul>
+              <li><strong>Fysiek ongemak:</strong> De angst om kramp te krijgen, niet makkelijk naar het toilet te kunnen of last te krijgen van de luchtdruk.</li>
+              <li><strong>Verhoogde behoefte aan controle:</strong> Het gevoel dat u de regie over de situatie verliest zodra de deuren sluiten.</li>
+              <li><strong>Nieuwsberichten:</strong> Ouderen consumeren vaak meer nieuws, waardoor incidenten in de luchtvaart (hoe zeldzaam ook) groter lijken in de beleving.</li>
             </ul>
 
-            <h2 className="text-3xl font-bold text-primary-900 mt-12 mb-6">Tips om vliegangst te beheersen</h2>
-            <p className="text-gray-700 mb-6">
-              Er zijn verschillende manieren om de spanning voor en tijdens de vlucht te verminderen. Een goede voorbereiding is hierbij het halve werk.
-            </p>
-            <div className="bg-primary-50 p-8 rounded-2xl mb-8">
-              <h3 className="text-xl font-bold text-primary-800 mb-4">Onze top 3 adviezen:</h3>
-              <ol className="list-decimal pl-6 space-y-4 text-gray-700">
-                <li><strong>Kennis is macht:</strong> Verdiep u kort in hoe een vliegtuig werkt. De geluiden die u hoort (zoals het inklappen van het landingsgestel) zijn volkomen normaal.</li>
-                <li><strong>Communiceer:</strong> Geef bij het cabinepersoneel aan dat u gespannen bent. Zij zijn getraind om u op uw gemak te stellen.</li>
-                <li><strong>Afleiding:</strong> Neem een luisterboek, kruiswoordpuzzel of rustige muziek mee.</li>
-              </ol>
-            </div>
+            <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">5 Tips voor een ontspannen vlucht</h2>
+            <ol>
+              <li><strong>Goede voorbereiding:</strong> Weet wat u kunt verwachten op de luchthaven. Gebruik bijvoorbeeld onze <Link href="/luchthaven-begeleiding">luchthavenbegeleiding</Link> om de eerste stress van de security en het boarden te vermijden.</li>
+              <li><strong>Kies de juiste zitplaats:</strong> Een stoel bij het gangpad geeft een minder opgesloten gevoel en maakt het makkelijker om even te bewegen.</li>
+              <li><strong>Vermijd cafeïne:</strong> Koffie en thee kunnen hartkloppingen en nervositeit versterken. Kies voor water of kruidenthee.</li>
+              <li><strong>Focus op de bestemming:</strong> Houd de reden van uw reis in gedachten. Waarom wilde u deze reis maken? De ontmoeting met familie of de prachtige zonbestemming is de korte vlucht waard.</li>
+              <li><strong>Praat erover:</strong> Geef bij het cabinepersoneel aan dat u nerveus bent. Zij zijn getraind om u op uw gemak te stellen.</li>
+            </ol>
 
-            <h2 className="text-3xl font-bold text-primary-900 mt-12 mb-6">De kracht van persoonlijke reisbegeleiding</h2>
-            <p className="text-gray-700 mb-6">
-              De meest effectieve manier om vliegangst bij ouderen weg te nemen, is door niet alleen te reizen. Bij <strong>Vliegklaar</strong> merken we dat de aanwezigheid van een rustige, professionele begeleider wonderen doet.
+            <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">De kracht van persoonlijke begeleiding</h2>
+            <p>
+              Soms is informatie en goede moed niet genoeg. In die gevallen kan een persoonlijke reisbegeleider het verschil maken. Bij <Link href="/">Vliegklaar</Link> zien we regelmatig dat de aanwezigheid van een rustig, vertrouwd persoon de vliegangst grotendeels wegneemt. Wij nemen de logistiek uit handen, zodat u zich alleen hoeft te concentreren op uw rust.
             </p>
-            <p className="text-gray-700 mb-6">
-              Een reisbegeleider neemt alle logistieke zorgen uit handen: van het inchecken van de bagage tot het navigeren door de security. Mocht er paniek ontstaan, dan is er direct iemand die weet hoe te handelen, u geruststelt en de situatie beheersbaar houdt.
-            </p>
-
-            <div className="my-12 border-l-4 border-primary-500 pl-6 py-2 italic text-gray-600">
-              "Sinds mijn man is overleden durfde ik niet meer te vliegen. Met de begeleiding van Vliegklaar ben ik afgelopen maand toch naar mijn kleinkinderen in Spanje gevlogen. Het was een bevrijding." - Mevrouw de Vries (78)
-            </div>
-
-            <h2 className="text-3xl font-bold text-primary-900 mt-12 mb-6">Conclusie</h2>
-            <p className="text-gray-700 mb-8">
-              Vliegangst hoeft uw wereld niet kleiner te maken. Met de juiste ondersteuning en begrip kunt u nog steeds genieten van verre reizen, familiebezoeken en vakanties.
-            </p>
-
-            <div className="bg-primary-900 text-white p-8 rounded-3xl text-center">
-              <h3 className="text-2xl font-bold mb-4">Wilt u weer zorgeloos vliegen?</h3>
-              <p className="mb-8">Wij bespreken graag hoe onze begeleiders u kunnen helpen bij uw volgende reis.</p>
-              <Link
-                href="/contact"
-                className="inline-block bg-white text-primary-900 font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors"
-              >
-                Vrijblijvend advies aanvragen
-              </Link>
-            </div>
           </div>
         </div>
       </section>
-    </article>
+
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary-800 mb-8 text-center">Veelgestelde vragen over vliegangst</h2>
+          <div className="space-y-6">
+            {faqData.mainEntity.map((item, index) => (
+              <div key={index} className="bg-gray-50 p-6 rounded-xl shadow-sm">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">{item.name}</h3>
+                <p className="text-gray-600">{item.acceptedAnswer.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-primary-900 text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Samen vliegen we de angst voorbij</h2>
+          <p className="text-xl mb-10 text-primary-100">
+            Wilt u weten hoe onze reisbegeleiders u kunnen helpen bij vliegangst? Neem vrijblijvend contact op voor een gesprek.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <a
+              href="tel:0618769492"
+              className="bg-primary-500 hover:bg-primary-600 text-white font-bold text-xl px-10 py-5 rounded-2xl shadow-xl transition-all"
+            >
+              Bel: 06-18769492
+            </a>
+            <Link
+              href="/contact"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-900 text-white font-bold text-xl px-10 py-5 rounded-2xl transition-all"
+            >
+              Bericht sturen
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+      />
+    </main>
   );
 }
