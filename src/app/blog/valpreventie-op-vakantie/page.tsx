@@ -48,7 +48,7 @@ export default function ValpreventieBlog() {
             Hotelkamers en vakantiewoningen zijn vaak anders ingericht dan u thuis gewend bent. Let bij aankomst direct op de volgende zaken:
           </p>
           <ul>
-            <li><strong>Verlichting:</strong> Zorg dat de route naar de badkamer 's nachts goed verlicht is. Gebruik eventueel een klein nachtlampje.</li>
+            <li><strong>Verlichting:</strong> Zorg dat de route naar de badkamer &apos;s nachts goed verlicht is. Gebruik eventueel een klein nachtlampje.</li>
             <li><strong>Losse kleden:</strong> Let op losliggende tapijten of matjes waar u over kunt struikelen. Schuif ze indien nodig even aan de kant.</li>
             <li><strong>Badkamerveiligheid:</strong> Gebruik de handgrepen in de douche als deze aanwezig zijn en vraag indien nodig om een antislipmat bij de receptie.</li>
           </ul>
