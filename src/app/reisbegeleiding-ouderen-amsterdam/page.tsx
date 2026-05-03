@@ -19,7 +19,7 @@ export default function AmsterdamSEOPage() {
               </h1>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
                 Woont u in Amsterdam of omgeving en wilt u graag op reis, maar ziet u op tegen de logistiek? 
-                Vliegklaar biedt persoonlijke begeleiding op maat voor senioren in onze hoofdstad.
+                Vliegklaar biedt persoonlijke begeleiding op maat for senioren in onze hoofdstad.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a
@@ -98,7 +98,7 @@ export default function AmsterdamSEOPage() {
               <p className="text-gray-600">Zeker. Voor we een reis plannen, komen we graag bij u thuis in Amsterdam langs voor een vrijblijvend kennismakingsgesprek. Zo kunnen we uw wensen rustig bespreken in uw eigen vertrouwde omgeving.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-lg font-bold text-primary-700 mb-2">Wat zijn de kosten voor reisbegeleiding in Amsterdam?</h3>
+              <h3 className="text-lg font-bold text-primary-700 mb-2">Wat zijn de kosten for reisbegeleiding in Amsterdam?</h3>
               <p className="text-gray-600">De kosten hangen af van de duur en intensiteit van de begeleiding. We werken met een transparant uurtarief of een vaste pakketprijs voor meerdaagse reizen. Tijdens een kennismaking in Amsterdam maken we een offerte op maat.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
@@ -120,6 +120,14 @@ export default function AmsterdamSEOPage() {
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Wat gebeurt er als ik tijdens de reis ziek word?</h3>
               <p className="text-gray-600">Uw begeleider is er om u te ondersteunen. Bij ziekte schakelen we direct met lokale artsen en uw verzekering. We blijven bij u tot de situatie stabiel is of tot er een passende oplossing is voor de terugreis.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-primary-700 mb-2">Bieden jullie ook begeleiding voor senioren met dementie in Amsterdam?</h3>
+              <p className="text-gray-600">Ja, wij hebben veel ervaring met het begeleiden van reizigers met beginnende dementie of geheugenproblemen. Onze begeleiders bieden de nodige structuur, rust en nabijheid om de reis voor zowel de senior als de familie zorgeloos te laten verlopen. Lees ook ons artikel over <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">reizen met dementie</Link>.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-primary-700 mb-2">Kan ik een begeleide reis cadeau doen aan mijn ouders in Amsterdam?</h3>
+              <p className="text-gray-600">Dat kan zeker. Veel van onze aanvragen komen van kinderen die hun ouders een veilige reis gunnen. We kunnen alles in overleg met u regelen, inclusief de verrassing en de logistiek vanaf hun huis in Amsterdam naar Schiphol.</p>
             </div>
           </div>
         </div>
@@ -200,6 +208,22 @@ export default function AmsterdamSEOPage() {
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Uw begeleider is er om u te ondersteunen. Bij ziekte schakelen we direct met lokale artsen en uw verzekering. We blijven bij u tot de situatie stabiel is of tot er een passende oplossing is voor de terugreis."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Bieden jullie ook begeleiding voor senioren met dementie in Amsterdam?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, wij hebben veel ervaring met het begeleiden van reizigers met beginnende dementie of geheugenproblemen. Onze begeleiders bieden de nodige structuur, rust en nabijheid om de reis voor zowel de senior als de familie zorgeloos te laten verlopen."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Kan ik een begeleide reis cadeau doen aan mijn ouders in Amsterdam?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dat kan zeker. Veel van onze aanvragen komen van kinderen die hun ouders een veilige reis gunnen. We kunnen alles in overleg met u regelen, inclusief de verrassing en de logistiek vanaf hun huis in Amsterdam naar Schiphol."
                   }
                 }
               ]
