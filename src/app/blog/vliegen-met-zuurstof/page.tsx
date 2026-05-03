@@ -54,8 +54,8 @@ export default function VliegenMetZuurstofPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">4. Tips voor tijdens de vlucht</h2>
-          <p>
-            De luchtdruk in de cabine is lager dan op zeeniveau, waardoor er minder zuurstof in de lucht zit. Zelfs als u thuis niet altijd zuurstof nodig heeft, kan dit in de lucht wel nodig zijn (de zogenaamde 'fit-to-fly' test kan dit uitwijzen). Drink voldoende water, vermijd alcohol en blijf rustig ademhalen.
+          <p className="text-gray-700 mb-8">
+            De luchtdruk in de cabine is lager dan op zeeniveau, waardoor er minder zuurstof in de lucht zit. Zelfs als u thuis niet altijd zuurstof nodig heeft, kan dit in de lucht wel nodig zijn (de zogenaamde &apos;fit-to-fly&apos; test kan dit uitwijzen). Drink voldoende water, vermijd alcohol en blijf rustig ademhalen.
           </p>
 
           <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">Hoe Vliegklaar u ondersteunt</h2>
