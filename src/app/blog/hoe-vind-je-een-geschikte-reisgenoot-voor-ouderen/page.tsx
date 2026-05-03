@@ -3,23 +3,27 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Hoe vind je een geschikte reisgenoot voor ouderen? | Vliegklaar',
-  description: 'Tips voor het vinden van de perfecte reisgenoot of reisbegeleider voor senioren. Waar moet u op letten voor een veilige en gezellige vakantie?',
+  title: 'Hoe vindt u de ideale reisgenoot voor senioren? | Vliegklaar',
+  description: 'Wilt u niet alleen reizen? Ontdek hoe u een geschikte reisgenoot voor senioren vindt. Tips voor een veilige en gezellige vakantie met begeleiding.',
 };
 
-export default function ReisgenootOuderenBlog() {
+export default function ReisgenootSeniorenBlog() {
   return (
     <article className="pt-20">
-      <section className="bg-primary-50 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <Link href="/blog" className="text-primary-600 font-semibold mb-4 inline-block hover:underline">
-            ← Terug naar blog overzicht
-          </Link>
+      <section className="bg-primary-50 py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <nav className="mb-8 text-sm text-gray-500">
+            <Link href="/" className="hover:text-primary-600">Home</Link>
+            <span className="mx-2">/</span>
+            <Link href="/blog" className="hover:text-primary-600">Blog</Link>
+            <span className="mx-2">/</span>
+            <span className="text-gray-900">Ideale reisgenoot vinden</span>
+          </nav>
           <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
-            Hoe vind je een geschikte reisgenoot voor ouderen?
+            Hoe vindt u de ideale reisgenoot voor senioren?
           </h1>
-          <p className="text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
-            Alleen reizen op latere leeftijd kan een drempel zijn. Een goede reisgenoot maakt de vakantie niet alleen gezelliger, maar ook een stuk veiliger.
+          <p className="text-xl text-gray-700 leading-relaxed">
+            Samen reizen is vaak leuker dan alleen. Maar waar vindt u een betrouwbare reisgenoot die dezelfde interesses en hetzelfde tempo heeft? In dit artikel delen we praktische tips voor senioren die een maatje zoeken voor hun volgende avontuur.
           </p>
         </div>
       </section>
@@ -27,79 +31,88 @@ export default function ReisgenootOuderenBlog() {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 prose prose-lg prose-primary">
           <p>
-            Vakantie vieren is heerlijk, maar naarmate we ouder worden, kunnen de logistieke uitdagingen groter worden. Het sjouwen met koffers, het navigeren door drukke luchthavens of simpelweg het hebben van aanspraak tijdens het diner zijn redenen waarom veel senioren op zoek gaan naar een reisgenoot.
+            Veel senioren dromen van verre reizen of een ontspannen vakantie in Europa, maar zien ertegenop om dit alleen te ondernemen. Een goede reisgenoot biedt niet alleen gezelligheid, maar ook een gevoel van veiligheid en praktische ondersteuning.
           </p>
 
           <h2>Waarom een reisgenoot zoeken?</h2>
           <p>
-            De redenen om een reisgenoot te zoeken zijn divers. Voor de één is het pure gezelligheid: samen herinneringen maken en indrukken delen. Voor de ander is het een noodzaak vanwege fysieke beperkingen of een onzeker gevoel in een vreemde omgeving.
+            Een reisgenoot voor senioren kan verschillende rollen vervullen. Soms is het puur voor de sociale interactie: samen eten, herinneringen ophalen en ervaringen delen. In andere gevallen is er behoefte aan iemand die helpt met de bagage, de weg wijst op een druk vliegveld of ondersteunt bij fysieke uitdagingen.
           </p>
 
-          <h3>Verschillende soorten reisgenoten</h3>
-          <ul>
-            <li><strong>Vrienden of familie:</strong> De meest vertrouwde optie, maar zij hebben niet altijd dezelfde vakantieplannen of het fysieke vermogen om te helpen.</li>
-            <li><strong>Reisgenoot-zoekmachines:</strong> Er zijn diverse websites waar senioren een oproep kunnen plaatsen voor een gelijkgestemde reispartner.</li>
-            <li><strong>Professionele reisbegeleiding:</strong> Voor wie maximale zekerheid en ontzorging wil, is een professionele begeleider van <Link href="/">Vliegklaar</Link> de beste keuze.</li>
-          </ul>
+          <div className="bg-primary-50 p-6 rounded-2xl my-8">
+            <h3 className="text-primary-800 mt-0">De voordelen op een rij:</h3>
+            <ul>
+              <li><strong>Gedeelde vreugde:</strong> Ervaringen zijn waardevoller als je ze kunt delen.</li>
+              <li><strong>Veiligheid:</strong> Er is altijd iemand in de buurt als er iets gebeurt.</li>
+              <li><strong>Kostenbesparing:</strong> Denk aan gedeelde hotelkamers of taxi&apos;s.</li>
+              <li><strong>Praktische hulp:</strong> Ondersteuning bij inchecken, navigatie en taalbarrières.</li>
+            </ul>
+          </div>
 
-          <h2>Waar moet een goede reisgenoot aan voldoen?</h2>
+          <h2>Waar vindt u een geschikte reisgenoot?</h2>
           <p>
-            Een match is meer dan alleen dezelfde bestemming leuk vinden. Let bij het zoeken naar een reispartner op de volgende punten:
+            Het vinden van de juiste persoon vraagt om een zorgvuldige aanpak. Hier zijn enkele bewezen methoden:
           </p>
           <ol>
-            <li><strong>Reistempo:</strong> Wilt u elke dag musea bezoeken, of liever rustig aan doen met een boek in de zon? Zorg dat uw tempo&apos;s overeenkomen.</li>
-            <li><strong>Budget:</strong> Bespreek vooraf duidelijk wat de verwachte kosten zijn voor hotels, eten en vervoer.</li>
-            <li><strong>Interesses:</strong> Een gedeelde passie voor cultuur, natuur of culinaire hoogstandjes maakt de reis veel leuker.</li>
-            <li><strong>Hulpbehoevendheid:</strong> Wees eerlijk over wat u wel en niet kunt. Een &apos;gewone&apos; reisgenoot is geen verpleegkundige of professionele begeleider.</li>
+            <li>
+              <strong>Gespecialiseerde websites:</strong> Er bestaan diverse platforms voor &apos;reismaatjes&apos; specifiek gericht op 50-plussers en senioren.
+            </li>
+            <li>
+              <strong>Lokale verenigingen:</strong> Denk aan ouderenbonden of hobbyclubs in uw eigen woonplaats, zoals 
+              <Link href="/reisbegeleiding-ouderen-amsterdam">Amsterdam</Link> of 
+              <Link href="/reisbegeleiding-ouderen-utrecht">Utrecht</Link>.
+            </li>
+            <li>
+              <strong>Professionele reisbegeleiding:</strong> Als u geen geschikte kennis of vriend kunt vinden, biedt 
+              <Link href="/luchthaven-begeleiding">professionele reisbegeleiding</Link> uitkomst. Dit combineert het gezelschap van een reisgenoot met de expertise van een zorgverlener.
+            </li>
           </ol>
 
-          <h2>Het alternatief: Professionele reisbegeleiding</h2>
+          <h2>Waar moet u op letten bij de selectie?</h2>
           <p>
-            Vindt u het lastig om een geschikte partner te vinden in uw eigen kring, of wilt u uw familie niet belasten met zorgtaken? Dan is een professionele reisbegeleider een uitkomst. Bij Vliegklaar koppelen we senioren aan ervaren begeleiders die niet alleen zorgen voor de gezelligheid, maar ook alle praktische zaken uit handen nemen.
+            Een match op papier betekent niet altijd een match in de praktijk. Bespreek vooraf de volgende punten:
           </p>
-          <p>
-            Of u nu vanuit <Link href="/reisbegeleiding-ouderen-amsterdam">Amsterdam</Link>, <Link href="/reisbegeleiding-ouderen-rotterdam">Rotterdam</Link> of <Link href="/reisbegeleiding-ouderen-utrecht">Utrecht</Link> vertrekt, wij zorgen dat u zorgeloos op uw bestemming aankomt.
-          </p>
+          <ul>
+            <li><strong>Reistempo:</strong> Wilt u elke dag op pad of liever een middag rusten bij het zwembad?</li>
+            <li><strong>Budget:</strong> Zoekt u luxe hotels of eenvoudige pensions?</li>
+            <li><strong>Interesses:</strong> Houdt u van musea, natuur of juist van winkelen?</li>
+            <li><strong>Ochtendmens of avondmens:</strong> Wanneer start en eindigt uw dag?</li>
+          </ul>
 
-          <h2>Conclusie</h2>
+          <h2>Vliegklaar als uw &apos;professionele reisgenoot&apos;</h2>
           <p>
-            Een reisgenoot kan uw wereld weer vergroten. Of u nu kiest voor een nieuwe vriendschap via een platform of de zekerheid van professionele hulp, de belangrijkste stap is dat u weer durft te dromen van die mooie reis.
+            Vindt u het lastig om een vreemde te vertrouwen of wilt u zeker weten dat uw reisgenoot over de juiste vaardigheden beschikt? Vliegklaar biedt persoonlijke reisbegeleiders die fungeren als uw ideale reispartner. Wij regelen de logistiek, bieden een luisterend oor en zorgen dat u zorgeloos kunt genieten.
           </p>
-          
-          <div className="bg-primary-50 p-8 rounded-2xl my-12 border border-primary-100">
-            <h3 className="text-primary-900 mt-0">Op zoek naar een reisbegeleider?</h3>
-            <p className="mb-6">Vliegklaar biedt persoonlijke reisbegeleiding op maat. Wij zijn uw steun en toeverlaat van deur tot deur.</p>
-            <Link href="/contact" className="bg-primary-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-primary-700 no-underline inline-block">
-              Vrijblijvend kennismaken
-            </Link>
-          </div>
+          <p>
+            Onze begeleiders komen vooraf bij u langs voor een kennismaking, zodat er een klik is voordat de reis begint. Of u nu vertrekt vanuit 
+            <Link href="/reisbegeleiding-ouderen-rotterdam">Rotterdam</Link>, 
+            <Link href="/reisbegeleiding-ouderen-eindhoven">Eindhoven</Link> of elders, wij staan voor u klaar.
+          </p>
         </div>
       </section>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": "Hoe vind je een geschikte reisgenoot voor ouderen?",
-            "description": "Tips voor het vinden van de perfecte reisgenoot of reisbegeleider voor senioren. Waar moet u op letten voor een veilige en gezellige vakantie?",
-            "author": {
-              "@type": "Organization",
-              "name": "Vliegklaar"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Vliegklaar",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://vliegklaar.nl/logo.png"
-              }
-            },
-            "datePublished": "2026-05-02"
-          })
-        }}
-      />
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-primary-900 mb-6">Op zoek naar een vertrouwde reispartner?</h2>
+          <p className="text-xl text-gray-600 mb-10">
+            Laat u begeleiden door de professionals van Vliegklaar. Neem vrijblijvend contact op voor de mogelijkheden.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="bg-primary-600 hover:bg-primary-700 text-white font-bold px-10 py-4 rounded-xl shadow-lg transition-transform hover:scale-105"
+            >
+              Vrijblijvende aanvraag
+            </Link>
+            <a
+              href="tel:0618769492"
+              className="bg-white border-2 border-primary-600 text-primary-600 font-bold px-10 py-4 rounded-xl hover:bg-primary-50 transition-colors"
+            >
+              Bel: 06-18769492
+            </a>
+          </div>
+        </div>
+      </section>
     </article>
   );
 }
