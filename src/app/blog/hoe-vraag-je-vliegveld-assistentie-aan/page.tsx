@@ -162,6 +162,22 @@ export default function VliegveldAssistentieGidsPage() {
                     "@type": "Answer",
                     "text": "Nee, een medische verklaring is niet nodig. U kunt assistentie aanvragen op basis van uw eigen inschatting van uw mobiliteit."
                   }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Wat als ik hulp nodig heb tijdens de hele reis?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Luchthavenassistentie stopt zodra u aan boord bent of de luchthaven verlaat. Voor continue begeleiding van deur-tot-deur kunt u een professionele reisbegeleider van Vliegklaar inschakelen."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Mag mijn eigen rolstoel mee?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, uw eigen (elektrische) rolstoel of rollator mag meestal gratis mee als ruimbagage. Geef dit wel 48 uur van tevoren door aan de luchtvaartmaatschappij."
+                  }
                 }
               ]
             })
