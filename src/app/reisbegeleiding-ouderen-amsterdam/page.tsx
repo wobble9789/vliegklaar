@@ -87,11 +87,11 @@ export default function AmsterdamSEOPage() {
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Begeleiden jullie ook vanaf Amsterdam Schiphol Airport?</h3>
-              <p className="text-gray-600">Ja, Amsterdam Schiphol is ons meest gebruikte startpunt. Wij kunnen u vanaf uw voordeur in Amsterdam naar de vertrekhal brengen, helpen bij het inchecken en de security, en desgewenst meereizen tot aan uw eindbestemming.</p>
+              <p className="text-gray-600">Ja, Amsterdam Schiphol is ons meest gebruikte startpunt. Wij kunnen u vanaf uw voordeur in Amsterdam naar de vertrekhal brengen, helpen bij het inchecken en de security, en desgewenst meereizen tot aan uw eindbestemming. Zie ook onze <Link href="/blog/rolstoel-op-het-vliegveld" className="text-primary-600 hover:underline">tips voor rolstoel op het vliegveld</Link>.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Is er begeleiding mogelijk voor senioren met een mobiliteitsbeperking in Amsterdam?</h3>
-              <p className="text-gray-600">Absoluut. Wij zijn gespecialiseerd in het ondersteunen van ouderen die minder mobiel zijn. We regelen assistentie op de luchthaven en zorgen dat het vervoer in Amsterdam en op de bestemming naadloos aansluit op uw behoeften.</p>
+              <p className="text-gray-600">Absoluut. Wij zijn gespecialiseerd in het ondersteunen van ouderen die minder mobiel zijn. We regelen assistentie op de luchthaven en zorgen dat het vervoer in Amsterdam en op de bestemming naadloos aansluit op uw behoeften. Lees meer over <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">vliegen met een rollator</Link>.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Komen jullie voor een kennismaking ook langs in Amsterdam?</h3>
@@ -103,11 +103,11 @@ export default function AmsterdamSEOPage() {
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Kan een begeleider ook helpen bij medische zorg tijdens de reis?</h3>
-              <p className="text-gray-600">Onze begeleiders zijn getraind om te ondersteunen bij dagelijkse taken en medicatieherinneringen. Voor specifieke medische handelingen kijken we samen of we een begeleider met een zorgachtergrond kunnen inzetten.</p>
+              <p className="text-gray-600">Onze begeleiders zijn getraind om te ondersteunen bij dagelijkse taken en medicatieherinneringen. Voor specifieke medische handelingen kijken we samen of we een begeleider met een zorgachtergrond kunnen inzetten. Vergeet niet uw <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">medicijnen op reis</Link> goed voor te bereiden.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Bieden jullie ook ondersteuning bij het boeken van de reis zelf?</h3>
-              <p className="text-gray-600">Zeker. Naast de fysieke begeleiding kunnen we u ook adviseren bij het uitzoeken van een geschikte accommodatie en vlucht die past bij uw wensen en eventuele beperkingen.</p>
+              <p className="text-gray-600">Zeker. Naast de fysieke begeleiding kunnen we u ook adviseren bij het uitzoeken van een geschikte accommodatie en vlucht die past bij uw wensen en eventuele beperkingen. Bekijk onze <Link href="/blog/checklist-senioren-vliegen" className="text-primary-600 hover:underline">checklist voor senioren</Link>.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Hoe lang van tevoren moet ik een reisbegeleider boeken?</h3>
@@ -115,7 +115,7 @@ export default function AmsterdamSEOPage() {
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Worden de kosten voor reisbegeleiding vergoed door de verzekering?</h3>
-              <p className="text-gray-600">In sommige gevallen kan reisbegeleiding (deels) worden vergoed vanuit een PGB (Persoonsgebonden Budget) of een aanvullende zorgverzekering, afhankelijk van uw situatie. We adviseren u hier graag over.</p>
+              <p className="text-gray-600">In sommige gevallen kan reisbegeleiding (deels) worden vergoed vanuit een PGB (Persoonsgebonden Budget) of een aanvullende zorgverzekering, afhankelijk van uw situatie. We adviseren u hier graag over. Lees meer over de <Link href="/blog/reisverzekering-voor-senioren" className="text-primary-600 hover:underline">reisverzekering voor senioren</Link>.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Wat gebeurt er als ik tijdens de reis ziek word?</h3>
