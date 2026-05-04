@@ -33,7 +33,7 @@ export default function Pagina() {
         <h2>2. De medische verklaring (Prothesepastpoort)</h2>
         <p>
           Hoewel een medische verklaring niet wettelijk verplicht is om te mogen vliegen, raden wij het sterk aan. 
-          U kunt bij uw behandelend arts of het ziekenhuis om een 'prothesepastpoort' of een Engelstalige verklaring vragen.
+          U kunt bij uw behandelend arts of het ziekenhuis om een &apos;prothesepastpoort&apos; of een Engelstalige verklaring vragen.
         </p>
         <p>
           Dit document helpt misverstanden bij de douane te voorkomen, vooral op kleinere buitenlandse luchthavens waar de apparatuur minder geavanceerd kan zijn.
