@@ -109,6 +109,10 @@ export default function UtrechtSEOPage() {
               <h3 className="text-xl font-semibold text-primary-700 mb-2">Bieden jullie ook ondersteuning bij het boeken van de reis zelf?</h3>
               <p className="text-gray-600">Zeker. Naast de fysieke begeleiding kunnen we u ook adviseren bij het uitzoeken van een geschikte accommodatie en vlucht die past bij uw wensen en eventuele beperkingen.</p>
             </div>
+            <div className="border-b border-gray-100 pb-4">
+              <h3 className="text-xl font-semibold text-primary-700 mb-2">Bieden jullie ook begeleiding voor senioren met dementie in Utrecht?</h3>
+              <p className="text-gray-600">Ja, wij hebben veel ervaring met het begeleiden van reizigers met beginnende dementie of geheugenproblemen in de regio Utrecht. Onze begeleiders bieden de nodige structuur, rust en nabijheid om de reis voor zowel de senior als de familie zorgeloos te laten verlopen. Lees ook ons artikel over <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">reizen met dementie</Link>.</p>
+            </div>
           </div>
           
           <script
@@ -162,8 +166,15 @@ export default function UtrechtSEOPage() {
                     "@type": "Question",
                     "name": "Bieden jullie ook ondersteuning bij het boeken van de reis zelf?",
                     "acceptedAnswer": {
-                      "@type": "Answer",
                       "text": "Zeker. Naast de fysieke begeleiding kunnen we u ook adviseren bij het uitzoeken van een geschikte accommodatie en vlucht die past bij uw wensen en eventuele beperkingen."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Bieden jullie ook begeleiding voor senioren met dementie in Utrecht?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Ja, wij hebben veel ervaring met het begeleiden van reizigers met beginnende dementie of geheugenproblemen in de regio Utrecht. Onze begeleiders bieden de nodige structuur, rust en nabijheid om de reis voor zowel de senior als de familie zorgeloos te laten verlopen."
                     }
                   }
                 ]
