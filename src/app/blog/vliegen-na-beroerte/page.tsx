@@ -3,145 +3,133 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Vliegen met angst na een beroerte: Tips voor Senioren | Vliegklaar',
-  description: 'Wilt u vliegen na een beroerte (CVA)? Lees onze tips over veiligheid, medische verklaringen en hoe reisbegeleiding kan helpen bij een zorgeloze vlucht.',
+  title: 'Vliegen na een beroerte: Veilig op reis als senior | Vliegklaar',
+  description: 'Wilt u vliegen na een beroerte (TIA of CVA)? Lees hier alles over de medische richtlijnen, benodigde verklaringen en praktische tips voor een veilige vliegreis.',
 };
 
-export default function VliegenNaBeroertePage() {
+export default function VliegenNaBeroerteBlog() {
   return (
     <main className="pt-20">
-      <section className="bg-primary-50 py-16 md:py-24">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="flex-1 text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6 leading-tight">
-                Vliegen na een beroerte: Veilig en zorgeloos op reis
-              </h1>
-              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                Een beroerte (CVA) heeft een grote impact, ook op uw reisplannen. Veel senioren vragen zich af of vliegen nog wel veilig is. Met de juiste voorbereiding en begeleiding is er vaak meer mogelijk dan u denkt.
-              </p>
-            </div>
-            <div className="flex-1 relative h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="https://images.unsplash.com/photo-1506917728037-b6af01ad7d42?w=800&q=80"
-                alt="Senior reiziger kijkt uit het raam"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
+      <article className="max-w-4xl mx-auto px-4 py-16">
+        <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-8">
+          Vliegen na een beroerte: Hoe reist u veilig en verantwoord?
+        </h1>
+        
+        <div className="relative h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden mb-12 shadow-lg">
+          <Image
+            src="https://images.unsplash.com/photo-1576091160550-217359f4ecf8?w=1200&q=80"
+            alt="Arts bespreekt gezondheid met senior"
+            fill
+            className="object-cover"
+          />
         </div>
-      </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4">
-          <div className="prose prose-lg prose-primary max-w-none">
-            <h2 className="text-3xl font-bold text-primary-800 mb-6">Wanneer mag u weer vliegen na een beroerte?</h2>
-            <p>
-              Na een beroerte of TIA is rust cruciaal. De meeste luchtvaartmaatschappijen en artsen hanteren een wachtperiode van minimaal twee tot vier weken voordat u weer mag vliegen. Dit is omdat de luchtdruk in de cabine en het lagere zuurstofgehalte invloed kunnen hebben op uw herstel.
-            </p>
-            <p>
-              <strong>Belangrijk:</strong> Overleg altijd eerst met uw neuroloog of behandelend arts voordat u een vlucht boekt. Elke situatie is uniek, en uw arts kan het beste beoordelen of uw conditie stabiel genoeg is voor een vliegreis.
-            </p>
-
-            <h3 className="text-2xl font-semibold text-primary-700 mt-10 mb-4">De Medische Verklaring (Fit to Fly)</h3>
-            <p>
-              In veel gevallen heeft u een medische verklaring nodig. Dit wordt ook wel een &apos;Fit to Fly&apos; verklaring genoemd. Luchtvaartmaatschappijen kunnen hierom vragen bij het inchecken. Lees hier meer over in ons artikel over het <Link href="/blog/hoe-vraag-je-een-medische-verklaring-aan-voor-vliegen" className="text-primary-600 hover:underline">aanvragen van een medische verklaring</Link>.
-            </p>
-
-            <h2 className="text-3xl font-bold text-primary-800 mt-12 mb-6">Tips voor een veilige vlucht na een CVA</h2>
-            <p>
-              Als de arts groen licht heeft gegeven, zijn er een aantal zaken waar u rekening mee kunt houden om de reis zo comfortabel mogelijk te maken:
-            </p>
-            <ul className="list-disc pl-6 space-y-3 mt-4">
-              <li><strong>Hydratatie:</strong> Drink voldoende water tijdens de vlucht om uitdroging te voorkomen.</li>
-              <li><strong>Beweging:</strong> Probeer regelmatig even te lopen of doe eenvoudige beenoefeningen op uw stoel om de doorbloeding te stimuleren en het risico op trombose te verkleinen.</li>
-              <li><strong>Medicatie:</strong> Houd uw medicijnen altijd in uw handbagage en neem een actueel medicatieoverzicht mee. Bekijk ook onze tips voor <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">medicijnen op reis</Link>.</li>
-              <li><strong>Rust:</strong> Plan een directe vlucht indien mogelijk om de vermoeidheid van overstappen te beperken.</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold text-primary-800 mt-12 mb-6">Hoe reisbegeleiding kan helpen</h2>
-            <p>
-              De angst dat er onderweg iets gebeurt, kan een grote drempel zijn. Persoonlijke reisbegeleiding neemt deze stress weg. Een begeleider van Vliegklaar kan:
-            </p>
-            <ul className="list-disc pl-6 space-y-3 mt-4">
-              <li>De logistiek op de luchthaven regelen (zoals <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">vliegveld assistentie</Link>).</li>
-              <li>Toezien op het tijdig innemen van medicatie.</li>
-              <li>Rust en structuur bieden bij onverwachte situaties of vertragingen.</li>
-              <li>Fysieke ondersteuning bieden bij verminderde mobiliteit na de beroerte.</li>
-            </ul>
-            <p className="mt-6">
-              Wilt u weten hoe wij u specifiek kunnen ondersteunen? Bekijk onze pagina over <Link href="/reisbegeleiding-ouderen" className="text-primary-600 hover:underline">reisbegeleiding voor ouderen</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-primary-800 mb-12 text-center">Veelgestelde vragen over vliegen na een beroerte</h2>
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-lg font-bold text-primary-700 mb-2">Mag ik alleen vliegen na een beroerte?</h3>
-              <p className="text-gray-600">Hoewel het medisch gezien soms mag, raden wij aan om de eerste keer na een beroerte niet alleen te reizen. De spanning en fysieke inspanning kunnen intens zijn. Een begeleider biedt de nodige zekerheid.</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-lg font-bold text-primary-700 mb-2">Moet ik de luchtvaartmaatschappij informeren?</h3>
-              <p className="text-gray-600">Ja, het is verstandig om bij de boeking aan te geven dat u een medische voorgeschiedenis heeft en mogelijk assistentie nodig heeft. Dit voorkomt problemen bij de gate.</p>
-            </div>
-          </div>
-        </div>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "Mag ik alleen vliegen na een beroerte?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Hoewel het medisch gezien soms mag, raden wij aan om de eerste keer na een beroerte niet alleen te reizen. De spanning en fysieke inspanning kunnen intens zijn. Een begeleider biedt de nodige zekerheid."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Moet ik de luchtvaartmaatschappij informeren?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ja, het is verstandig om bij de boeking aan te geven dat u een medische voorgeschiedenis heeft en mogelijk assistentie nodig heeft. Dit voorkomt problemen bij de gate."
-                  }
-                }
-              ]
-            })
-          }}
-        />
-      </section>
-
-      <section className="py-20 bg-primary-900 text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Zorgeloos vliegen met persoonlijke begeleiding</h2>
-          <p className="text-xl mb-10 text-primary-100">
-            Ziet u op tegen uw eerste vlucht na een beroerte? Wij staan voor u klaar om de reis veilig en comfortabel te laten verlopen.
+        <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+          <p>
+            Een beroerte (CVA) of een TIA is een ingrijpende gebeurtenis. Wanneer de eerste fase van herstel achter de rug is, ontstaat vaak de wens om weer te gaan reizen. Maar is vliegen wel veilig na een beroerte? In de meeste gevallen kan het zeker, mits u de juiste voorzorgsmaatregelen neemt en rekening houdt met de medische richtlijnen.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a
-              href="tel:0618769492"
-              className="inline-block bg-primary-500 hover:bg-primary-600 text-white font-bold text-xl px-10 py-5 rounded-2xl shadow-xl transition-all"
-            >
-              Bel voor advies: 06-18769492
-            </a>
-            <Link
-              href="/contact"
-              className="inline-block bg-white text-primary-900 font-bold text-xl px-10 py-5 rounded-2xl shadow-xl transition-all hover:bg-primary-50"
-            >
-              Stuur een bericht
-            </Link>
+
+          <h2 className="text-2xl font-bold text-primary-800 mt-12 mb-6">Wanneer mag u weer vliegen?</h2>
+          <p>
+            De algemene medische richtlijn voor vliegen na een beroerte hangt af van de ernst en het type beroerte. Over het algemeen hanteren luchtvaartmaatschappijen de volgende termijnen:
+          </p>
+          <ul>
+            <li><strong>Na een TIA:</strong> Vaak mag u na 3 tot 10 dagen weer vliegen, mits u stabiel bent en geen nieuwe symptomen heeft.</li>
+            <li><strong>Na een CVA (beroerte):</strong> Meestal wordt een wachttijd van minimaal 14 tot 21 dagen geadviseerd. Bij een complexe beroerte kan dit langer zijn.</li>
+          </ul>
+          <p className="italic">
+            Let op: Overleg ALTIJD eerst met uw behandelend neuroloog of cardioloog voordat u een vlucht boekt.
+          </p>
+
+          <h2 className="text-2xl font-bold text-primary-800 mt-12 mb-6">Medische verklaring (Fit to Fly)</h2>
+          <p>
+            Voor reizigers die recent een beroerte hebben gehad, vraagt de luchtvaartmaatschappij vaak om een &apos;Fit to Fly&apos; verklaring. Dit is een officieel document waarin uw arts verklaart dat het veilig voor u is om te reizen. Zonder deze verklaring kan een maatschappij u bij de gate weigeren. Lees hier meer over het <Link href="/blog/hoe-vraag-je-een-medische-verklaring-aan-voor-vliegen" className="text-primary-600 hover:underline">aanvragen van een medische verklaring</Link>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-primary-800 mt-12 mb-6">Aandachtspunten tijdens de vlucht</h2>
+          <p>
+            Vliegen brengt specifieke omstandigheden met zich mee, zoals een lagere luchtdruk en een lager zuurstofgehalte in de cabine. Voor mensen die een beroerte hebben gehad, zijn de volgende zaken extra belangrijk:
+          </p>
+          <div className="grid md:grid-cols-2 gap-6 my-8">
+            <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-primary-500">
+              <h3 className="font-bold text-primary-700 mb-2">Trombosepreventie</h3>
+              <p className="text-sm">Het risico op bloedstolsels is verhoogd na een beroerte. Draag eventueel compressiekousen en blijf in beweging tijdens de vlucht.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-primary-500">
+              <h3 className="font-bold text-primary-700 mb-2">Hydratatie</h3>
+              <p className="text-sm">Drink voldoende water en vermijd alcohol. De droge lucht aan boord kan leiden tot indikking van het bloed.</p>
+            </div>
+          </div>
+
+          <h2 className="text-2xl font-bold text-primary-800 mt-12 mb-6">Praktische tips voor een zorgeloze reis</h2>
+          <ol>
+            <li><strong>Vraag luchthavenassistentie aan:</strong> Vermijd onnodige stress en vermoeidheid op het vliegveld. Wij kunnen u helpen bij het <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">aanvragen van assistentie</Link>.</li>
+            <li><strong>Medicatie in handbagage:</strong> Neem voldoende medicijnen mee voor de vlucht én een extra voorraad in uw handbagage.</li>
+            <li><strong>Reis niet alleen:</strong> Zeker de eerste keer vliegen na een beroerte kan spannend zijn. Een reisbegeleider kan medische signalen herkennen en u ondersteunen bij de logistiek.</li>
+          </ol>
+
+          <div className="bg-primary-50 p-8 rounded-2xl my-12 border-l-4 border-primary-500">
+            <h3 className="text-xl font-bold text-primary-900 mb-4">Hulp nodig bij vliegen na een medische gebeurtenis?</h3>
+            <p className="mb-6">
+              Vliegklaar is gespecialiseerd in het begeleiden van senioren die extra zorg of aandacht nodig hebben tijdens hun reis. Wij zorgen voor een veilige en rustige ervaring, van uw voordeur tot uw eindbestemming.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact" className="bg-primary-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-primary-700 transition-colors text-center">
+                Contact voor advies
+              </Link>
+              <Link href="/reisbegeleiding-ouderen" className="bg-white border-2 border-primary-600 text-primary-600 font-bold px-6 py-3 rounded-xl hover:bg-primary-50 transition-colors text-center">
+                Onze werkwijze
+              </Link>
+            </div>
+          </div>
+
+          <h2 className="text-2xl font-bold text-primary-800 mt-12 mb-6">Veelgestelde vragen</h2>
+          <div className="space-y-6">
+            <div>
+              <h4 className="font-bold text-primary-700 text-lg">Mag ik vliegen met bloedverdunners?</h4>
+              <p>Ja, dat mag zeker. Het is juist vaak essentieel dat u deze blijft gebruiken. Bespreek met uw arts of de dosering aangepast moet worden voor de reis.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-primary-700 text-lg">Wat als ik extra zuurstof nodig heb?</h4>
+              <p>Na een beroerte kan het zuurstofgehalte in uw bloed gevoeliger reageren op de cabinedruk. In sommige gevallen is extra zuurstof aan boord nodig. Bekijk onze gids over <Link href="/blog/vliegen-met-zuurstof" className="text-primary-600 hover:underline">vliegen met zuurstof</Link>.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-primary-700 text-lg">Wordt een beroerte gedekt door de reisverzekering?</h4>
+              <p>Bestaande aandoeningen moeten vaak gemeld worden bij uw <Link href="/blog/reisverzekering-voor-senioren" className="text-primary-600 hover:underline">reisverzekering</Link>. Controleer goed of medische repatriëring gedekt is.</p>
+            </div>
           </div>
         </div>
-      </section>
+      </article>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "Vliegen na een beroerte: Veilig op reis als senior",
+            "description": "Richtlijnen en tips voor senioren die willen vliegen na een TIA of CVA. Alles over medische verklaringen en veiligheid aan boord.",
+            "image": "https://images.unsplash.com/photo-1576091160550-217359f4ecf8?w=1200&q=80",
+            "author": {
+              "@type": "Organization",
+              "name": "Vliegklaar"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Vliegklaar",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://vliegklaar.nl/logo.png"
+              }
+            },
+            "datePublished": "2026-05-05",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://vliegklaar.nl/blog/vliegen-na-beroerte"
+            }
+          })
+        }}
+      />
     </main>
   );
 }
