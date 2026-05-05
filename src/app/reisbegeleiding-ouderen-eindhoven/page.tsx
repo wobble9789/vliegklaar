@@ -94,6 +94,10 @@ export default function EindhovenSEOPage() {
               <p className="text-gray-600">Ja, onze begeleiders halen u direct bij uw voordeur op in Eindhoven en alle omliggende gemeenten in Zuidoost-Brabant. U hoeft zelf dus geen taxi of vervoer te regelen.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+              <h3 className="text-xl font-semibold text-primary-700 mb-2">Hoe zit het met vliegveld assistentie op Eindhoven Airport?</h3>
+              <p className="text-gray-600">Eindhoven Airport biedt gratis assistentie voor minder mobiele reizigers. Wij raden aan dit minimaal 48 uur van tevoren aan te vragen. In ons blog leest u precies <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">hoe u vliegveld assistentie aanvraagt</Link>.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-xl font-semibold text-primary-700 mb-2">Wat gebeurt er bij vertraging op Eindhoven Airport?</h3>
               <p className="text-gray-600">Bij vertraging blijft uw persoonlijke begeleider gewoon bij u. We zoeken een rustige plek op de luchthaven voor een kopje koffie en houden de vluchtinformatie nauwlettend voor u in de gaten.</p>
             </div>
@@ -120,6 +124,14 @@ export default function EindhovenSEOPage() {
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Ja, onze begeleiders halen u direct bij uw voordeur op in Eindhoven en alle omliggende gemeenten in Zuidoost-Brabant. U hoeft zelf dus geen taxi of vervoer te regelen."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Hoe zit het met vliegveld assistentie op Eindhoven Airport?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eindhoven Airport biedt gratis assistentie voor minder mobiele reizigers. Wij raden aan dit minimaal 48 uur van tevoren aan te vragen. Onze begeleiders kunnen u helpen bij de coördinatie hiervan."
                   }
                 },
                 {
