@@ -113,6 +113,14 @@ export default function UtrechtSEOPage() {
               <h3 className="text-xl font-semibold text-primary-700 mb-2">Bieden jullie ook begeleiding voor senioren met dementie in Utrecht?</h3>
               <p className="text-gray-600">Ja, wij hebben veel ervaring met het begeleiden van reizigers met beginnende dementie of geheugenproblemen in de regio Utrecht. Onze begeleiders bieden de nodige structuur, rust en nabijheid om de reis voor zowel de senior als de familie zorgeloos te laten verlopen. Lees ook ons artikel over <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">reizen met dementie</Link>.</p>
             </div>
+            <div className="border-b border-gray-100 pb-4">
+              <h3 className="text-xl font-semibold text-primary-700 mb-2">Is vliegen met een rollator mogelijk vanaf Utrecht?</h3>
+              <p className="text-gray-600">Zeker. Of u nu vanaf Utrecht Centraal reist of we u naar Schiphol brengen, wij zorgen dat uw rollator mee kan en dat u overal de nodige assistentie krijgt. Voor meer informatie kunt u terecht bij ons blog over <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">vliegen met een rollator</Link>.</p>
+            </div>
+            <div className="border-b border-gray-100 pb-4">
+              <h3 className="text-xl font-semibold text-primary-700 mb-2">Kan ik hulp krijgen bij vliegangst in Utrecht?</h3>
+              <p className="text-gray-600">Ja, onze begeleiders zijn getraind om reizigers met vliegangst gerust te stellen en te ondersteunen tijdens de gehele reis. We nemen de tijd om u op uw gemak te stellen. Lees ook onze <Link href="/blog/vliegangst-bij-ouderen" className="text-primary-600 hover:underline">tips tegen vliegangst bij ouderen</Link>.</p>
+            </div>
           </div>
           
           <script
@@ -175,6 +183,22 @@ export default function UtrechtSEOPage() {
                     "acceptedAnswer": {
                       "@type": "Answer",
                       "text": "Ja, wij hebben veel ervaring met het begeleiden van reizigers met beginnende dementie of geheugenproblemen in de regio Utrecht. Onze begeleiders bieden de nodige structuur, rust en nabijheid om de reis voor zowel de senior als de familie zorgeloos te laten verlopen."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is vliegen met een rollator mogelijk vanaf Utrecht?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Zeker. Of u nu vanaf Utrecht Centraal reist of we u naar Schiphol brengen, wij zorgen dat uw rollator mee kan en dat u overal de nodige assistentie krijgt."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Kan ik hulp krijgen bij vliegangst in Utrecht?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Ja, onze begeleiders zijn getraind om reizigers met vliegangst gerust te stellen en te ondersteunen tijdens de gehele reis. We nemen de tijd om u op uw gemak te stellen."
                     }
                   }
                 ]
