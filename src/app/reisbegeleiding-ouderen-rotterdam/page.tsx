@@ -268,6 +268,22 @@ export default function RotterdamSEOPage() {
           "text": "Een rolstoel moet minimaal 48 uur voor vertrek worden aangemeld bij de luchtvaartmaatschappij met de afmetingen en het gewicht. Vanaf Rotterdam The Hague Airport kunt u vaak tot aan de gate in uw eigen rolstoel blijven. Onze begeleiders regelen alle details voor u."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Zijn er risico's bij vliegen met glaucoom of staar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In de meeste gevallen is vliegen met glaucoom of staar veilig, maar het is essentieel om dit vooraf met uw oogarts te bespreken, vooral na een recente operatie. Wij helpen u graag bij het regelen van extra begeleiding op de luchthaven als uw zicht beperkt is, zodat u veilig bij de gate aankomt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen na een beroerte vanuit Rotterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen na een beroerte is vaak weer mogelijk, mits uw behandelend arts hiervoor toestemming geeft. Onze begeleiders ondersteunen u bij de logistiek op de luchthaven, bieden fysieke ondersteuning en zorgen voor een ontspannen reiservaring vanaf uw voordeur in Rotterdam."
+        }
+      },
     ]
   };
 
@@ -428,6 +444,15 @@ export default function RotterdamSEOPage() {
                   )}
                   {faq.name.includes("stoma") && (
                     <> <Link href="/blog/vliegen-met-een-stoma" className="text-primary-600 hover:underline">Lees meer over vliegen met een stoma.</Link></>
+                  )}
+                  {faq.name.includes("glaucoom") && (
+                    <> <Link href="/blog/vliegen-met-glaucoom" className="text-primary-600 hover:underline">Lees meer over vliegen met glaucoom.</Link></>
+                  )}
+                  {faq.name.includes("staar") && (
+                    <> <Link href="/blog/vliegen-met-staar" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met staar.</Link></>
+                  )}
+                  {faq.name.includes("beroerte") && (
+                    <> <Link href="/blog/vliegen-na-beroerte" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een beroerte.</Link></>
                   )}
                   {faq.name.includes("bloeddruk") && (
                     <> <Link href="/blog/vliegen-met-bloeddruk-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een hoge bloeddruk.</Link></>
