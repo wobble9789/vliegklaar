@@ -58,6 +58,22 @@ const faqData = {
         "@type": "Answer",
         "text": "Geen zorgen. Onze begeleiders houden de vluchttijden nauwgezet in de gaten en blijven bij u tot u veilig op uw bestemming bent, ongeacht de vertraging."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen jullie ook helpen met de bagage in Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zeker, onze begeleider helpt u bij het tillen en inladen van uw koffers bij uw woning in Alkmaar, en zorgt dat deze veilig op de luchthaven bij de incheckbalie aankomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is er begeleiding mogelijk vanaf station Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, wij kunnen u ook ontmoeten op station Alkmaar als u liever met de trein reist. Vanaf daar begeleiden we u gedurende de hele treinreis en op de luchthaven."
+      }
     }
   ]
 };
