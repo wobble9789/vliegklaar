@@ -8,8 +8,59 @@ export const metadata: Metadata = {
 };
 
 export default function AmersfoortSEOPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook vanaf huis in Amersfoort?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, onze service is van deur tot deur. Wij kunnen u ophalen bij uw woning in Amersfoort, Vathorst of Hoogland en u naar de luchthaven (Schiphol, Eindhoven of Rotterdam) brengen en gedurende de hele reis begeleiden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie helpen bij vliegen met een rollator vanuit Amersfoort?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Wij zijn gespecialiseerd in het ondersteunen van senioren die een rollator of rolstoel gebruiken. Wij regelen de assistentie op de luchthaven en zorgen dat uw hulpmiddel veilig mee aan boord gaat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook begeleiding voor ouderen met dementie in de regio Amersfoort?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij hebben veel ervaring met het begeleiden van reizigers met (beginnende) dementie. Wij bieden de nodige structuur en rust om de reis veilig en comfortabel te laten verlopen, zowel voor de senior als de familie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik een medische verklaring hebben als ik vlieg met medicijnen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Voor bepaalde medicijnen is een officiële medische verklaring of een medicijnpaspoort nodig. Wij kunnen u adviseren over welke documenten u nodig heeft om probleemloos door de security te komen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wordt reisbegeleiding in Amersfoort vergoed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In sommige situaties kan begeleiding (deels) worden vergoed vanuit een PGB of een aanvullende zorgverzekering. Wij raden aan dit vooraf bij uw eigen verzekeraar te controleren."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <section className="bg-primary-50 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -76,6 +127,34 @@ export default function AmersfoortSEOPage() {
                 Geen stress bij de douane of gate-wijzigingen. Wij houden het overzicht terwijl u ontspant.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary-800 mb-12 text-center">Veelgestelde vragen over reisbegeleiding in Amersfoort</h2>
+          <div className="space-y-6">
+            {faqSchema.mainEntity.map((faq, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {faq.acceptedAnswer.text}
+                  {faq.name.includes("rollator") && (
+                    <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Lees meer over vliegen met een rollator.</Link></>
+                  )}
+                  {faq.name.includes("dementie") && (
+                    <> <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">Lees over reizen met dementie.</Link></>
+                  )}
+                  {faq.name.includes("medicijnen") && (
+                    <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Bekijk tips voor medicijnen op reis.</Link></>
+                  )}
+                  {faq.name.includes("verzekering") && (
+                    <> <Link href="/blog/reisverzekering-voor-senioren" className="text-primary-600 hover:underline">Lees over reisverzekeringen voor senioren.</Link></>
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
