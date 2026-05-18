@@ -356,6 +356,14 @@ export default function AmsterdamSEOPage() {
           "text": "Ja, een CPAP-apparaat mag mee als medische handbagage. Het is verstandig om dit vooraf te melden bij de luchtvaartmaatschappij en een medische verklaring bij u te hebben. Onze begeleiders helpen u graag om alles rondom uw CPAP-apparaat soepel te laten verlopen op Schiphol."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Hoe voorkom ik uitdroging tijdens een lange vlucht vanaf Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De droge lucht in de vliegtuigcabine kan snel leiden tot uitdroging, wat bij senioren extra risico's met zich meebrengt. Wij raden aan om voor vertrek op Schiphol al goed te drinken, cafeïne en alcohol te vermijden, en tijdens de vlucht elk uur een glas water te nemen. Onze begeleiders herinneren u hier regelmatig aan en zorgen dat u altijd voldoende drinkwater bij de hand heeft."
+        }
+      },
     ]
   };
 
@@ -445,6 +453,9 @@ export default function AmsterdamSEOPage() {
                 <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {faq.acceptedAnswer.text}
+                  {faq.name.includes("uitdroging") && (
+                    <> <Link href="/blog/hoe-voorkom-je-uitdroging-tijdens-het-vliegen-als-senior" className="text-primary-600 hover:underline">Lees onze tips om uitdroging te voorkomen.</Link></>
+                  )}
                   {faq.name.includes("CPAP") && (
                     <> <Link href="/blog/vliegen-met-cpap-apparaat" className="text-primary-600 hover:underline">Lees meer over vliegen met een CPAP-apparaat.</Link></>
                   )}
