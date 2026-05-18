@@ -113,7 +113,7 @@ export default function VliegenKunstgebitPage() {
           <section>
             <h2 className="text-2xl font-bold text-primary-800">5. Eten aan boord</h2>
             <p>
-              Vliegtuigmaaltijden kunnen soms taai vlees of plakkerige bijgerechten bevatten. Als u twijfelt over de stevigheid van uw gebit, kunt u bij het boeken van uw ticket vaak kiezen voor een 'zachte maaltijd' of een medisch dieet. Dit maakt eten tijdens een lange vlucht een stuk ontspannender.
+              Vliegtuigmaaltijden kunnen soms taai vlees of plakkerige bijgerechten bevatten. Als u twijfelt over de stevigheid van uw gebit, kunt u bij het boeken van uw ticket vaak kiezen voor een &apos;zachte maaltijd&apos; of een medisch dieet. Dit maakt eten tijdens een lange vlucht een stuk ontspannender.
             </p>
           </section>
 
