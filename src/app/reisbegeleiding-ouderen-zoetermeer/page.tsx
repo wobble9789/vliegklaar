@@ -8,8 +8,59 @@ export const metadata: Metadata = {
 };
 
 export default function ZoetermeerSEOPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook vanaf Rotterdam The Hague Airport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, voor bewoners van Zoetermeer is Rotterdam The Hague Airport vaak een heel prettig en overzichtelijk startpunt. Wij begeleiden u van deur tot deur, helpen bij het inchecken en blijven bij u tot aan de gate of de eindbestemming."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie helpen bij vliegen met een rollator vanaf Zoetermeer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Vliegen met een rollator is goed mogelijk. Wij zorgen dat deze correct wordt aangemeld bij de luchtvaartmaatschappij en begeleiden u op de luchthaven zodat u niet onnodig ver hoeft te lopen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook ondersteuning bij het aanvragen van vliegveld assistentie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij kunnen de volledige aanvraag voor luchthavenassistentie voor u uit handen nemen. Zo weet u zeker dat er op zowel Rotterdam als Schiphol hulp klaarstaat bij aankomst."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is reisbegeleiding in Zoetermeer ook beschikbaar voor mensen met beginnende dementie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, onze begeleiders hebben veel ervaring met het ondersteunen van senioren met geheugenproblemen. Wij bieden de nodige structuur en rust om de reis veilig en prettig te laten verlopen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost reisbegeleiding in de regio Zoetermeer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De kosten zijn afhankelijk van uw specifieke wensen en de duur van de reis. We komen graag bij u langs in Zoetermeer voor een vrijblijvende kennismaking, waarna we een transparante offerte op maat maken."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <section className="bg-primary-50 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -76,6 +127,31 @@ export default function ZoetermeerSEOPage() {
                 Van inchecken tot het vinden van de juiste gate; wij regelen alles zodat u alleen maar hoeft te genieten.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary-800 mb-8 text-center">Veelgestelde vragen over reisbegeleiding in Zoetermeer</h2>
+          <div className="space-y-6">
+            {faqSchema.mainEntity.map((faq, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {faq.acceptedAnswer.text}
+                  {faq.name.includes("rollator") && (
+                    <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Lees meer over vliegen met een rollator.</Link></>
+                  )}
+                  {faq.name.includes("assistentie") && (
+                    <> <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">Lees onze gids voor assistentie aanvragen.</Link></>
+                  )}
+                  {faq.name.includes("dementie") && (
+                    <> <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">Lees over reizen met dementie.</Link></>
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
