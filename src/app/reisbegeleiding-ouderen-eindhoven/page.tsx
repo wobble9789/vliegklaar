@@ -210,6 +210,9 @@ export default function EindhovenSEOPage() {
                   {faq.name.includes("pacemaker") && (
                     <> <Link href="/blog/vliegen-met-een-pacemaker-of-icd" className="text-primary-600 hover:underline">Lees meer over vliegen met een pacemaker.</Link></>
                   )}
+                  {faq.name.includes("security") && (
+                    <> <Link href="/blog/hoe-gaat-een-senior-veilig-door-de-security-op-schiphol" className="text-primary-600 hover:underline">Bekijk onze gids voor de security op de luchthaven.</Link></>
+                  )}
                   {faq.name.includes("medicijnen") && (
                     <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Bekijk onze tips voor medicijnen op reis.</Link></>
                   )}
