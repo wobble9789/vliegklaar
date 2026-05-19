@@ -22,6 +22,78 @@ export default function BredaSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Kan ik vliegen met een rollator vanaf Breda?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Of u nu vanaf Breda reist of we u naar Schiphol of Eindhoven Airport brengen, wij zorgen dat uw rollator mee kan en dat u overal de nodige assistentie krijgt. Lees meer in ons artikel over vliegen met een rollator."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie ook helpen bij vliegen met parkinson vanuit de regio Breda?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij hebben ruime ervaring met het begeleiden van senioren met de ziekte van Parkinson. Wij zorgen for een rustig tempo, helpen bij de logistiek en ondersteunen bij medicatie-inname op de juiste tijden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe ga ik om met een tussenstop als senior?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een tussenstop kan vermoeiend zijn. Wij raden aan om vliegveld assistentie aan te vragen voor het vervoer tussen gates, voldoende overstaptijd te plannen en gebruik te maken van lounges voor rust. Onze begeleiders ondersteunen u hierbij volledig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat moet ik regelen voor medicijnen op reis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het is belangrijk om een actueel medicatieoverzicht (AMO) en eventueel een medische verklaring bij u te hebben. Wij kunnen u helpen bij de voorbereiding hiervan zodat u zorgeloos door de security komt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegangst voor senioren in Breda?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegangst komt op alle leeftijden voor. Onze begeleiders bieden een rustige aanwezigheid, uitleg over de geluiden van het vliegtuig en afleiding tijdens de vlucht om uw reis zo comfortabel mogelijk te maken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is vliegen met een hoge bloeddruk veilig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Over het algemeen is vliegen met een goed ingestelde bloeddruk veilig. We raden aan om voor vertrek uw arts te raadplegen, uw medicatie in uw handbagage te bewaren en tijdens de vlucht voldoende water te drinken. Onze begeleiders ondersteunen u graag bij een ontspannen reiservaring."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen met COPD of astma vanaf de luchthaven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met COPD of astma is vaak mogelijk met de juiste voorbereiding. Het is belangrijk om uw medicatie (inhalatoren) in uw handbagage te hebben en eventueel extra zuurstof aan te vragen als dat nodig is. Onze begeleiders helpen u bij het regelen van de nodige documenten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn er risico's bij vliegen met hartklachten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij stabiele hartklachten is vliegen meestal mogelijk, maar overleg altijd met uw cardioloog. Vraag indien nodig vliegveld assistentie aan om fysieke inspanning te beperken. Onze begeleiders kunnen u hierbij volledig ondersteunen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ondersteuning bij een vertraagde vlucht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een vluchtvertraging kan voor stress zorgen. Wij blijven bij u, regelen de communicatie met de luchtvaartmaatschappij en zorgen dat u comfortabel kunt wachten. Bij lange vertragingen coördineren wij eventuele extra zorg."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Is er begeleiding mogelijk voor senioren met een mobiliteitsbeperking in Breda?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -168,6 +240,33 @@ export default function BredaSEOPage() {
                   )}
                   {faq.name.includes("assistentie") && (
                     <> <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">Lees onze gids voor assistentie aanvragen.</Link></>
+                  )}
+                  {faq.name.includes("rollator") && (
+                    <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Lees meer over vliegen met een rollator.</Link></>
+                  )}
+                  {faq.name.includes("parkinson") && (
+                    <> <Link href="/blog/vliegen-met-parkinson" className="text-primary-600 hover:underline">Lees meer over vliegen met Parkinson.</Link></>
+                  )}
+                  {faq.name.includes("tussenstop") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-een-tussenstop-als-senior" className="text-primary-600 hover:underline">Lees onze tips over tussenstops.</Link></>
+                  )}
+                  {faq.name.includes("medicijnen") && (
+                    <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Bekijk tips voor medicijnen op reis.</Link></>
+                  )}
+                  {faq.name.includes("vliegangst") && (
+                    <> <Link href="/blog/vliegangst-bij-ouderen" className="text-primary-600 hover:underline">Bekijk onze tips tegen vliegangst.</Link></>
+                  )}
+                  {faq.name.includes("bloeddruk") && (
+                    <> <Link href="/blog/vliegen-met-bloeddruk-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een hoge bloeddruk.</Link></>
+                  )}
+                  {faq.name.includes("COPD") && (
+                    <> <Link href="/blog/vliegen-met-copd-of-astma" className="text-primary-600 hover:underline">Lees meer over vliegen met COPD of astma.</Link></>
+                  )}
+                  {faq.name.includes("hartklachten") && (
+                    <> <Link href="/blog/vliegen-met-hartklachten" className="text-primary-600 hover:underline">Lees onze gids voor vliegen met hartklachten.</Link></>
+                  )}
+                  {faq.name.includes("vertraagde vlucht") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-een-vertraagde-vlucht-senior" className="text-primary-600 hover:underline">Lees wat te doen bij een vertraagde vlucht.</Link></>
                   )}
                 </p>
               </div>
