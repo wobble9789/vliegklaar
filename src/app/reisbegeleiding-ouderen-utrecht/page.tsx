@@ -220,6 +220,38 @@ export default function UtrechtSEOPage() {
           "text": "Zeker. Vliegen met een kunstgebit of prothese is veilig en discreet. Onze begeleiders weten precies hoe u hier bij de security mee omgaat en geven praktische tips voor comfort tijdens een lange reis vanaf Utrecht Centraal of Schiphol."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met reuma vanuit Utrecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met reuma is heel goed mogelijk. Wij adviseren u om tijdens de vlucht regelmatig te bewegen om stijfheid te voorkomen en eventueel vliegveld assistentie aan te vragen voor de afstanden op de luchthaven. Onze begeleiders in Utrecht kunnen u hierbij volledig ondersteunen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn er risico&apos;s bij vliegen met glaucoom of staar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In de meeste gevallen is vliegen met glaucoom of staar veilig, maar het is essentieel om dit vooraf met uw oogarts te bespreken, vooral na een recente operatie. Wij helpen u graag bij het regelen van extra begeleiding op de luchthaven als uw zicht beperkt is, zodat u veilig bij de gate aankomt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen na een galblaasoperatie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meestal is vliegen na een galblaasoperatie na 1 tot 2 weken weer veilig, afhankelijk van het type ingreep. Onze begeleiders kunnen u ondersteunen tijdens de reis om fysieke inspanning te minimaliseren en uw comfort te waarborgen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen na een beroerte vanuit de regio Utrecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen na een beroerte is vaak weer mogelijk, mits uw behandelend arts hiervoor toestemming geeft. Onze begeleiders ondersteunen u bij de logistiek op de luchthaven, bieden fysieke ondersteuning en zorgen voor een ontspannen reiservaring vanaf uw voordeur in Utrecht."
+        }
+      },
     ]
   };
 
@@ -377,6 +409,21 @@ export default function UtrechtSEOPage() {
                   )}
                   {faq.name.toLowerCase().includes("kunstgebit") && (
                     <> <Link href="/blog/vliegen-met-een-kunstgebit" className="text-primary-600 hover:underline">Lees meer over vliegen met een kunstgebit.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("reuma") && (
+                    <> <Link href="/blog/vliegen-met-reuma" className="text-primary-600 hover:underline">Lees onze gids over vliegen met reuma.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("glaucoom") && (
+                    <> <Link href="/blog/vliegen-met-glaucoom" className="text-primary-600 hover:underline">Lees meer over vliegen met glaucoom.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("staar") && (
+                    <> <Link href="/blog/vliegen-met-staar" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met staar.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("galblaasoperatie") && (
+                    <> <Link href="/blog/vliegen-na-galblaasoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een galblaasoperatie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("beroerte") && (
+                    <> <Link href="/blog/vliegen-na-beroerte" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een beroerte.</Link></>
                   )}
                 </p>
               </div>
