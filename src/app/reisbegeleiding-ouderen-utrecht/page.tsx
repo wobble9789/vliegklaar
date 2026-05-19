@@ -158,6 +158,14 @@ export default function UtrechtSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Zijn er risico's bij vliegen met hartklachten vanuit Utrecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij stabiele hartklachten is vliegen meestal mogelijk, maar de lagere luchtdruk in de cabine kan invloed hebben. Overleg altijd met uw cardioloog en vraag indien nodig vliegveld assistentie aan om fysieke inspanning te beperken. Onze begeleiders kunnen u hierbij volledig ondersteunen."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Wat moet ik regelen voor medicijnen op reis?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -354,6 +362,9 @@ export default function UtrechtSEOPage() {
                   )}
                   {faq.name.toLowerCase().includes("parkinson") && (
                     <> <Link href="/blog/vliegen-met-parkinson" className="text-primary-600 hover:underline">Lees meer over vliegen met Parkinson.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("hartklachten") && (
+                    <> <Link href="/blog/vliegen-met-hartklachten" className="text-primary-600 hover:underline">Lees onze gids voor vliegen met hartklachten.</Link></>
                   )}
                   {faq.name.toLowerCase().includes("copd") && (
                     <> <Link href="/blog/vliegen-met-copd-of-astma" className="text-primary-600 hover:underline">Lees meer over vliegen met COPD of astma.</Link></>
