@@ -94,6 +94,46 @@ export default function NijmegenSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegangst voor senioren in Nijmegen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegangst komt op alle leeftijden voor. Onze begeleiders bieden een rustige aanwezigheid, uitleg over de geluiden van het vliegtuig en afleiding tijdens de vlucht om uw reis vanuit de regio Nijmegen zo comfortabel mogelijk te maken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe ga ik om met een tussenstop als senior?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een tussenstop kan vermoeiend zijn. Wij raden aan om vliegveld assistentie aan te vragen voor het vervoer tussen gates en gebruik te maken van lounges voor rust. Onze begeleiders ondersteunen u hierbij volledig, of u nu via Schiphol of een andere luchthaven reist."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn er speciale voorzieningen voor senioren met gehoorproblemen op de luchthaven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, de meeste grote luchthavens bieden faciliteiten zoals ringleidingen. Wij ondersteunen u ter plaatse om te zorgen dat u geen enkele omroep of belangrijke informatie mist tijdens uw reis vanuit Nijmegen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik een stoma meenemen op reis vanuit Nijmegen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met een stoma is heel goed mogelijk. Wij adviseren om voldoende reservemateriaal in uw handbagage mee te nemen. Onze begeleiders kunnen u helpen bij de voorbereiding voor een zorgeloze reis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat zijn de regels voor een rolstoel in het vliegtuig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Uw rolstoel mag vrijwel altijd gratis mee als medische bagage. Het is verplicht om deze minimaal 48 uur voor vertrek aan te melden bij de luchtvaartmaatschappij. Wij kunnen dit voor u regelen voor uw vlucht vanuit de regio Nijmegen."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Wat zijn de kosten voor reisbegeleiding in Nijmegen?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -215,6 +255,21 @@ export default function NijmegenSEOPage() {
                   )}
                   {faq.name.includes("pacemaker") && (
                     <> <Link href="/blog/vliegen-met-een-pacemaker-of-icd" className="text-primary-600 hover:underline">Lees meer over vliegen met een pacemaker.</Link></>
+                  )}
+                  {faq.name.includes("vliegangst") && (
+                    <> <Link href="/blog/vliegangst-bij-ouderen" className="text-primary-600 hover:underline">Bekijk onze tips tegen vliegangst.</Link></>
+                  )}
+                  {faq.name.includes("tussenstop") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-een-tussenstop-als-senior" className="text-primary-600 hover:underline">Lees onze tips over tussenstops.</Link></>
+                  )}
+                  {faq.name.includes("gehoor") && (
+                    <> <Link href="/blog/vliegen-met-een-gehoorapparaat-vliegveld-tips" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met gehoorproblemen.</Link></>
+                  )}
+                  {faq.name.includes("stoma") && (
+                    <> <Link href="/blog/vliegen-met-een-stoma" className="text-primary-600 hover:underline">Lees meer over vliegen met een stoma.</Link></>
+                  )}
+                  {faq.name.includes("rolstoel") && (
+                    <> <Link href="/blog/vliegen-met-een-rolstoel" className="text-primary-600 hover:underline">Lees onze complete gids over vliegen met een rolstoel.</Link></>
                   )}
                 </p>
               </div>
