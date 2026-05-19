@@ -78,6 +78,14 @@ export default function AmsterdamSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Mag ik vliegen met een rollator vanaf Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, een rollator mag bij vrijwel alle luchtvaartmaatschappijen gratis mee als medische bagage. U kunt uw rollator meestal gebruiken tot aan de gate, waarna deze in het vrachtruim wordt geplaatst. Onze begeleiders helpen u graag bij de logistiek hiervan op Schiphol."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Hoe lang van tevoren moet ik een reisbegeleider boeken?",
         "acceptedAnswer": {
           "@type": "Answer",
