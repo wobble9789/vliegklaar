@@ -358,6 +358,14 @@ export default function AmsterdamSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Hoe gaat een senior veilig door de security op Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Senioren kunnen vlot door de security op Schiphol door gebruik te maken van de moderne CT-scanners (vloeistoffen mogen in de tas blijven), gemakkelijke kleding te dragen en medische protheses of pacemakers vooraf te melden."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Hoe voorkom ik uitdroging tijdens een lange vlucht vanaf Schiphol?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -453,6 +461,9 @@ export default function AmsterdamSEOPage() {
                 <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {faq.acceptedAnswer.text}
+                  {faq.name.includes("security") && (
+                    <> <Link href="/blog/hoe-gaat-een-senior-veilig-door-de-security-op-schiphol" className="text-primary-600 hover:underline">Bekijk onze gids voor de security op Schiphol.</Link></>
+                  )}
                   {faq.name.includes("uitdroging") && (
                     <> <Link href="/blog/hoe-voorkom-je-uitdroging-tijdens-het-vliegen-als-senior" className="text-primary-600 hover:underline">Lees onze tips om uitdroging te voorkomen.</Link></>
                   )}
