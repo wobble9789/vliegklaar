@@ -22,6 +22,22 @@ export default function VliegenNaKnieOperatie() {
       },
       {
         "@type": "Question",
+        "name": "Is vliegen met een nieuwe knie veilig voor senioren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, mits de herstelperiode in acht wordt genomen en u groen licht heeft van uw arts. Voor senioren is het extra belangrijk om tijdens de vlucht te bewegen en voldoende te drinken om de bloedsomloop te stimuleren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat moet ik regelen voor mijn knieprothese bij de security?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meld vooraf bij de beveiligingsbeambte dat u een knieprothese heeft. Het metaal kan het alarm activeren. Een prothesepaspaspoort kan handig zijn voor een vlotte afhandeling, maar de medewerkers zijn getraind om hier discreet mee om te gaan."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Mag ik vliegen met krukken?",
         "acceptedAnswer": {
           "@type": "Answer",
