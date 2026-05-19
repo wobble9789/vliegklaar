@@ -69,6 +69,38 @@ const faqData = {
     },
     {
       "@type": "Question",
+      "name": "Begeleiden jullie ook voor senioren met dementie in Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, wij hebben veel ervaring met het begeleiden van reizigers met beginnende dementie of geheugenproblemen. Onze begeleiders bieden de nodige structuur, rust en nabijheid om de reis voor zowel de senior als de familie zorgeloos te laten verlopen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik vliegveld assistentie krijgen bij vliegen met artrose?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, reizigers met artrose hebben recht op assistentie op de luchthaven. Wij kunnen dit voor u coördineren, zodat u niet onnodig ver hoeft te lopen en comfortabel naar de gate wordt gebracht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mag ik vliegen met een rollator vanaf Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, een rollator mag bij vrijwel alle luchtvaartmaatschappijen gratis mee als medische bagage. U kunt uw rollator meestal gebruiken tot aan de gate, waarna deze in het vrachtruim wordt geplaatst. Onze begeleiders helpen u graag bij de logistiek hiervan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe ga ik om met een tussenstop als senior?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een tussenstop kan vermoeiend zijn. Wij raden aan om vliegveld assistentie aan te vragen voor het vervoer tussen gates, voldoende overstaptijd te plannen en gebruik te maken van lounges voor rust. Onze begeleiders kunnen u hierbij volledig ondersteunen."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Is er begeleiding mogelijk vanaf station Alkmaar?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -163,7 +195,21 @@ export default function AlkmaarSEOPage() {
             {faqData.mainEntity.map((item, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
                 <h3 className="text-xl font-semibold text-primary-700 mb-3">{item.name}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.acceptedAnswer.text}</p>
+                <p className="text-gray-600 leading-relaxed">
+                  {item.acceptedAnswer.text}
+                  {item.name.toLowerCase().includes("dementie") && (
+                    <> <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">Lees over reizen met dementie.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("artrose") && (
+                    <> <Link href="/blog/vliegen-met-artrose" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met artrose.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("rollator") && (
+                    <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Lees meer over vliegen met een rollator.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("tussenstop") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-een-tussenstop-als-senior" className="text-primary-600 hover:underline">Lees onze tips over tussenstops.</Link></>
+                  )}
+                </p>
               </div>
             ))}
           </div>
