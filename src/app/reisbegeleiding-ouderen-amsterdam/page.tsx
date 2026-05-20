@@ -603,6 +603,12 @@ export default function AmsterdamSEOPage() {
             <Link href="/blog/vliegen-met-knie-of-heupprothese" className="bg-primary-50 text-primary-700 px-4 py-2 rounded-lg hover:bg-primary-100 transition-colors border border-primary-200">
               Vliegen met een prothese
             </Link>
+            <Link href="/blog/vliegen-met-bloedverdunners" className="bg-primary-50 text-primary-700 px-4 py-2 rounded-lg hover:bg-primary-100 transition-colors border border-primary-200">
+              Vliegen met bloedverdunners
+            </Link>
+            <Link href="/blog/hoe-ga-je-om-met-een-gebitprothese-op-het-vliegveld" className="bg-primary-50 text-primary-700 px-4 py-2 rounded-lg hover:bg-primary-100 transition-colors border border-primary-200">
+              Kunstgebit op het vliegveld
+            </Link>
             <Link href="/blog/hoe-voorbereiden-op-lange-vlucht-senior" className="bg-primary-50 text-primary-700 px-4 py-2 rounded-lg hover:bg-primary-100 transition-colors border border-primary-200">
               Lange vlucht voorbereiden
             </Link>
