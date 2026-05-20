@@ -43,6 +43,22 @@ export default function VliegenMetArtrose() {
           "@type": "Answer",
           "text": "Een stoel aan het gangpad is vaak het prettigst, omdat u dan makkelijker even kunt opstaan en uw benen kunt strekken zonder anderen te storen. Stoelen met extra beenruimte zijn ook aan te raden."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik vliegen met artrose in de rug of nek?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met artrose in de rug of nek is mogelijk. Gebruik een goed ondersteunend nekkussen en een onderrugkussen om de druk op de wervelkolom te verminderen. Onze begeleiders kunnen u helpen bij het juist instellen van uw zitplek voor maximaal comfort."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is het koud in het vliegtuig nadelig voor artrose?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lage temperaturen kunnen gewrichten stijver maken. Draag daarom warme kleding in laagjes en neem een sjaal of dekentje mee. Wij zorgen als begeleider dat u altijd comfortabel en warm blijft tijdens de vlucht."
+        }
       }
     ]
   };
