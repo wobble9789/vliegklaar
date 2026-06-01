@@ -523,6 +523,18 @@ export default function AmsterdamSEOPage() {
                   {faq.name.includes("gehoor") && (
                     <> <Link href="/blog/vliegen-met-een-gehoorapparaat-vliegveld-tips" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met gehoorproblemen.</Link></>
                   )}
+                  {faq.name.includes("gehoor") && (
+                    <> <Link href="/blog/vliegen-met-een-gehoorapparaat-senioren" className="text-primary-600 hover:underline">Lees meer over vliegen met een gehoorapparaat als senior.</Link></>
+                  )}
+                  {faq.name.includes("gehoor") && (
+                    <> <Link href="/blog/reizen-met-gehoorapparaat" className="text-primary-600 hover:underline">Algemene tips voor reizen met een gehoorapparaat.</Link></>
+                  )}
+                  {faq.name.includes("gehoor") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-een-gehoorapparaat-op-het-vliegveld" className="text-primary-600 hover:underline">Hoe ga je om met een gehoorapparaat op het vliegveld.</Link></>
+                  )}
+                  {faq.name.includes("Amsterdam") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-douane-controles-als-senior" className="text-primary-600 hover:underline">Tips voor douanecontroles als senior.</Link></>
+                  )}
                   {faq.name.includes("hulphond") && (
                     <> <Link href="/blog/vliegen-met-een-hulphond-of-huisdier" className="text-primary-600 hover:underline">Lees meer over vliegen met een hulphond.</Link></>
                   )}
