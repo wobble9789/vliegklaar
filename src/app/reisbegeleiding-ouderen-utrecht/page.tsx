@@ -252,6 +252,22 @@ export default function UtrechtSEOPage() {
           "text": "Ja, vliegen na een beroerte is vaak weer mogelijk, mits uw behandelend arts hiervoor toestemming geeft. Onze begeleiders ondersteunen u bij de logistiek op de luchthaven, bieden fysieke ondersteuning en zorgen voor een ontspannen reiservaring vanaf uw voordeur in Utrecht."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met een stoma vanuit de regio Utrecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met een stoma is heel goed mogelijk. Onze begeleiders in Utrecht adviseren u om voldoende reservemateriaal in uw handbagage mee te nemen en kunnen u ondersteunen bij de voorbereiding van uw reisdocumenten voor de security."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is vliegen met een hoge bloeddruk veilig vanuit Utrecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Over het algemeen is vliegen met een goed ingestelde bloeddruk veilig. We raden aan om voor vertrek uw arts in Utrecht te raadplegen en uw medicatie in uw handbagage te bewaren. Onze begeleiders ondersteunen u graag bij een ontspannen reiservaring."
+        }
+      },
     ]
   };
 
@@ -424,6 +440,12 @@ export default function UtrechtSEOPage() {
                   )}
                   {faq.name.toLowerCase().includes("beroerte") && (
                     <> <Link href="/blog/vliegen-na-beroerte" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een beroerte.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("stoma") && (
+                    <> <Link href="/blog/vliegen-met-een-stoma" className="text-primary-600 hover:underline">Lees meer over vliegen met een stoma.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("hoge bloeddruk") && (
+                    <> <Link href="/blog/vliegen-met-bloeddruk-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een hoge bloeddruk.</Link></>
                   )}
                 </p>
               </div>
