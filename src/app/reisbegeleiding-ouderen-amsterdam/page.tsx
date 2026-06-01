@@ -380,6 +380,14 @@ export default function AmsterdamSEOPage() {
           "text": "De droge lucht in de vliegtuigcabine kan snel leiden tot uitdroging, wat bij senioren extra risico's met zich meebrengt. Wij raden aan om voor vertrek op Schiphol al goed te drinken, cafeïne en alcohol te vermijden, en tijdens de vlucht elk uur een glas water te nemen. Onze begeleiders herinneren u hier regelmatig aan en zorgen dat u altijd voldoende drinkwater bij de hand heeft."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Zijn er tips voor vliegen met een bril of contactlenzen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, de droge lucht in het vliegtuig kan irriterend zijn voor lensdragers. We adviseren senioren om tijdens de vlucht een bril te dragen, reservebrillen in de handbagage mee te nemen en oogdruppels te gebruiken. Onze begeleiders kunnen u helpen bij het herinneren aan oogzorg tijdens een lange vlucht."
+        }
+      },
     ]
   };
 
@@ -600,6 +608,9 @@ export default function AmsterdamSEOPage() {
                   )}
                   {faq.name.includes("gebit") && (
                     <> <Link href="/blog/vliegen-met-een-gebit" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met een gebit.</Link></>
+                  )}
+                  {faq.name.includes("bril") && (
+                    <> <Link href="/blog/vliegen-met-bril-of-contactlenzen-tips" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met een bril of contactlenzen.</Link></>
                   )}
                 </p>
               </div>
