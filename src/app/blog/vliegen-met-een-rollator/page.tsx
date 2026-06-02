@@ -1,13 +1,12 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Vliegen met een rollator: 10 handige tips voor senioren | Vliegklaar',
-  description: 'Gaat u vliegen met een rollator? Lees onze 10 praktische tips over vliegveld assistentie, bagageregels en comfortabel reizen met uw loophulpmiddel.',
+  title: 'Vliegen met een rollator: Tips voor senioren | Vliegklaar',
+  description: 'Alles wat u moet weten over vliegen met een rollator. Regels op het vliegveld, tips voor de security en hoe u assistentie aanvraagt.',
 };
 
-export default function VliegenMetRollatorBlog() {
+export default function VliegenMetRollatorPage() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -17,7 +16,7 @@ export default function VliegenMetRollatorBlog() {
         "name": "Mag een rollator gratis mee in het vliegtuig?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja, bij vrijwel alle luchtvaartmaatschappijen mag een rollator gratis mee als medische bagage. Dit staat los van uw standaard bagagevrijstelling."
+          "text": "Ja, bij vrijwel alle luchtvaartmaatschappijen mag een rollator als medische bagage gratis worden meegenomen bovenop uw standaard bagagevrijstelling."
         }
       },
       {
@@ -25,15 +24,15 @@ export default function VliegenMetRollatorBlog() {
         "name": "Mag ik mijn rollator gebruiken tot aan de gate?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Zeker. U kunt uw rollator meestal gebruiken tot aan de deur van het vliegtuig (de gate). Daar wordt hij door het grondpersoneel ingenomen en in het vrachtruim geplaatst."
+          "text": "Ja, u kunt uw rollator meestal gebruiken tot aan de deur van het vliegtuig (de gate of de vliegtuigslurf). Daar wordt hij door het personeel ingenomen en in het vrachtruim geplaatst."
         }
       },
       {
         "@type": "Question",
-        "name": "Moet ik mijn rollator vooraf aanmelden bij de vliegmaatschappij?",
+        "name": "Moet ik mijn rollator van tevoren aanmelden?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Het is zeer aan te raden om dit minimaal 48 uur voor vertrek te doen. Zo kan de luchtvaartmaatschappij rekening houden met de ruimte en eventueel assistentie inplannen."
+          "text": "Het is zeer aanbevolen om uw rollator minimaal 48 uur voor vertrek aan te melden bij de luchtvaartmaatschappij, zodat zij op de hoogte zijn van uw mobiliteitsbehoefte."
         }
       }
     ]
@@ -45,112 +44,76 @@ export default function VliegenMetRollatorBlog() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      
       <article className="max-w-4xl mx-auto px-4 py-12">
-        <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
-            Vliegen met een rollator: 10 handige tips voor een zorgeloze reis
-          </h1>
-          <p className="text-xl text-gray-700 leading-relaxed">
-            Een rollator biedt vrijheid en stabiliteit, ook als u op reis gaat. Veel senioren vragen zich echter af hoe het precies werkt op de luchthaven. Mag de rollator mee naar de gate? Kost het extra? In dit artikel geven we u 10 praktische tips voor vliegen met een rollator.
+        <h1 className="text-4xl font-bold text-primary-900 mb-6">
+          Vliegen met een rollator: Een complete gids voor senioren
+        </h1>
+        
+        <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+          Voor veel senioren is een rollator een essentieel hulpmiddel om mobiel en onafhankelijk te blijven. 
+          Gelukkig is vliegen met een rollator tegenwoordig heel goed geregeld op vliegvelden zoals Schiphol. 
+          In dit artikel leggen we precies uit waar u op moet letten.
+        </p>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-primary-800 mb-4">Regels en Kosten</h2>
+          <p className="text-gray-600 mb-4">
+            Het belangrijkste om te weten is dat een rollator wordt gezien als een medisch hulpmiddel. 
+            Dit betekent dat u deze bij bijna elke maatschappij (zoals KLM, Transavia of EasyJet) <strong>gratis</strong> mag meenemen. 
+            Dit gaat niet ten koste van uw normale kilo&apos;s handbagage of ruimbagage.
           </p>
-        </header>
+        </section>
 
-        <div className="relative h-[300px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-xl mb-12">
-          <Image
-            src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=1200&q=80"
-            alt="Senior met rollator op reis"
-            fill
-            className="object-cover"
-          />
-        </div>
-
-        <div className="prose prose-lg max-w-none text-gray-800">
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">1. Meld uw rollator op tijd aan</h2>
-          <p>
-            Hoewel een rollator bijna altijd gratis mee mag, is het belangrijk om dit vooraf te melden bij uw luchtvaartmaatschappij (minimaal 48 uur voor vertrek). Dit voorkomt verrassingen bij de incheckbalie en zorgt ervoor dat er ruimte is in het vrachtruim.
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-primary-800 mb-4">Op de luchthaven</h2>
+          <p className="text-gray-600 mb-4">
+            U hoeft uw rollator niet direct bij de incheckbalie af te geven. U kunt deze gewoon gebruiken om naar de gate te lopen. 
+            Bij de security check moet de rollator door de scan. Als u niet goed kunt staan zonder rollator, 
+            kunt u dit aangeven bij de medewerkers; zij zullen u dan assisteren.
           </p>
-
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">2. Gebruik de rollator tot aan de gate</h2>
-          <p>
-            U hoeft uw rollator niet direct bij de check-in in te leveren. U kunt hem gebruiken om comfortabel naar de gate te lopen. Bij de ingang van het vliegtuig neemt het personeel de rollator van u over. Tip: Zorg dat u een label met uw naam en contactgegevens aan de rollator bevestigt.
-          </p>
-
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">3. Vraag luchthavenassistentie aan</h2>
-          <p>
-            Zelfs met een rollator kunnen de afstanden op grote vliegvelden zoals Schiphol behoorlijk pittig zijn. Maak gebruik van de gratis vliegveld assistentie. Een medewerker kan u begeleiden of u kunt gebruikmaken van een elektrisch karretje terwijl uw rollator wordt meegenomen.
-          </p>
-
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">4. Controleer de afmetingen</h2>
-          <p>
-            Heeft u een extra brede of zware rollator? Geef de afmetingen door bij het boeken. De meeste standaard rollators zijn geen probleem, maar voor afwijkende maten gelden soms andere regels.
-          </p>
-
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">5. Maak losse onderdelen vast</h2>
-          <p>
-            Heeft u een mandje, een stokhouder of een dienblad op uw rollator? Verwijder deze onderdelen of zet ze goed vast voordat u de rollator bij de gate afgeeft. Losse onderdelen kunnen tijdens het laden in het vrachtruim makkelijk kwijtraken.
-          </p>
-
-          <div className="bg-primary-50 p-8 rounded-2xl my-12 border border-primary-100">
-            <h3 className="text-xl font-bold text-primary-900 mb-4">Hulp nodig bij uw reis?</h3>
-            <p className="text-primary-800 mb-6">
-              Vliegklaar biedt persoonlijke begeleiding voor senioren die met een loophulpmiddel reizen. Wij helpen u van deur tot deur.
+          <div className="bg-primary-50 p-6 rounded-xl border border-primary-100">
+            <h3 className="font-bold text-primary-900 mb-2">Tip van Packlight:</h3>
+            <p className="text-primary-800">
+              Bevestig een label met uw naam en contactgegevens aan uw rollator. Omdat rollators vaak op elkaar lijken, 
+              voorkomt u hiermee dat iemand anders er per ongeluk mee vandoor gaat na de landing.
             </p>
-            <Link href="/contact" className="inline-block bg-primary-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-primary-700 transition-colors">
-              Ontdek onze reisbegeleiding
-            </Link>
           </div>
+        </section>
 
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">6. Security check met een rollator</h2>
-          <p>
-            Bij de security scan moet uw rollator door de röntgenscanner. Als u niet zonder ondersteuning kunt staan, kunt u dit aangeven bij de medewerker. Er zijn vaak leen-rolstoelen beschikbaar voor dit korte moment, of u wordt handmatig gecontroleerd.
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-primary-800 mb-4">Assistentie aanvragen</h2>
+          <p className="text-gray-600 mb-4">
+            Hoewel u uw eigen rollator heeft, kan het vliegveld erg groot zijn. Het is vaak verstandig om ook 
+            <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline"> vliegveld assistentie aan te vragen</Link>. 
+            Zij kunnen u met een elektrisch wagentje naar de gate brengen als de afstanden te groot worden.
           </p>
+        </section>
 
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">7. Uw rollator bij aankomst</h2>
-          <p>
-            Vraag bij het instappen of uw rollator bij de gate van de bestemming weer voor u klaarstaat (&apos;delivery at aircraft side&apos;). Soms komt de rollator op de bagageband terecht, wat lastig kan zijn als u direct na het uitstappen ondersteuning nodig heeft. Assistentie ter plaatse kan u hierbij helpen.
-          </p>
-
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">8. Overweeg een reisrollator</h2>
-          <p>
-            Er bestaan speciale lichtgewicht reisrollators die u heel compact kunt opvouwen. Sommige modellen mogen zelfs mee in de cabine als ze in de bagagebakken passen, al is dit afhankelijk van de maatschappij.
-          </p>
-
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">9. Controleer uw verzekering</h2>
-          <p>
-            Hoewel luchtvaartmaatschappijen voorzichtig omgaan met hulpmiddelen, kan er schade ontstaan. Controleer of uw reisverzekering schade aan of verlies van uw rollator dekt. Maak voor vertrek een foto van de staat van uw rollator.
-          </p>
-
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">10. Reis samen voor extra rust</h2>
-          <p>
-            Vindt u de logistiek met een rollator nog steeds spannend? Een <Link href="/blog/betrouwbare-reisbegeleider-vinden" className="text-primary-600 hover:underline">ervaren reisbegeleider</Link> van Vliegklaar kan alle zorgen uit handen nemen, van het inchecken van de rollator tot de begeleiding op de plaats van bestemming.
-          </p>
-        </div>
-
-        <footer className="mt-16 pt-8 border-t border-gray-200">
-          <h2 className="text-2xl font-bold text-primary-800 mb-6">Veelgestelde vragen</h2>
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-primary-800 mb-4">Veelgestelde vragen</h2>
           <div className="space-y-6">
             {faqSchema.mainEntity.map((faq, index) => (
-              <div key={index}>
-                <h3 className="text-lg font-bold text-gray-900">{faq.name}</h3>
-                <p className="text-gray-700">{faq.acceptedAnswer.text}</p>
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
+                <p className="text-gray-600 leading-relaxed">{faq.acceptedAnswer.text}</p>
               </div>
             ))}
           </div>
-        </footer>
-      </article>
+        </section>
 
-      <section className="bg-gray-50 py-16">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-primary-900 mb-6">Zorgeloos op reis met Vliegklaar</h2>
-          <p className="text-xl text-gray-700 mb-10">
-            Wij begeleiden senioren door heel Nederland, of u nu vertrekt vanuit <Link href="/reisbegeleiding-ouderen-amsterdam" className="text-primary-600 hover:underline">Amsterdam</Link>, <Link href="/reisbegeleiding-ouderen-rotterdam" className="text-primary-600 hover:underline">Rotterdam</Link> of <Link href="/reisbegeleiding-ouderen-utrecht" className="text-primary-600 hover:underline">Utrecht</Link>.
+        <section className="py-12 border-t border-gray-200">
+          <h2 className="text-2xl font-bold text-primary-800 mb-6 text-center">Hulp nodig bij uw reis?</h2>
+          <p className="text-center text-gray-700 mb-8">
+            Vliegklaar biedt persoonlijke reisbegeleiding voor senioren. Wij helpen u van deur tot deur, 
+            ook met de logistiek van uw rollator.
           </p>
-          <Link href="/diensten" className="inline-block bg-primary-600 text-white font-bold text-lg px-10 py-4 rounded-2xl shadow-lg hover:bg-primary-700 transition-all">
-            Bekijk al onze diensten
-          </Link>
-        </div>
-      </section>
+          <div className="flex justify-center">
+            <Link href="/contact" className="bg-primary-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-primary-700 transition-colors">
+              Neem contact op voor de mogelijkheden
+            </Link>
+          </div>
+        </section>
+      </article>
     </main>
   );
 }
