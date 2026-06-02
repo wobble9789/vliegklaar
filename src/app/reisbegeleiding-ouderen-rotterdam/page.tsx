@@ -22,6 +22,14 @@ export default function RotterdamSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Mag ik een CPAP-apparaat meenemen in het vliegtuig vanaf Rotterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, een CPAP-apparaat mag mee als medische handbagage vanaf Rotterdam The Hague Airport of Schiphol. Het is verstandig om dit vooraf te melden bij de luchtvaartmaatschappij en een medische verklaring bij u te hebben. Onze begeleiders helpen u graag om alles rondom uw CPAP-apparaat soepel te laten verlopen."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Kunnen jullie ook helpen bij vliegen met parkinson vanaf Rotterdam?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -425,6 +433,9 @@ export default function RotterdamSEOPage() {
                   )}
                   {faq.name.includes("Schengen") && (
                     <> <Link href="/blog/schengen-regels-2026" className="text-primary-600 hover:underline">Lees meer over de Schengen-regels in 2026.</Link></>
+                  )}
+                  {faq.name.includes("CPAP") && (
+                    <> <Link href="/blog/vliegen-met-cpap-apparaat" className="text-primary-600 hover:underline">Lees meer over vliegen met een CPAP-apparaat.</Link></>
                   )}
                   {faq.name.includes("diabetes") && (
                     <> <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">Lees meer over vliegen met diabetes.</Link></>
