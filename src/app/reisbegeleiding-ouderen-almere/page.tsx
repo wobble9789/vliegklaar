@@ -45,6 +45,30 @@ const faqData = {
     },
     {
       "@type": "Question",
+      "name": "Hoe ga ik om met een jetlag na een vlucht naar Almere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een jetlag kan vermoeiend zijn, zeker op latere leeftijd. Wij adviseren om direct het lokale ritme van Almere aan te houden, veel water te drinken en overdag buiten te zijn in het daglicht. Onze begeleiders kunnen u helpen om de eerste dagen na aankomst weer in het juiste ritme te komen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik hulp krijgen bij een tussenstop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zeker. Een tussenstop is vaak het meest stressvolle deel van een reis. Wij kunnen vliegveld assistentie voor u regelen of zelf meereizen om u te begeleiden van de ene gate naar de andere, zodat u rustig kunt overstappen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zijn de mogelijkheden voor vliegen met artrose?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vliegen met artrose is goed mogelijk met de juiste voorbereiding. Denk aan een stoel met extra beenruimte en het aanvragen van assistentie op de luchthaven om lange loopafstanden te vermijden. Wij ondersteunen u graag bij de logistiek hiervan."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Wat kost reisbegeleiding in Almere?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -140,7 +164,16 @@ export default function AlmereSEOPage() {
                 <h3 className="text-xl font-semibold text-primary-700 mb-3">{item.name}</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {item.acceptedAnswer.text}
-                  {item.name.includes("rollator") && (
+                  {item.name.toLowerCase().includes("vliegen met artrose") && (
+                    <> <Link href="/blog/vliegen-met-artrose" className="text-primary-600 hover:underline">Lees meer over vliegen met artrose.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("tussenstop") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-een-tussenstop-als-senior" className="text-primary-600 hover:underline">Bekijk onze tips voor een comfortabele tussenstop.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("jetlag") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-een-jetlag-als-senior" className="text-primary-600 hover:underline">Lees onze tips tegen een jetlag.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("rollator") && (
                     <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Lees meer over vliegen met een rollator.</Link></>
                   )}
                   {item.name.includes("slechthorenden") && (
