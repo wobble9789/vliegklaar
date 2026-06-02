@@ -108,7 +108,7 @@ export default function VliegenMetRollatorBlog() {
 
           <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">7. Uw rollator bij aankomst</h2>
           <p>
-            Vraag bij het instappen of uw rollator bij de gate van de bestemming weer voor u klaarstaat ('delivery at aircraft side'). Soms komt de rollator op de bagageband terecht, wat lastig kan zijn als u direct na het uitstappen ondersteuning nodig heeft. Assistentie ter plaatse kan u hierbij helpen.
+            Vraag bij het instappen of uw rollator bij de gate van de bestemming weer voor u klaarstaat (&apos;delivery at aircraft side&apos;). Soms komt de rollator op de bagageband terecht, wat lastig kan zijn als u direct na het uitstappen ondersteuning nodig heeft. Assistentie ter plaatse kan u hierbij helpen.
           </p>
 
           <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">8. Overweeg een reisrollator</h2>
