@@ -45,6 +45,22 @@ const faqData = {
     },
     {
       "@type": "Question",
+      "name": "Hoe gaat een senior veilig door de security op Schiphol?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Senioren kunnen vlot door de security op Schiphol door gebruik te maken van de moderne CT-scanners (vloeistoffen mogen vaak in de tas blijven), gemakkelijke kleding te dragen en medische protheses of pacemakers vooraf te melden. Onze begeleiders ondersteunen u hierbij stap voor stap."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn er risico's bij vliegen met hartklachten vanuit Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bij stabiele hartklachten is vliegen meestal mogelijk, maar de lagere luchtdruk in de cabine kan invloed hebben. Overleg altijd met uw cardioloog en vraag indien nodig vliegveld assistentie aan om fysieke inspanning te beperken. Wij helpen u graag bij de coördinatie hiervan op Schiphol."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Blijven jullie de hele vakantie bij mij?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -208,6 +224,12 @@ export default function AlkmaarSEOPage() {
                   )}
                   {item.name.toLowerCase().includes("tussenstop") && (
                     <> <Link href="/blog/hoe-ga-je-om-met-een-tussenstop-als-senior" className="text-primary-600 hover:underline">Lees onze tips over tussenstops.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("security") && (
+                    <> <Link href="/blog/hoe-gaat-een-senior-veilig-door-de-security-op-schiphol" className="text-primary-600 hover:underline">Bekijk onze gids voor de security op Schiphol.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("hartklachten") && (
+                    <> <Link href="/blog/vliegen-met-hartklachten" className="text-primary-600 hover:underline">Lees onze gids voor vliegen met hartklachten.</Link></>
                   )}
                 </p>
               </div>
