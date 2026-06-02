@@ -117,6 +117,38 @@ const faqData = {
     },
     {
       "@type": "Question",
+      "name": "Bieden jullie ook hulp bij vliegen met diabetes vanuit de regio Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jazeker. Reizen met diabetes vraagt om extra planning rondom insuline, koeling en maaltijden. Onze begeleiders helpen u om alles volgens schema te laten verlopen en zorgen dat u ontspannen door de controles komt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen jullie helpen bij vliegen met een pacemaker vanuit Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zeker. Reizen met een pacemaker of ICD vereist extra aandacht bij de security scans. Onze begeleiders weten precies welke documenten u nodig heeft en hoe u vlot door de beveiliging gaat zonder risico voor uw apparaat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Begeleiden jullie ook bij vliegen na een operatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, wij bieden gespecialiseerde ondersteuning voor senioren in Alkmaar die kort geleden een ingreep hebben ondergaan. Onze begeleiders zorgen voor een rustig tempo en helpen bij alle fysieke handelingen op de luchthaven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bieden jullie ook hulp bij vliegen met Parkinson vanuit Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, wij hebben ruime ervaring met het begeleiden van senioren met de ziekte van Parkinson. Wij zorgen voor een rustig tempo, helpen bij de logistiek en ondersteunen bij medicatie-inname op de juiste tijden."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Is er begeleiding mogelijk vanaf station Alkmaar?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -230,6 +262,18 @@ export default function AlkmaarSEOPage() {
                   )}
                   {item.name.toLowerCase().includes("hartklachten") && (
                     <> <Link href="/blog/vliegen-met-hartklachten" className="text-primary-600 hover:underline">Lees onze gids voor vliegen met hartklachten.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("diabetes") && (
+                    <> <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">Lees onze tips over vliegen met diabetes.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("pacemaker") && (
+                    <> <Link href="/blog/vliegen-met-een-pacemaker-of-icd" className="text-primary-600 hover:underline">Lees meer over vliegen met een pacemaker.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("operatie") && (
+                    <> <Link href="/blog/vliegen-na-operatie" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een operatie.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("parkinson") && (
+                    <> <Link href="/blog/vliegen-met-parkinson" className="text-primary-600 hover:underline">Lees meer over vliegen met Parkinson.</Link></>
                   )}
                 </p>
               </div>
