@@ -35,6 +35,22 @@ export default function SecuritySeniorBlog() {
           "@type": "Answer",
           "text": "Ja, vloeibare medicijnen (meer dan 100ml) zijn toegestaan mits u een medisch paspoort of doktersverklaring kunt tonen. Bewaar ze bij voorkeur in de originele verpakking."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik mijn schoenen uitdoen bij de security?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Op veel luchthavens moeten schoenen die boven de enkel komen (zoals laarsjes of hoge wandelschoenen) uitgetrokken worden en in een bak door de scanner. Lage instappers of sneakers mogen vaak aanblijven, tenzij ze metalen onderdelen bevatten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik mijn wandelstok meenemen door de security?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, uw wandelstok moet meestal even in de bak om door de röntgenscanner te gaan. Indien u niet zonder ondersteuning kunt staan, zal de beveiliging u een tijdelijke leenstok geven of u ondersteunen terwijl u door de scan gaat."
+        }
       }
     ]
   };
