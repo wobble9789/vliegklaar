@@ -268,6 +268,30 @@ export default function UtrechtSEOPage() {
           "text": "Over het algemeen is vliegen met een goed ingestelde bloeddruk veilig. We raden aan om voor vertrek uw arts in Utrecht te raadplegen en uw medicatie in uw handbagage te bewaren. Onze begeleiders ondersteunen u graag bij een ontspannen reiservaring."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met incontinentie in de regio Utrecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met incontinentie is voor veel senioren een bron van zorg. Onze begeleiders bieden discrete ondersteuning, helpen bij het plannen van toiletbezoeken en adviseren over de juiste materialen en kleding voor tijdens de vlucht, zodat u met een gerust hart op reis kunt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is vliegen met een CPAP-apparaat mogelijk vanaf Utrecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Een CPAP-apparaat mag mee als medische handbagage. Onze begeleiders in Utrecht helpen u bij het regelen van de juiste documentatie (zoals een medische verklaring) en zorgen dat het apparaat veilig en volgens de regels door de security op de luchthaven gaat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie helpen bij vliegen met kleinkinderen vanuit Utrecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Als u als grootouder met uw kleinkinderen wilt vliegen, kunnen wij de extra handen bieden die nodig zijn. Wij helpen bij de logistiek, de bagage en de zorg voor de kinderen, zodat u optimaal kunt genieten van de tijd met uw kleinkinderen."
+        }
+      },
     ]
   };
 
@@ -446,6 +470,15 @@ export default function UtrechtSEOPage() {
                   )}
                   {faq.name.toLowerCase().includes("hoge bloeddruk") && (
                     <> <Link href="/blog/vliegen-met-bloeddruk-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een hoge bloeddruk.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("incontinentie") && (
+                    <> <Link href="/blog/vliegen-met-incontinentie-tips-senioren" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met incontinentie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("cpap") && (
+                    <> <Link href="/blog/vliegen-met-cpap-apparaat" className="text-primary-600 hover:underline">Lees meer over vliegen met een CPAP-apparaat.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("kleinkinderen") && (
+                    <> <Link href="/blog/vliegen-met-kleinkinderen-tips-voor-grootouders" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met kleinkinderen.</Link></>
                   )}
                 </p>
               </div>
