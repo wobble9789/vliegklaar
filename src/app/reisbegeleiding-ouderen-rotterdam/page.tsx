@@ -14,10 +14,34 @@ export default function RotterdamSEOPage() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Biedt Vliegklaar reisbegeleiding in heel Rotterdam?",
+        "name": "Is vliegen met een gebitprothese veilig vanaf Rotterdam?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja, wij bieden persoonlijke reisbegeleiding voor ouderen in alle wijken van Rotterdam en omliggende gemeenten zoals Schiedam, Vlaardingen en Capelle aan den IJssel."
+          "text": "Ja, vliegen met een gebitprothese is volkomen veilig. Bij de security op Rotterdam The Hague Airport hoeft u uw prothese niet uit te doen; de moderne scanners herkennen dit gewoon als medisch hulpmiddel. Onze begeleiders kunnen u discreet ondersteunen bij de controles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met een gehoorapparaat vanuit Rotterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Vliegen met een gehoorapparaat is geen probleem, maar de luchthavenomgeving kan lawaaierig zijn. Onze begeleiders helpen u om belangrijke omroepen op Rotterdam The Hague Airport niet te missen en zorgen dat u ontspannen aan uw vlucht begint."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat zijn de regels voor vliegen met een kunstgebit op Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Op Schiphol gelden dezelfde regels: u kunt uw kunstgebit gewoon inhouden. Mocht u zich ongerust maken over de security check, dan kan onze begeleider u vooraf precies vertellen wat u kunt verwachten en u ter plaatse ondersteunen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik vliegveld assistentie krijgen voor reizen met een gehoorapparaat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, als uw gehoorbeperking uw reis beïnvloedt, kunt u assistentie aanvragen. Wij coördineren dit voor u, zodat u op de luchthaven de juiste ondersteuning krijgt en altijd op de hoogte bent van gate-wijzigingen of instaptijden."
         }
       },
       {
@@ -389,6 +413,18 @@ export default function RotterdamSEOPage() {
                 <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {faq.acceptedAnswer.text}
+                  {faq.name.includes("gehoorapparaat") && (
+                    <> <Link href="/blog/vliegen-met-een-gehoorapparaat-vliegveld-tips" className="text-primary-600 hover:underline">Bekijk onze vliegveld tips voor gehoorapparaten.</Link></>
+                  )}
+                  {faq.name.includes("gebitprothese") && (
+                    <> <Link href="/blog/vliegen-met-een-gebitprothese" className="text-primary-600 hover:underline">Lees meer over vliegen met een gebitprothese.</Link></>
+                  )}
+                  {faq.name.includes("kunstgebit") && (
+                    <> <Link href="/blog/vliegen-met-een-kunstgebit" className="text-primary-600 hover:underline">Lees onze tips voor vliegen met een kunstgebit.</Link></>
+                  )}
+                  {faq.name.includes("gehoorapparaat") && (
+                    <> <Link href="/blog/reizen-met-gehoorapparaat" className="text-primary-600 hover:underline">Algemene tips voor reizen met een gehoorapparaat.</Link></>
+                  )}
                   {faq.name.includes("security") && (
                     <> <Link href="/blog/hoe-gaat-een-senior-veilig-door-de-security-op-schiphol" className="text-primary-600 hover:underline">Bekijk onze gids voor de security op Schiphol.</Link></>
                   )}
