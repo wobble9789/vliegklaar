@@ -91,6 +91,78 @@ export default function GroningenSEOPage() {
           "@type": "Answer",
           "text": "Het is belangrijk om een actueel medicatieoverzicht en eventueel een medische verklaring bij u te hebben. Wij helpen u graag bij de voorbereiding hiervan."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Can ik vliegveld assistentie krijgen bij vliegen met artrose?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, reizigers met artrose hebben recht op assistentie op de luchthaven. Wij kunnen dit voor u coördineren vanaf Groningen Airport Eelde of Schiphol, zodat u niet onnodig ver hoeft te lopen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegangst voor senioren in Groningen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegangst komt op alle leeftijden voor. Onze begeleiders bieden een rustige aanwezigheid, uitleg over de geluiden van het vliegtuig en afleiding tijdens de vlucht om uw reis zo comfortabel mogelijk te maken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunt u ook helpen bij vliegen met een pacemaker vanuit de regio Groningen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Reizen met een pacemaker of ICD vereist extra aandacht bij de security scans. Onze begeleiders weten precies welke documenten u nodig heeft en hoe u vlot door de beveiliging gaat op Eelde of Schiphol."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie ook begeleiden bij vliegen met diabetes vanaf Groningen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Reizen met diabetes vraagt om extra planning rondom insuline, koeling en maaltijden. Onze begeleiders helpen u om alles volgens schema te laten verlopen en zorgen dat u ontspannen door de controles komt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen met COPD of astma vanaf Groningen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met COPD of astma is vaak mogelijk met de juiste voorbereiding. Het is belangrijk om uw medicatie in uw handbagage te hebben en eventueel extra zuurstof aan te vragen. Wij helpen u bij het regelen van de nodige documenten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met een stoma vanuit de regio Groningen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met een stoma is heel goed mogelijk. Wij adviseren u om voldoende reservemateriaal in uw handbagage mee te nemen. Onze begeleiders kunnen u helpen bij de voorbereiding en zorgen voor een ontspannen reis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn compressiekousen nodig bij een vlucht vanuit Groningen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Voor veel senioren worden compressiekousen aangeraden tijdens langere vluchten om de bloedsomloop te bevorderen. We adviseren u graag over het gebruik hiervan en kunnen u helpen bij het aantrekken voor vertrek."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe ga ik om met een tussenstop als senior?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een tussenstop kan vermoeiend zijn. Wij raden aan om vliegveld assistentie aan te vragen voor het vervoer tussen gates en gebruik te maken van lounges voor rust. Onze begeleiders kunnen u hierbij volledig ondersteunen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen na een beroerte vanuit Groningen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen na een beroerte is vaak weer mogelijk mits uw arts akkoord is. Onze begeleiders ondersteunen u bij de logistiek, bieden fysieke ondersteuning en zorgen voor een ontspannen reiservaring vanaf uw voordeur."
+        }
       }
     ]
   };
@@ -198,6 +270,33 @@ export default function GroningenSEOPage() {
                   )}
                   {faq.name.toLowerCase().includes("medicijnen") && (
                     <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Bekijk tips voor medicijnen op reis.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("artrose") && (
+                    <> <Link href="/blog/vliegen-met-artrose" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met artrose.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("vliegangst") && (
+                    <> <Link href="/blog/vliegangst-bij-ouderen" className="text-primary-600 hover:underline">Bekijk onze tips tegen vliegangst.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("pacemaker") && (
+                    <> <Link href="/blog/vliegen-met-een-pacemaker-of-icd" className="text-primary-600 hover:underline">Lees meer over vliegen met een pacemaker.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("diabetes") && (
+                    <> <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">Lees meer over vliegen met diabetes.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("copd") && (
+                    <> <Link href="/blog/vliegen-met-copd-of-astma" className="text-primary-600 hover:underline">Lees meer over vliegen met COPD of astma.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("stoma") && (
+                    <> <Link href="/blog/vliegen-met-een-stoma" className="text-primary-600 hover:underline">Lees meer over vliegen met een stoma.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("compressiekousen") && (
+                    <> <Link href="/blog/vliegen-met-compressiekousen" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met compressiekousen.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("tussenstop") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-een-tussenstop-als-senior" className="text-primary-600 hover:underline">Lees onze tips over tussenstops.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("beroerte") && (
+                    <> <Link href="/blog/vliegen-na-beroerte" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een beroerte.</Link></>
                   )}
                 </p>
               </div>
