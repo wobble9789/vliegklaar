@@ -51,6 +51,30 @@ export default function AmersfoortSEOPage() {
           "@type": "Answer",
           "text": "In sommige situaties kan begeleiding (deels) worden vergoed vanuit een PGB of een aanvullende zorgverzekering. Wij raden aan dit vooraf bij uw eigen verzekeraar te controleren."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe gaat een senior veilig door de security op Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Senioren kunnen vlot door de security op Schiphol door gebruik te maken van de moderne CT-scanners (vloeistoffen mogen in de tas blijven), gemakkelijke kleding te dragen en medische protheses of pacemakers vooraf te melden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik vliegveld assistentie krijgen bij vliegen met artrose?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, reizigers met artrose hebben recht op assistentie op de luchthaven. Wij kunnen dit voor u coördineren, zodat u niet onnodig ver hoeft te lopen en comfortabel naar de gate wordt gebracht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag een kunstgebit in blijven bij de security op Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, u kunt uw kunstgebit gewoon inhouden tijdens de veiligheidscontrole op Schiphol. De scanners zijn niet ingesteld op de kleine hoeveelheden metaal in een gebitsprothese. Mocht er toch een melding zijn, dan weten de medewerkers daar discreet mee om te gaan."
+        }
       }
     ]
   };
@@ -151,6 +175,15 @@ export default function AmersfoortSEOPage() {
                   )}
                   {faq.name.includes("verzekering") && (
                     <> <Link href="/blog/reisverzekering-voor-senioren" className="text-primary-600 hover:underline">Lees over reisverzekeringen voor senioren.</Link></>
+                  )}
+                  {faq.name.includes("security") && (
+                    <> <Link href="/blog/hoe-gaat-een-senior-veilig-door-de-security-op-schiphol" className="text-primary-600 hover:underline">Bekijk onze gids voor de security op Schiphol.</Link></>
+                  )}
+                  {faq.name.includes("artrose") && (
+                    <> <Link href="/blog/vliegen-met-artrose" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met artrose.</Link></>
+                  )}
+                  {faq.name.includes("gebit") && (
+                    <> <Link href="/blog/vliegen-met-een-gebit" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met een gebit.</Link></>
                   )}
                 </p>
               </div>
