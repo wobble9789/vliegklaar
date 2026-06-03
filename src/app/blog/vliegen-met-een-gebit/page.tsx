@@ -8,8 +8,51 @@ export const metadata: Metadata = {
 };
 
 export default function VliegenMetGebitBlog() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Moet mijn kunstgebit uit bij de security check op het vliegveld?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee, u kunt uw kunstgebit gewoon inhouden tijdens de veiligheidscontrole. De scanners op luchthavens zoals Schiphol zijn niet ingesteld op de kleine hoeveelheden metaal in een gebitsprothese."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag kleefpasta mee in de handbagage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, kleefpasta mag mee in de handbagage, mits de tube niet groter is dan 100ml. Het valt onder de vloeistoffenregels, dus bewaar het in een doorzichtig, hersluitbaar zakje."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe verzorg ik mijn gebit tijdens een lange vlucht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Drink voldoende water om een droge mond te voorkomen. Gebruik voor het poetsen of spoelen van uw gebit altijd water uit een flesje in plaats van kraanwater uit het vliegtuigtoilet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat als ik mijn gebit verlies tijdens de reis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het is raadzaam om, indien mogelijk, een reservegebit in uw handbagage mee te nemen. Controleer ook uw reisverzekering op dekking voor gebitsprotheses bij verlies of schade."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <section className="bg-primary-50 py-12 md:py-20">
         <div className="max-w-4xl mx-auto px-4">
           <Link href="/blog" className="text-primary-600 hover:underline mb-4 inline-block">← Terug naar overzicht</Link>
@@ -70,6 +113,16 @@ export default function VliegenMetGebitBlog() {
             <li>Een afsluitbaar bakje (voor als u het gebit &apos;s nachts uit wilt doen).</li>
             <li>Eventueel een reservegebit als u die heeft.</li>
           </ol>
+
+          <h2>Veelgestelde vragen</h2>
+          <div className="not-prose space-y-4 my-8">
+            {faqSchema.mainEntity.map((faq, index) => (
+              <div key={index} className="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                <h3 className="text-lg font-bold text-primary-800 mb-2">{faq.name}</h3>
+                <p className="text-gray-700 leading-relaxed">{faq.acceptedAnswer.text}</p>
+              </div>
+            ))}
+          </div>
 
           <h2>Conclusie</h2>
           <p>
