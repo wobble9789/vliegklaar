@@ -92,6 +92,12 @@ const GebitOpVliegveldPage = () => {
           <Link href="/blog/vliegen-met-een-kunstgebit" className="p-4 border rounded hover:bg-gray-50 transition-colors">
             Vliegen met een kunstgebit: uitgebreide gids
           </Link>
+          <Link href="/reisbegeleiding-ouderen-amsterdam" className="p-4 border rounded hover:bg-gray-50 transition-colors">
+            Reisbegeleiding in Amsterdam
+          </Link>
+          <Link href="/reisbegeleiding-ouderen-rotterdam" className="p-4 border rounded hover:bg-gray-50 transition-colors">
+            Reisbegeleiding in Rotterdam
+          </Link>
         </div>
       </section>
     </div>
