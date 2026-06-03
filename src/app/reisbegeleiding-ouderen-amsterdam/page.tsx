@@ -388,6 +388,22 @@ export default function AmsterdamSEOPage() {
           "text": "Ja, de droge lucht in het vliegtuig kan irriterend zijn voor lensdragers. We adviseren senioren om tijdens de vlucht een bril te dragen, reservebrillen in de handbagage mee te nemen en oogdruppels te gebruiken. Onze begeleiders kunnen u helpen bij het herinneren aan oogzorg tijdens een lange vlucht."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook ondersteuning bij vliegen met een CPAP-apparaat vanaf Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Een CPAP-apparaat mag mee als medische handbagage. Wij helpen u bij de aanmelding bij de luchtvaartmaatschappij en zorgen dat u de juiste medische verklaringen bij u heeft voor een vlotte controle op Schiphol."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie helpen bij vliegen met compressiekousen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij adviseren senioren vaak over het gebruik van compressiekousen tijdens langere vluchten vanuit Amsterdam om de bloedsomloop te stimuleren. Onze begeleiders kunnen u zelfs helpen bij het aantrekken voor vertrek."
+        }
+      },
     ]
   };
 
