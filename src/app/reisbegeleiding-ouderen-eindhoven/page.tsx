@@ -78,6 +78,14 @@ export default function EindhovenSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Hoe zit het met vliegen met een kunstgebit vanaf Eindhoven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vliegen met een kunstgebit of prothese is voor senioren in de regio Eindhoven geen enkel probleem. Onze begeleiders weten hoe ze hier discreet mee omgaan bij de security en geven praktische tips voor optimaal comfort tijdens de vlucht vanaf Eindhoven Airport of Schiphol."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Is vliegen met een rollator mogelijk vanaf Eindhoven Airport?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -215,6 +223,9 @@ export default function EindhovenSEOPage() {
                   )}
                   {faq.name.includes("medicijnen") && (
                     <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Bekijk onze tips voor medicijnen op reis.</Link></>
+                  )}
+                  {faq.name.includes("kunstgebit") && (
+                    <> <Link href="/blog/vliegen-met-een-kunstgebit-vliegveld-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een kunstgebit of prothese.</Link></>
                   )}
                 </p>
               </div>
