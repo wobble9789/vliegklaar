@@ -420,6 +420,14 @@ export default function AmsterdamSEOPage() {
           "text": "Ja, wij adviseren senioren vaak over het gebruik van compressiekousen tijdens langere vluchten vanuit Amsterdam om de bloedsomloop te stimuleren. Onze begeleiders kunnen u zelfs helpen bij het aantrekken voor vertrek."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met een neuspiercing of opvallende sieraden vanuit Amsterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Onze begeleiders in Amsterdam weten precies hoe de security op Schiphol omgaat met piercings en sieraden. We adviseren u vooraf over welke stukken u het beste in uw handbagage kunt doen en begeleiden u discreet door de controle, zodat u zich geen zorgen hoeft te maken over eventuele meldingen bij de bodyscan."
+        }
+      },
     ]
   };
 
@@ -509,6 +517,9 @@ export default function AmsterdamSEOPage() {
                 <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {faq.acceptedAnswer.text}
+                  {faq.name.includes("neuspiercing") && (
+                    <> <Link href="/blog/vliegen-met-een-neuspiercing-of-sieraden" className="text-primary-600 hover:underline">Lees meer over vliegen met piercings en sieraden.</Link></>
+                  )}
                   {faq.name.includes("security") && (
                     <> <Link href="/blog/hoe-gaat-een-senior-veilig-door-de-security-op-schiphol" className="text-primary-600 hover:underline">Bekijk onze gids voor de security op Schiphol.</Link></>
                   )}
