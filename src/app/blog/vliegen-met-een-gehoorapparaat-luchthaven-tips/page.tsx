@@ -8,8 +8,51 @@ export const metadata: Metadata = {
 };
 
 export default function GehoorapparaatLuchthavenTipsPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Moet mijn gehoorapparaat uit bij de security op het vliegveld?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee, u kunt uw gehoorapparaat gewoon inhouden tijdens de veiligheidscontrole. De scanners beschadigen het toestel niet. Het is wel raadzaam om de beveiligingsbeambte vooraf te informeren dat u een hoortoestel draagt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Beschadigen de scanners op het vliegveld mijn gehoorapparaat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee, de röntgenapparaten voor handbagage en de metaaldetectoren of bodyscanners waar u zelf doorheen loopt, zijn veilig voor moderne gehoorapparaten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe hoor ik belangrijke omroepen op een drukke luchthaven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Veel luchthavens hebben ringleidingen (inductielussen) bij informatiebalies en gates. Daarnaast kunt u de gate-medewerker informeren over uw slechthorendheid, zodat zij u persoonlijk kunnen waarschuwen bij wijzigingen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik reservebatterijen voor mijn gehoorapparaat meenemen in het vliegtuig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, reservebatterijen moeten in uw handbagage worden vervoerd. Zink-luchtbatterijen en lithium-ion batterijen (in het toestel of de lader) zijn toegestaan aan boord."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-12 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
@@ -43,15 +86,15 @@ export default function GehoorapparaatLuchthavenTipsPage() {
           <p>
             Luchthavens zijn lawaaierige plekken. Omroepen over gate-wijzigingen of vertragingen kunnen lastig te verstaan zijn. 
             Meld u bij de incheckbalie of de gate-medewerker en geef aan dat u slechthorend bent. Zij kunnen u dan 
-            persoonlijk informeren als er belangrijke wijzigingen zijn.
+            persoonlijk informeren als er belangrijke wijzigingen zijn. Veel moderne luchthavens maken ook gebruik van ringleidingen die direct koppelen met uw hoortoestel.
           </p>
 
           <div className="bg-primary-50 p-8 rounded-2xl my-10 border-l-4 border-primary-500">
             <h3 className="text-xl font-bold text-primary-900 mb-4">Onze 3 Gouden Tips:</h3>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Reservebatterijen:</strong> Neem altijd extra batterijen of uw oplader mee in uw handbagage.</li>
-              <li><strong>Reinigingsset:</strong> De lucht in het vliegtuig is droog, wat kan zorgen voor meer oorsmeer. Houd uw setje bij de hand.</li>
-              <li><strong>Vliegveld assistentie:</strong> Schroom niet om assistentie aan te vragen. Dit kan ook voor slechthorenden zeer prettig zijn bij het navigeren.</li>
+              <li><strong>Reservebatterijen:</strong> Neem altijd extra batterijen of uw oplader mee in uw handbagage. Bewaar batterijen in hun originele verpakking om kortsluiting te voorkomen.</li>
+              <li><strong>Reinigingsset:</strong> De lucht in het vliegtuig is droog, wat kan zorgen voor meer oorsmeer. Houd uw setje bij de hand voor comfort tijdens de reis.</li>
+              <li><strong>Vliegveld assistentie:</strong> Schroom niet om assistentie aan te vragen. Dit kan ook voor slechthorenden zeer prettig zijn bij het navigeren door de drukke terminal.</li>
             </ul>
           </div>
 
@@ -63,7 +106,17 @@ export default function GehoorapparaatLuchthavenTipsPage() {
             Lees meer over hoe u <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">vliegveld assistentie aanvraagt</Link>.
           </p>
 
-          <h2 className="text-2xl font-bold text-primary-800">Begeleid reizen met Vliegklaar</h2>
+          <h2 className="text-2xl font-bold text-primary-800">Veelgestelde vragen over vliegen met een gehoorapparaat</h2>
+          <div className="space-y-6 not-prose">
+            {faqSchema.mainEntity.map((faq, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
+                <p className="text-gray-600 leading-relaxed">{faq.acceptedAnswer.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="text-2xl font-bold text-primary-800 mt-12">Begeleid reizen met Vliegklaar</h2>
           <p>
             Vindt u de drukte op de luchthaven spannend vanwege uw gehoor? Onze reisbegeleiders zijn gewend om 
             te communiceren met senioren die een gehoorapparaat dragen. Wij blijven bij u, luisteren mee naar de omroepen 
