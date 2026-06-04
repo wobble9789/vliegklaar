@@ -22,6 +22,14 @@ export default function ArnhemSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Moet ik mijn neuspiercing of sieraden uitdoen bij de security op Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kleine sieraden zoals een trouwring of een kleine neuspiercing kunnen meestal gewoon blijven zitten bij de security op Schiphol of andere luchthavens. Moderne scanners zijn ingesteld op grotere metalen objecten. Onze begeleiders in Arnhem adviseren u graag vooraf over welke sieraden u het beste in uw handbagage kunt opbergen om vertraging te voorkomen."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Kan ik vliegveld assistentie krijgen bij vliegen met artrose?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -171,6 +179,10 @@ export default function ArnhemSEOPage() {
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Biedt Vliegklaar reisbegeleiding in heel Arnhem?</h3>
               <p className="text-gray-600">Ja, wij bieden persoonlijke reisbegeleiding voor ouderen in alle wijken van Arnhem en omliggende gemeenten zoals Velp, Oosterbeek, Elst en Huissen.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-primary-700 mb-2">Moet ik mijn neuspiercing of sieraden uitdoen bij de security op de luchthaven?</h3>
+              <p className="text-gray-600">Kleine sieraden en piercings kunnen vaak blijven zitten, maar grotere stukken veroorzaken een alarm. Onze begeleiders helpen u discreet door de controle. Lees onze <Link href="/blog/vliegen-met-een-neuspiercing-of-sieraden" className="text-primary-600 hover:underline">tips voor vliegen met piercings en sieraden</Link>.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Kan ik vliegveld assistentie krijgen bij vliegen met artrose?</h3>
