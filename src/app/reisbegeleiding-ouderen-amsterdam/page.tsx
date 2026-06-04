@@ -86,6 +86,22 @@ export default function AmsterdamSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Biedt Vliegklaar ook begeleiding bij vliegen met diabetes vanaf Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Reizen met diabetes vraagt om extra planning rondom insuline, koeling en maaltijden. Onze begeleiders helpen u om alles volgens schema te laten verlopen en zorgen dat u ontspannen door de controles in Amsterdam komt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe ga ik om met een rolstoel in het vliegtuig vanaf Amsterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Uw rolstoel mag vrijwel altijd gratis mee als medische bagage. Het is wel verplicht om deze minimaal 48 uur voor vertrek aan te melden bij de luchtvaartmaatschappij, inclusief afmetingen en type accu (bij elektrische rolstoelen). Wij regelen dit proces graag voor u op Schiphol."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Hoe lang van tevoren moet ik een reisbegeleider boeken?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -525,6 +541,12 @@ export default function AmsterdamSEOPage() {
                   )}
                   {faq.name.includes("boeken") && (
                     <> <Link href="/blog/hoe-boek-je-vliegticket-als-senior" className="text-primary-600 hover:underline">Lees onze stap-voor-stap gids over het boeken van een vliegticket.</Link></>
+                  )}
+                  {faq.name.includes("diabetes") && (
+                    <> <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">Lees onze uitgebreide gids over vliegen met diabetes.</Link></>
+                  )}
+                  {faq.name.includes("rolstoel") && (
+                    <> <Link href="/blog/vliegen-met-een-rolstoel" className="text-primary-600 hover:underline">Bekijk onze complete gids voor vliegen met een rolstoel.</Link></>
                   )}
                   {faq.name.includes("boeken") && (
                     <> <Link href="/blog/checklist-senioren-vliegen" className="text-primary-600 hover:underline">Bekijk de checklist voor senioren.</Link></>
