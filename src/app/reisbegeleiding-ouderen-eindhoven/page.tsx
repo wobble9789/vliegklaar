@@ -86,6 +86,14 @@ export default function EindhovenSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Begeleiden jullie ook bij vliegen met diabetes vanaf Eindhoven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Reizen met diabetes vraagt om extra planning rondom insuline, koeling en maaltijden. Onze begeleiders helpen u om alles volgens schema te laten verlopen en zorgen dat u ontspannen door de controles op Eindhoven Airport komt."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Is vliegen met een rollator mogelijk vanaf Eindhoven Airport?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -197,6 +205,9 @@ export default function EindhovenSEOPage() {
                 <h3 className="text-xl font-semibold text-primary-700 mb-2">{faq.name}</h3>
                 <p className="text-gray-600">
                   {faq.acceptedAnswer.text}
+                  {faq.name.includes("diabetes") && (
+                    <> <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">Lees meer over vliegen met diabetes.</Link></>
+                  )}
                   {faq.name.includes("assistentie") && (
                     <> <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">In ons blog leest u precies hoe u vliegveld assistentie aanvraagt.</Link></>
                   )}
