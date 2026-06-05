@@ -82,7 +82,8 @@ export default function GebitsprothekeVliegveldPage() {
           <p>
             Een van de grootste zorgen is of de gebitsprothese uit moet tijdens de controle. Het antwoord is simpel: <strong>nee</strong>. 
             De beveiligingsscanners zijn ontworpen om gevaarlijke voorwerpen te detecteren, niet om medische hulpmiddelen zoals kunstgebitten te controleren. 
-            Mocht u een prothese hebben met een metalen frame (zoals een frameprothese), dan is de kans nog steeds minimaal dat de metaaldetector afgaat.
+            Mocht u een prothese hebben met een metalen frame (zoals een frameprothese), dan is de kans nog steeds minimaal dat de metaaldetector afgaat. 
+            Lees meer over de <Link href="/blog/hoe-gaat-een-senior-veilig-door-de-security-op-schiphol" className="text-primary-600 hover:underline">security op Schiphol voor senioren</Link>.
           </p>
 
           <h2 className="text-2xl font-bold text-primary-800">2. Handbagage regels</h2>
@@ -94,12 +95,16 @@ export default function GebitsprothekeVliegveldPage() {
             <li><strong>Mondwater:</strong> Ook hier geldt de 100ml regel.</li>
             <li><strong>Reinigingstabletten:</strong> Deze mogen onbeperkt mee, aangezien het geen vloeistoffen zijn.</li>
           </ul>
+          <p>
+            Bent u nog aan het plannen? Bekijk ook onze tips voor het <Link href="/blog/hoe-boek-je-vliegticket-als-senior" className="text-primary-600 hover:underline">boeken van een vliegticket als senior</Link>.
+          </p>
 
           <h2 className="text-2xl font-bold text-primary-800">3. Tijdens de vlucht</h2>
           <p>
             De lucht in een vliegtuig is erg droog. Dit kan leiden tot een droge mond (xerostomie). Voor dragers van een gebitsprothese 
             kan dit betekenen dat de prothese minder goed blijft zitten of dat er sneller irritaties ontstaan. 
-            Drink tijdens de vlucht regelmatig water en vermijd teveel koffie of alcohol, omdat deze dranken uitdrogend werken.
+            Drink tijdens de vlucht regelmatig water en vermijd teveel koffie of alcohol, omdat deze dranken uitdrogend werken. 
+            Dit helpt ook om <Link href="/blog/hoe-voorkom-je-uitdroging-tijdens-het-vliegen-als-senior" className="text-primary-600 hover:underline">uitdroging tijdens het vliegen te voorkomen</Link>.
           </p>
           <p>
             <strong>Tip:</strong> Neem een tandenborstel en een kleine tube tandpasta mee in uw handbagage om na de maaltijd aan boord uw gebit 
@@ -110,6 +115,14 @@ export default function GebitsprothekeVliegveldPage() {
           <p>
             Vergeet niet een stevig bewaardoosje mee te nemen voor als u de prothese &apos;s nachts uitdoet. Gebruik op uw vakantiebestemming 
             bij voorkeur flessenwater (geen kraanwater) om uw prothese te reinigen als de kwaliteit van het lokale drinkwater onduidelijk is.
+          </p>
+
+          <h2 className="text-2xl font-bold text-primary-800">5. Begeleiding in uw regio</h2>
+          <p>
+            Vliegklaar biedt persoonlijke reisbegeleiding in heel Nederland. Woont u in de hoofdstad? Bekijk onze specifieke pagina over 
+            <Link href="/reisbegeleiding-ouderen-amsterdam" className="text-primary-600 hover:underline"> reisbegeleiding voor ouderen in Amsterdam</Link>. Ook in steden als 
+            <Link href="/reisbegeleiding-ouderen-rotterdam" className="text-primary-600 hover:underline"> Rotterdam</Link> en 
+            <Link href="/reisbegeleiding-ouderen-utrecht" className="text-primary-600 hover:underline"> Utrecht</Link> staan onze begeleiders voor u klaar.
           </p>
         </div>
 
