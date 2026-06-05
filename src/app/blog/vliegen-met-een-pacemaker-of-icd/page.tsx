@@ -1,163 +1,89 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { Metadata } from 'next';
+import { BlogLayout } from "@/components/BlogLayout";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Vliegen met een Pacemaker of ICD: Veilig door de Security | Vliegklaar',
-  description: 'Mag je vliegen met een pacemaker of ICD? Lees onze tips over security checks, medische verklaringen en veilig reizen als senior met hartklachten.',
+  title: "Vliegen met een pacemaker of ICD: Alles wat u moet weten | Vliegklaar",
+  description: "Kunt u veilig vliegen met een pacemaker of ICD? Lees onze uitgebreide gids over de security check, medische verklaringen en tips voor een zorgeloze vlucht.",
 };
 
-export default function VliegenPacemakerPage() {
-  const publishDate = "2026-05-16";
-  const pageTitle = "Vliegen met een pacemaker of ICD: Wat u moet weten";
+export default function Page() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Vliegen met een pacemaker of ICD: Tips voor senioren",
+    "description": "Een complete gids voor reizigers met een pacemaker of ICD, inclusief informatie over de security op Schiphol en medische documentatie.",
+    "author": {
+      "@type": "Organization",
+      "name": "Vliegklaar"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://vliegklaar.nl/blog/vliegen-met-een-pacemaker-of-icd"
+    }
+  };
 
   return (
-    <main className="pt-20">
-      <article className="max-w-4xl mx-auto px-4 py-16">
-        <header className="mb-12">
-          <Link href="/blog" className="text-primary-600 hover:underline mb-4 inline-block">
-            ← Terug naar blog overzicht
-          </Link>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
-            {pageTitle}
-          </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
-            Reizen met een pacemaker of ICD roept vaak vragen op. Mag u wel door de security scan? Wat als de apparatuur invloed heeft op uw hart? In dit artikel leggen we uit hoe u veilig en zorgeloos kunt vliegen met uw hartimplantaat.
-          </p>
-        </header>
+    <BlogLayout
+      title="Vliegen met een pacemaker of ICD: Veilig en ontspannen op reis"
+      publishDate="5 juni 2026"
+      description="Veel senioren met een pacemaker of ICD vragen zich af of vliegen wel veilig is en wat er gebeurt bij de veiligheidscontrole op het vliegveld. In dit artikel beantwoorden we de meest gestelde vragen."
+    >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
+      <section>
+        <h2>Is vliegen veilig met een pacemaker of ICD?</h2>
+        <p>
+          In de meeste gevallen is vliegen met een pacemaker of ICD (Implantable Cardioverter Defibrillator) volkomen veilig. Moderne apparaten zijn goed beschermd tegen de drukverschillen in de cabine en de elektronica van het vliegtuig. Het is echter altijd essentieel om voor vertrek contact op te nemen met uw cardioloog of technicus om te bevestigen dat uw specifieke situatie stabiel genoeg is voor een vliegreis.
+        </p>
+      </section>
 
-        <div className="relative h-[400px] w-full mb-12 rounded-2xl overflow-hidden shadow-lg">
-          <Image
-            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80"
-            alt="Medische zorg en reizen voor senioren"
-            fill
-            className="object-cover"
-          />
-        </div>
+      <section>
+        <h2>De security check op het vliegveld</h2>
+        <p>
+          Dit is vaak het punt waar de meeste zorgen over bestaan. Hoewel de nieuwste generatie pacemakers en ICD&apos;s vaak niet meer reageren op de metaaldetectiepoortjes, blijft het advies om voorzichtig te zijn.
+        </p>
+        <ul>
+          <li><strong>Meld het direct:</strong> Geef bij de beveiligingsbeambte aan dat u een geïmplanteerd medisch apparaat heeft voordat u door het poortje loopt.</li>
+          <li><strong>De scan:</strong> Vaak mag u de normale metaaldetector passeren, maar de voorkeur gaat vaak uit naar de &apos;body scan&apos; (die geen magnetische velden gebruikt) of een handmatige controle.</li>
+          <li><strong>Handmatige metaaldetector:</strong> De beveiliging gebruikt soms een handscanner. Vraag hen om deze niet te lang direct boven uw apparaat te houden.</li>
+        </ul>
+      </section>
 
-        <div className="prose prose-lg max-w-none text-gray-700 space-y-8">
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">Is vliegen veilig met een pacemaker of ICD?</h2>
-            <p>
-              In de meeste gevallen is vliegen met een pacemaker of ICD (Implanteerbare Cardioverter Defibrillator) volkomen veilig. De luchtdruk in de cabine heeft geen invloed op de werking van het apparaat. Het is echter wel belangrijk dat uw hartconditie stabiel genoeg is om te reizen. Overleg daarom altijd eerst met uw cardioloog voor u een ticket boekt.
-            </p>
-          </section>
+      <section>
+        <h2>Het belang van de pacemakerpas</h2>
+        <p>
+          Draag uw pacemakerpas of ICD-identificatiekaart altijd bij u in uw handbagage, of nog beter: in uw borstzak of portemonnee. Deze kaart is internationaal erkend en bevat cruciale informatie over uw apparaat. Toon deze kaart bij de security check; dit voorkomt onnodige discussies en zorgt voor een snellere afhandeling.
+        </p>
+      </section>
 
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">Security checks op de luchthaven</h2>
-            <p>
-              Dit is het punt waar de meeste senioren tegenop zien: de metaaldetector. Moderne pacemakers en ICD&apos;s zijn goed beschermd tegen interferentie, maar de metalen behuizing kan het alarm van de detectiepoortjes activeren.
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Meld het direct:</strong> Geef bij de security-medewerker aan dat u een pacemaker of ICD draagt <em>voordat</em> u door het poortje loopt.</li>
-              <li><strong>Pacemakerpasje:</strong> Toon altijd uw originele identificatiepasje van de fabrikant. Dit is uw officiële bewijs.</li>
-              <li><strong>Handmatige controle:</strong> U mag vragen om een handmatige controle (fouilleren) in plaats van door de metaaldetector te lopen.</li>
-              <li><strong>Handscanners:</strong> Als er een handscanner wordt gebruikt, vraag de medewerker dan om deze niet te lang direct boven het implantaat te houden.</li>
-            </ul>
-          </section>
+      <section>
+        <h2>Tips voor tijdens de vlucht</h2>
+        <p>
+          Eenmaal aan boord gelden de normale adviezen voor senioren, met een paar extra aandachtspunten:
+        </p>
+        <ul>
+          <li><strong>Blijf in beweging:</strong> Loop regelmatig een stukje door het gangpad om de bloedsomloop te stimuleren en trombose te voorkomen.</li>
+          <li><strong>Hydratatie:</strong> Drink voldoende water en beperk alcohol en cafeïne.</li>
+          <li><strong>Medicatie:</strong> Houd uw hartmedicatie altijd binnen handbereik in uw handbagage.</li>
+        </ul>
+      </section>
 
-          <section className="bg-primary-50 p-8 rounded-xl border-l-4 border-primary-500">
-            <h2 className="text-2xl font-bold text-primary-800 mb-4">Belangrijke voorbereiding</h2>
-            <p>
-              Zorg dat u uw pacemakerpasje altijd in uw handbagage heeft, en niet in de koffer die het ruim in gaat. Het is ook verstandig om een kopie van uw meest recente ECG of een korte medische verklaring van uw arts mee te nemen, zeker bij internationale reizen.
-            </p>
-          </section>
+      <section>
+        <h2>Wanneer moet u extra oppassen?</h2>
+        <p>
+          Als u onlangs een operatie heeft ondergaan voor het plaatsen of vervangen van de pacemaker/ICD, wordt vaak geadviseerd om 2 tot 6 weken te wachten met vliegen. Dit is om de wond te laten genezen en te controleren of de draden goed op hun plek blijven zitten. Overleg dit altijd met uw arts.
+        </p>
+      </section>
 
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">Tijdens de vlucht</h2>
-            <p>
-              Eenmaal aan boord hoeft u zich geen zorgen te maken over de elektronica van het vliegtuig. Wel is het voor hartpatiënten extra belangrijk om tijdens lange vluchten te blijven bewegen om trombose te voorkomen. Drink voldoende water en loop regelmatig even door het gangpad.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">Persoonlijke begeleiding nodig?</h2>
-            <p>
-              Vindt u de drukte en de procedures op de luchthaven stressvol met uw medische achtergrond? De <Link href="/" className="text-primary-600 font-bold hover:underline">reisbegeleiders van Vliegklaar</Link> zijn getraind om senioren met medische behoeften te ondersteunen. Wij nemen de logistieke zorgen uit handen, zodat u zich volledig kunt focussen op uw gezondheid en de reis.
-            </p>
-          </section>
-
-          <section className="bg-gray-50 p-8 rounded-xl">
-            <h2 className="text-2xl font-bold text-primary-800 mb-4 text-center">Conclusie</h2>
-            <p className="text-center italic">
-              Met een goede voorbereiding en het juiste pasje op zak is een pacemaker geen belemmering om de wereld te ontdekken. Informeer de security, blijf rustig en geniet van uw vlucht!
-            </p>
-            <div className="mt-8 text-center">
-              <Link
-                href="/contact"
-                className="bg-primary-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-primary-700 transition-colors"
-              >
-                Heeft u vragen over reizen met medische behoeften? Wij helpen u graag.
-              </Link>
-            </div>
-          </section>
-        </div>
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": pageTitle,
-              "description": "Veilig vliegen met een pacemaker of ICD. Lees alles over security procedures, het pacemakerpasje en tips voor senioren tijdens de vlucht.",
-              "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
-              "author": {
-                "@type": "Organization",
-                "name": "Vliegklaar"
-              },
-              "publisher": {
-                "@type": "Organization",
-                "name": "Vliegklaar",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://vliegklaar.nl/logo.png"
-                }
-              },
-              "datePublished": publishDate,
-              "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://vliegklaar.nl/blog/vliegen-met-een-pacemaker-of-icd"
-              }
-            })
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "Mag ik door de metaaldetector met een pacemaker?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Het wordt aangeraden om niet door de metaaldetector te lopen. Meld uw pacemaker bij de beveiliging en vraag om een handmatige controle (fouilleren)."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Wat moet ik meenemen als ik vlieg met een ICD?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Neem altijd uw originele identificatiepasje van de ICD-fabrikant mee en bewaar dit in uw handbagage."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Heeft de luchtdruk in het vliegtuig invloed op mijn pacemaker?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Nee, moderne pacemakers en ICD's zijn ontworpen om normaal te functioneren bij de luchtdrukvariaties in een vliegtuigcabine."
-                  }
-                }
-              ]
-            })
-          }}
-        />
-      </article>
-    </main>
+      <section>
+        <h2>Reisbegeleiding van Vliegklaar</h2>
+        <p>
+          Vindt u het spannend om alleen te reizen met een pacemaker? De reisbegeleiders van Vliegklaar hebben ervaring met het ondersteunen van senioren met medische behoeften. Wij helpen u bij de security check, dragen uw koffers en zorgen ervoor dat u zich geen moment zorgen hoeft te maken over de praktische zaken van uw reis.
+        </p>
+      </section>
+    </BlogLayout>
   );
 }
