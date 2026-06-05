@@ -131,7 +131,7 @@ export default function VliegenMetGebitBlog() {
           
           <div className="mt-12 pt-8 border-t border-gray-200">
             <p className="text-sm text-gray-500 italic">
-              Wilt u meer weten over comfortabel reizen als senior? Lees ook onze artikelen over <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600">medicijnen mee op reis</Link> en <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600">vliegen met een rollator</Link>.
+              Wilt u meer weten over comfortabel reizen als senior? Lees ook onze artikelen over <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600">medicijnen mee op reis</Link>, <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600">vliegen met een rollator</Link> en onze lokale gids voor <Link href="/reisbegeleiding-ouderen-amsterdam" className="text-primary-600">reisbegeleiding in Amsterdam</Link>.
             </p>
           </div>
         </div>
