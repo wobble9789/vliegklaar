@@ -428,6 +428,22 @@ export default function AmsterdamSEOPage() {
           "text": "Zeker. Onze begeleiders in Amsterdam weten precies hoe de security op Schiphol omgaat met piercings en sieraden. We adviseren u vooraf over welke stukken u het beste in uw handbagage kunt doen en begeleiden u discreet door de controle, zodat u zich geen zorgen hoeft te maken over eventuele meldingen bij de bodyscan."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen na een knieoperatie vanuit de regio Amsterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij hebben veel ervaring met het ondersteunen van senioren na een knieoperatie. Wij zorgen voor vliegveld assistentie op Schiphol, ondersteunen bij het in- en uitstappen en letten op voldoende beenruimte en beweging tijdens de vlucht om uw herstel te bevorderen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie ook helpen bij vliegen met allergieën?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Reizen met ernstige allergieën vraagt om een goede voorbereiding, zoals het doorgeven van speciale maaltijden en het meenemen van een EpiPen. Onze begeleiders helpen u bij de communicatie met de luchtvaartmaatschappij en zorgen dat u veilig op reis gaat vanaf Schiphol."
+        }
+      },
     ]
   };
 
@@ -600,6 +616,12 @@ export default function AmsterdamSEOPage() {
                   )}
                   {faq.name.includes("Parkinson") && (
                     <> <Link href="/blog/vliegen-met-parkinson" className="text-primary-600 hover:underline">Lees meer over vliegen met Parkinson.</Link></>
+                  )}
+                  {faq.name.includes("knieoperatie") && (
+                    <> <Link href="/blog/vliegen-na-knieoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een knieoperatie.</Link></>
+                  )}
+                  {faq.name.includes("allergieën") && (
+                    <> <Link href="/blog/vliegen-met-allergieen" className="text-primary-600 hover:underline">Lees meer over vliegen met allergieën.</Link></>
                   )}
                   {faq.name.includes("stoma") && (
                     <> <Link href="/blog/vliegen-met-een-stoma" className="text-primary-600 hover:underline">Lees meer over vliegen met een stoma.</Link></>
