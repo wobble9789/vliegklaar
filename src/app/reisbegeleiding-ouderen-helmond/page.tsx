@@ -27,6 +27,38 @@ export default function HelmondSEOPage() {
           "@type": "Answer",
           "text": "Zeker, wij begeleiden senioren vanaf huis in Helmond naar Eindhoven Airport (EIN), Schiphol of andere luchthavens, inclusief hulp bij de security en bagage."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Is er begeleiding voor senioren met dementie in Helmond?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij hebben veel ervaring met het begeleiden van reizigers met beginnende dementie. Onze begeleiders bieden de nodige structuur en rust om de reis zorgeloos te laten verlopen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik vliegen met een rollator vanaf Helmond?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, een rollator mag vrijwel altijd gratis mee als medische bagage. Wij regelen de assistentie op Eindhoven Airport of Schiphol zodat u uw rollator tot aan de gate kunt gebruiken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe gaat een senior veilig door de security op de luchthaven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Senioren kunnen vlot door de security door moderne CT-scanners te gebruiken, gemakkelijke kleding te dragen en medische protheses of pacemakers vooraf te melden. Onze begeleiders ondersteunen u bij elke stap."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik vliegveld assistentie krijgen bij vliegen met artrose?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, reizigers met artrose hebben recht op assistentie op de luchthaven. Wij coördineren dit voor u, zodat u niet onnodig ver hoeft te lopen en comfortabel naar de gate wordt gebracht."
+        }
       }
     ]
   };
@@ -104,6 +136,34 @@ export default function HelmondSEOPage() {
                 Met Vliegklaar reist u zonder zorgen over bagage, assistentie op de luchthaven of vervoer.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary-800 mb-12 text-center">Veelgestelde vragen over reisbegeleiding in Helmond</h2>
+          <div className="space-y-6">
+            {faqSchema.mainEntity.map((faq, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {faq.acceptedAnswer.text}
+                  {faq.name.toLowerCase().includes("dementie") && (
+                    <> <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">Lees over reizen met dementie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("rollator") && (
+                    <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Lees meer over vliegen met een rollator.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("security") && (
+                    <> <Link href="/blog/hoe-gaat-een-senior-veilig-door-de-security-op-schiphol" className="text-primary-600 hover:underline">Bekijk onze gids voor de security.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("artrose") && (
+                    <> <Link href="/blog/vliegen-met-artrose" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met artrose.</Link></>
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
