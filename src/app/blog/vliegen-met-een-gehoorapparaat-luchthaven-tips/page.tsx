@@ -84,7 +84,7 @@ export default function VliegenGehoorapparaatLuchthaven() {
           <h2 className="text-2xl font-bold text-primary-800">Ringleidingen en Hulpmiddelen</h2>
           <p>
             Grote luchthavens zoals Schiphol zijn uitstekend uitgerust voor reizigers met gehoorproblemen. 
-            Let bij de gates en informatiebalies op het symbool voor ringleiding (een oor met een 'T'). 
+            Let bij de gates en informatiebalies op het symbool voor ringleiding (een oor met een &apos;T&apos;). 
             Wanneer u uw gehoorapparaat op de T-stand zet, wordt het geluid van de omroepinstallatie direct naar uw oor gestuurd, 
             zonder storend omgevingsgeluid.
           </p>
