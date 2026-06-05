@@ -54,10 +54,18 @@ export default function VliegenMetArtrose() {
       },
       {
         "@type": "Question",
-        "name": "Is het koud in het vliegtuig nadelig voor artrose?",
+        "name": "Is vliegen met artrose veilig na een knieoperatie?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Lage temperaturen kunnen gewrichten stijver maken. Draag daarom warme kleding in laagjes en neem een sjaal of dekentje mee. Wij zorgen als begeleider dat u altijd comfortabel en warm blijft tijdens de vlucht."
+          "text": "Ja, vliegen na een knieoperatie is vaak na enkele weken weer mogelijk, mits uw chirurg hiervoor toestemming geeft. Bij artrose is het extra belangrijk om tijdens de vlucht regelmatig te bewegen om stijfheid rond het littekenweefsel te voorkomen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook begeleiding voor senioren met artrose in Amsterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Wij begeleiden veel senioren vanuit de regio Amsterdam naar Schiphol. Onze begeleiders helpen bij de logistiek op de luchthaven en zorgen voor een rustig tempo dat past bij uw fysieke mogelijkheden."
         }
       }
     ]
@@ -149,6 +157,15 @@ export default function VliegenMetArtrose() {
                 <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {faq.acceptedAnswer.text}
+                  {faq.name.includes("assistentie") && (
+                    <> <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">Lees meer over assistentie aanvragen.</Link></>
+                  )}
+                  {faq.name.includes("knieoperatie") && (
+                    <> <Link href="/blog/vliegen-na-knieoperatie" className="text-primary-600 hover:underline">Lees onze gids over vliegen na een knieoperatie.</Link></>
+                  )}
+                  {faq.name.includes("Amsterdam") && (
+                    <> <Link href="/reisbegeleiding-ouderen-amsterdam" className="text-primary-600 hover:underline">Bekijk onze diensten in Amsterdam.</Link></>
+                  )}
                 </p>
               </div>
             ))}
