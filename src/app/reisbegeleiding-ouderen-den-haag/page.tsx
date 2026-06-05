@@ -131,6 +131,126 @@ export default function DenHaagSEOPage() {
           "@type": "Answer",
           "text": "Het is belangrijk om een actueel medicatieoverzicht en eventueel een medische verklaring bij u te hebben. Wij kunnen u helpen bij de voorbereiding hiervan zodat u zorgeloos door de security komt."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag een kunstgebit in blijven bij de security?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, u kunt uw kunstgebit gewoon inhouden tijdens de veiligheidscontrole op de luchthaven. De scanners zijn niet ingesteld op de kleine hoeveelheden metaal in een gebitsprothese. Onze begeleiders weten precies hoe ze u hier discreet bij ondersteunen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met een gehoorapparaat vanuit Den Haag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Vliegen met een gehoorapparaat is geen probleem, maar de luchthavenomgeving kan lawaaierig zijn. Onze begeleiders helpen u om belangrijke omroepen niet te missen en zorgen dat u ontspannen aan uw vlucht begint."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is vliegen met een stoma mogelijk vanaf Schiphol of Rotterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met een stoma is heel goed mogelijk. Wij adviseren u om voldoende reservemateriaal in uw handbagage mee te nemen en een stoma-paspoort bij u te hebben. Onze begeleiders kunnen u helpen bij de voorbereiding."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik vliegen met reuma of andere gewrichtsklachten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met reuma is heel goed mogelijk. Wij adviseren u om tijdens de vlucht regelmatig te bewegen om stijfheid te voorkomen en eventueel vliegveld assistentie aan te vragen. Onze begeleiders ondersteunen u hierbij volledig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn er risico&apos;s bij vliegen met glaucoom of staar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In de meeste gevallen is vliegen met glaucoom of staar veilig, maar overleg dit vooraf met uw oogarts. Wij helpen u graag bij het regelen van extra begeleiding op de luchthaven als uw zicht beperkt is."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is vliegen met een hoge bloeddruk veilig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Over het algemeen is vliegen met een goed ingestelde bloeddruk veilig. We raden aan om voor vertrek uw arts te raadplegen en tijdens de vlucht voldoende water te drinken. Onze begeleiders ondersteunen u graag."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn er risico&apos;s bij vliegen met hartklachten vanuit Den Haag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij stabiele hartklachten is vliegen meestal mogelijk. Overleg altijd met uw cardioloog en vraag indien nodig vliegveld assistentie aan om fysieke inspanning te beperken. Onze begeleiders ondersteunen u hierbij."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen met COPD of astma?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met COPD of astma is vaak mogelijk met de juiste voorbereiding. Het is belangrijk om uw medicatie in uw handbagage te hebben en eventueel extra zuurstof aan te vragen indien nodig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn compressiekousen nodig bij een vlucht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Voor veel senioren worden compressiekousen aangeraden tijdens langere vluchten om de bloedsomloop te bevorderen. We adviseren u graag over het gebruik hiervan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met een heupprothese vanuit Den Haag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Vliegen met een heup- of knieprothese vraagt om extra aandacht bij de security. Onze begeleiders helpen u om comfortabel door de controles te gaan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie helpen bij valpreventie voor senioren op reis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absoluut. Veiligheid is onze prioriteit. We adviseren over stevig schoeisel en zorgen voor stabiele ondersteuning tijdens de hele reis om vallen te voorkomen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen na een beroerte vanuit Den Haag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen na een beroerte is vaak weer mogelijk mits uw arts toestemming geeft. Onze begeleiders ondersteunen u bij de logistiek en bieden fysieke ondersteuning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen na een hartoperatie of galblaasoperatie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dit is meestal na enkele weken weer mogelijk, afhankelijk van het herstel. Overleg dit altijd met uw behandelend arts. Wij kunnen u ondersteunen om fysieke inspanning te minimaliseren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe regel ik het vervoer van een rolstoel in het vliegtuig vanaf Den Haag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een rolstoel moet minimaal 48 uur voor vertrek worden aangemeld bij de luchtvaartmaatschappij. Onze begeleiders regelen alle details rondom aanmelding en logistiek voor u."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik een CPAP-apparaat meenemen in het vliegtuig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, een CPAP-apparaat mag mee als medische handbagage. Het is verstandig om dit vooraf te melden en een medische verklaring bij u te hebben. Wij helpen u graag bij de voorbereiding."
+        }
       }
     ]
   };
@@ -259,6 +379,57 @@ export default function DenHaagSEOPage() {
                   )}
                   {faq.name.includes("medicijnen") && (
                     <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Bekijk de checklist voor medicijnen.</Link></>
+                  )}
+                  {faq.name.includes("gebit") && (
+                    <> <Link href="/blog/vliegen-met-een-gebit" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met een gebit.</Link></>
+                  )}
+                  {faq.name.includes("gehoorapparaat") && (
+                    <> <Link href="/blog/vliegen-met-gehoorapparaat-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een gehoorapparaat.</Link></>
+                  )}
+                  {faq.name.includes("stoma") && (
+                    <> <Link href="/blog/vliegen-met-een-stoma" className="text-primary-600 hover:underline">Lees meer over vliegen met een stoma.</Link></>
+                  )}
+                  {faq.name.includes("reuma") && (
+                    <> <Link href="/blog/vliegen-met-reuma" className="text-primary-600 hover:underline">Lees onze gids over vliegen met reuma.</Link></>
+                  )}
+                  {faq.name.includes("glaucoom") && (
+                    <> <Link href="/blog/vliegen-met-glaucoom" className="text-primary-600 hover:underline">Lees meer over vliegen met glaucoom.</Link></>
+                  )}
+                  {faq.name.includes("staar") && (
+                    <> <Link href="/blog/vliegen-met-staar" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met staar.</Link></>
+                  )}
+                  {faq.name.includes("bloeddruk") && (
+                    <> <Link href="/blog/vliegen-met-bloeddruk-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een hoge bloeddruk.</Link></>
+                  )}
+                  {faq.name.includes("hartklachten") && (
+                    <> <Link href="/blog/vliegen-met-hartklachten" className="text-primary-600 hover:underline">Lees onze gids voor vliegen met hartklachten.</Link></>
+                  )}
+                  {faq.name.includes("COPD") && (
+                    <> <Link href="/blog/vliegen-met-copd-of-astma" className="text-primary-600 hover:underline">Lees meer over vliegen met COPD of astma.</Link></>
+                  )}
+                  {faq.name.includes("compressiekousen") && (
+                    <> <Link href="/blog/vliegen-met-compressiekousen" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met compressiekousen.</Link></>
+                  )}
+                  {faq.name.includes("heupprothese") && (
+                    <> <Link href="/blog/vliegen-met-knie-of-heupprothese" className="text-primary-600 hover:underline">Lees meer over vliegen met een prothese.</Link></>
+                  )}
+                  {faq.name.includes("valpreventie") && (
+                    <> <Link href="/blog/valpreventie-op-vakantie" className="text-primary-600 hover:underline">Bekijk tips voor valpreventie op reis.</Link></>
+                  )}
+                  {faq.name.includes("beroerte") && (
+                    <> <Link href="/blog/vliegen-na-beroerte" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een beroerte.</Link></>
+                  )}
+                  {faq.name.includes("hartoperatie") && (
+                    <> <Link href="/blog/vliegen-na-hartoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een hartoperatie.</Link></>
+                  )}
+                  {faq.name.includes("galblaasoperatie") && (
+                    <> <Link href="/blog/vliegen-na-galblaasoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een galblaasoperatie.</Link></>
+                  )}
+                  {faq.name.includes("rolstoel") && (
+                    <> <Link href="/blog/vliegen-met-een-rolstoel" className="text-primary-600 hover:underline">Lees onze complete gids over vliegen met een rolstoel.</Link></>
+                  )}
+                  {faq.name.includes("CPAP") && (
+                    <> <Link href="/blog/vliegen-met-cpap-apparaat" className="text-primary-600 hover:underline">Lees meer over vliegen met een CPAP-apparaat.</Link></>
                   )}
                 </p>
               </div>
