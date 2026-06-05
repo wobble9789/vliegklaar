@@ -208,6 +208,14 @@ export default function ArnhemSEOPage() {
               <h3 className="text-lg font-bold text-primary-700 mb-2">Bieden jullie ook begeleiding voor senioren met dementie in de regio Arnhem?</h3>
               <p className="text-gray-600">Ja, we hebben ruime ervaring met het begeleiden van ouderen met beginnende dementie. Onze begeleiders bieden de nodige structuur, rust en nabijheid om de reis veilig en comfortabel te laten verlopen. Zie ook ons artikel over <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">reizen met dementie</Link>.</p>
             </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-primary-700 mb-2">Biedt Vliegklaar ook hulp bij vliegangst voor senioren in Arnhem?</h3>
+              <p className="text-gray-600">Ja, vliegangst komt op alle leeftijden voor. Onze begeleiders bieden een rustige aanwezigheid en ondersteuning tijdens de vlucht om uw reis zo comfortabel mogelijk te maken. Lees onze <Link href="/blog/vliegangst-bij-ouderen" className="text-primary-600 hover:underline">tips tegen vliegangst bij ouderen</Link>.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-primary-700 mb-2">Hoe gaat een senior uit Arnhem veilig door de security op Schiphol?</h3>
+              <p className="text-gray-600">Senioren kunnen vlot door de security op Schiphol door gebruik te maken van de moderne CT-scanners en medische protheses of pacemakers vooraf te melden. Onze begeleiders ondersteunen u hierbij stap voor stap. Bekijk onze <Link href="/blog/hoe-gaat-een-senior-veilig-door-de-security-op-schiphol" className="text-primary-600 hover:underline">gids voor security op Schiphol</Link>.</p>
+            </div>
           </div>
         </div>
       </section>
