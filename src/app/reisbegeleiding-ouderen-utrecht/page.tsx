@@ -292,6 +292,30 @@ export default function UtrechtSEOPage() {
           "text": "Jazeker. Als u als grootouder met uw kleinkinderen wilt vliegen, kunnen wij de extra handen bieden die nodig zijn. Wij helpen bij de logistiek, de bagage en de zorg voor de kinderen, zodat u optimaal kunt genieten van de tijd met uw kleinkinderen."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen na een heupoperatie vanuit Utrecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen na een heupoperatie is vaak weer mogelijk zodra uw arts toestemming geeft. Wij ondersteunen senioren in Utrecht bij het vervoer naar Schiphol, regelen vliegveld assistentie voor minder lopen en bieden fysieke steun tijdens de reis voor een veilig herstel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie helpen bij vliegen met een CPAP-apparaat vanaf Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Een CPAP-apparaat mag als medische handbagage mee. Wij helpen reizigers uit Utrecht bij de aanmelding bij de luchtvaartmaatschappij en zorgen dat u de juiste verklaringen bij u heeft voor de security."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen met bloedverdunners vanaf Utrecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met bloedverdunners is mogelijk. Het is belangrijk om gehydrateerd te blijven en regelmatig te bewegen. Onze begeleiders ondersteunen u bij uw medicatieschema en helpen met eenvoudige oefeningen tijdens de vlucht."
+        }
+      },
     ]
   };
 
@@ -479,6 +503,12 @@ export default function UtrechtSEOPage() {
                   )}
                   {faq.name.toLowerCase().includes("kleinkinderen") && (
                     <> <Link href="/blog/vliegen-met-kleinkinderen-tips-voor-grootouders" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met kleinkinderen.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("heupoperatie") && (
+                    <> <Link href="/blog/vliegen-na-heupoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een heupoperatie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("bloedverdunners") && (
+                    <> <Link href="/blog/vliegen-met-bloedverdunners" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met bloedverdunners.</Link></>
                   )}
                 </p>
               </div>
