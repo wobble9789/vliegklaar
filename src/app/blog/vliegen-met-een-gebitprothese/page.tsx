@@ -22,6 +22,30 @@ export default function VliegenMetGebitsprothesePage() {
       },
       {
         "@type": "Question",
+        "name": "Mag ik mijn gebitsprothese inhouden in het vliegtuig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, u kunt uw gebitsprothese gewoon inhouden tijdens de vlucht. Sterker nog, het helpt bij het spreken en eten van de maaltijden aan boord. Let wel op de droge lucht in de cabine; drink voldoende water om te voorkomen dat uw tandvlees irriteert."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe verzorg ik mijn kunstgebit tijdens een lange vliegreis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tijdens een lange vlucht is het raadzaam om uw gebit na de maaltijd even te reinigen. Gebruik hiervoor een kleine tandenborstel en spoel uw mond met (fles)water. Neem een compact reisbakje mee voor het geval u uw gebit tijdens het slapen wilt uitdoen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag kleefpasta mee in de handbagage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, kleefpasta voor uw gebit mag mee in de handbagage, mits de tube niet groter is dan 100ml. Het valt onder de vloeistoffenregeling, dus vergeet niet om het in het doorzichtige plastic zakje te doen bij de security check."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Kan de luchtdruk in het vliegtuig invloed hebben op mijn gebit?",
         "acceptedAnswer": {
           "@type": "Answer",
