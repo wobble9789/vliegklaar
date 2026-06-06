@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Luchthaven begeleiding voor ouderen — geen stress op Schiphol | Vliegklaar',
@@ -90,7 +91,27 @@ const faqs = [
   {
     vraag: 'Mijn moeder heeft een rolstoel nodig. Kan dat geregeld worden?',
     antwoord:
-      'Absoluut. We melden rolstoelaanvragen vooraf aan bij de luchtvaartmaatschappij en de luchthaven. Op Schiphol, Rotterdam en Eindhoven is rolstoel­assistentie standaard beschikbaar — wij zorgen dat alles klaarstaat wanneer u aankomt.',
+      'Absoluut. We melden rolstoelaanvragen vooraf aan bij de luchtvaartmaatschappij en de luchthaven. Op Schiphol, Rotterdam en Eindhoven is rolstoelassistentie standaard beschikbaar — wij zorgen dat alles klaarstaat wanneer u aankomt.',
+  },
+  {
+    vraag: 'Hoe vraag ik assistentie aan op Schiphol voor een senior?',
+    antwoord:
+      'Assistentie op de luchthaven Schiphol vraagt u minimaal 48 uur voor vertrek aan bij uw luchtvaartmaatschappij. Wij kunnen dit volledige proces voor u uit handen nemen, zodat u zeker weet dat er hulp klaarstaat bij aankomst op de luchthaven.',
+  },
+  {
+    vraag: 'Mag een kunstgebit in blijven bij de security op Schiphol?',
+    antwoord:
+      'Ja, u kunt uw kunstgebit gewoon inhouden tijdens de veiligheidscontrole op Schiphol. De scanners zijn niet ingesteld op de kleine hoeveelheden metaal in een gebitsprothese. Mocht er toch een melding zijn, dan weten de medewerkers daar discreet mee om te gaan.',
+  },
+  {
+    vraag: 'Wat moet ik regelen voor medicijnen op reis als senior?',
+    antwoord:
+      'Het is belangrijk om een actueel medicatieoverzicht (AMO) en eventueel een medische verklaring bij u te hebben. Wij adviseren om medicijnen altijd in de handbagage te bewaren. Wij kunnen u helpen bij de voorbereiding hiervan zodat u zorgeloos door de controles komt.',
+  },
+  {
+    vraag: 'Moet ik een medische verklaring hebben voor vliegen vanaf Schiphol?',
+    antwoord:
+      'Voor sommige aandoeningen of apparatuur is een medische verklaring (Fit to Fly) verplicht. We kunnen u helpen te bepalen of dit nodig is en hoe u deze eenvoudig aanvraagt bij uw arts voor vertrek vanaf Amsterdam Schiphol.',
   },
   {
     vraag: 'Hoe vroeg moet mijn vader/moeder op de luchthaven zijn?',
@@ -188,7 +209,21 @@ export default function LuchthavensBegeleidingPage() {
                 <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
                   {faq.vraag}
                 </h3>
-                <p className="text-lg text-gray-600 leading-relaxed">{faq.antwoord}</p>
+                <div className="text-lg text-gray-600 leading-relaxed">
+                  <p>{faq.antwoord}</p>
+                  {faq.vraag.includes("assistentie") && (
+                    <p className="mt-2"><Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">Lees onze uitgebreide gids voor assistentie aanvragen.</Link></p>
+                  )}
+                  {faq.vraag.includes("kunstgebit") && (
+                    <p className="mt-2"><Link href="/blog/vliegen-met-een-gebit-vliegveld-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een gebit of prothese.</Link></p>
+                  )}
+                  {faq.vraag.includes("medicijnen") && (
+                    <p className="mt-2"><Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Bekijk onze tips voor medicijnen op reis.</Link></p>
+                  )}
+                  {faq.vraag.includes("medische verklaring") && (
+                    <p className="mt-2"><Link href="/blog/hoe-vraag-je-een-medische-verklaring-aan-voor-vliegen" className="text-primary-600 hover:underline">Lees meer over de medische verklaring.</Link></p>
+                  )}
+                </div>
               </div>
             ))}
           </div>
