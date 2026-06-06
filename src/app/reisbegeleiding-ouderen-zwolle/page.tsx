@@ -8,8 +8,59 @@ export const metadata: Metadata = {
 };
 
 export default function ZwolleSEOPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook senioren vanuit Zwolle naar Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij halen u thuis op in Zwolle en begeleiden u naar Schiphol, Eindhoven Airport of zelfs vliegvelden in Duitsland. We helpen bij het inchecken, de security en blijven bij u tot aan de gate of zelfs tot op uw eindbestemming."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is er begeleiding voor ouderen met dementie in de regio Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Wij zijn gespecialiseerd in het begeleiden van senioren met beginnende dementie of geheugenproblemen. Onze begeleiders bieden de nodige rust en structuur tijdens de hele reis vanaf Zwolle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik vliegen met een rollator vanaf Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, een rollator mag bijna altijd gratis mee als medische bagage. Wij helpen u bij de logistiek vanaf uw voordeur in Zwolle tot aan het vliegtuig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vraag ik vliegveld assistentie aan voor mijn reis vanuit Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Assistentie dient minimaal 48 uur voor vertrek aangevraagd te worden bij de luchtvaartmaatschappij. Vliegklaar kan dit volledige proces voor u uit handen nemen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat zijn de kosten voor reisbegeleiding in Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De kosten zijn afhankelijk van uw specifie Crane wensen. We komen graag bij u langs in Zwolle voor een gratis kennismakingsgesprek om een offerte op maat te maken."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <section className="bg-primary-50 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -76,6 +127,31 @@ export default function ZwolleSEOPage() {
                 Of u nu een familiebezoek brengt of een vakantie viert; wij zijn uw vertrouwde reispartner vanuit Zwolle.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary-800 mb-12 text-center">Veelgestelde vragen over reisbegeleiding in Zwolle</h2>
+          <div className="space-y-6">
+            {faqSchema.mainEntity.map((faq, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {faq.acceptedAnswer.text}
+                  {faq.name.includes("dementie") && (
+                    <> <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">Lees meer over reizen met dementie.</Link></>
+                  )}
+                  {faq.name.includes("rollator") && (
+                    <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met een rollator.</Link></>
+                  )}
+                  {faq.name.includes("assistentie") && (
+                    <> <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">Lees onze gids over vliegveld assistentie.</Link></>
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
