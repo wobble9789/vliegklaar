@@ -316,6 +316,46 @@ export default function UtrechtSEOPage() {
           "text": "Ja, vliegen met bloedverdunners is mogelijk. Het is belangrijk om gehydrateerd te blijven en regelmatig te bewegen. Onze begeleiders ondersteunen u bij uw medicatieschema en helpen met eenvoudige oefeningen tijdens de vlucht."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen na een knieoperatie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vliegen na een knieoperatie is meestal na 4 tot 6 weken weer veilig, afhankelijk van uw herstel en het advies van uw chirurg. Onze begeleiders in Utrecht helpen u bij de logistiek op de luchthaven en zorgen voor een comfortabele zitplaats met voldoende beenruimte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is reizen met een elektrische rolstoel mogelijk vanaf Utrecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, reizen met een elektrische rolstoel is mogelijk, maar vereist extra planning (zoals het aanmelden van de accu-specificaties). Wij ondersteunen u bij dit proces en zorgen dat u zorgeloos kunt vertrekken vanuit de regio Utrecht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen met een gebitprothese?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker, vliegen met een gebitprothese is geen enkel probleem. Bij de security op de luchthaven hoeft u uw prothese niet uit te doen. Onze begeleiders kunnen u adviseren over mondverzorging tijdens lange vluchten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe voorkom ik uitdroging tijdens het vliegen als senior?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Uitdroging is een risico door de droge lucht in het vliegtuig. Wij adviseren om regelmatig water te drinken en alcohol te vermijden. Onze begeleiders letten hierop en zorgen dat u gehydrateerd blijft tijdens de hele reis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook senioren die alleen reizen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij bieden juist uitkomst voor senioren die graag alleen reizen maar behoefte hebben aan een veilig vangnet. Onze begeleider is uw vertrouwde aanspreekpunt van vertrek tot aankomst."
+        }
+      },
     ]
   };
 
@@ -506,6 +546,24 @@ export default function UtrechtSEOPage() {
                   )}
                   {faq.name.toLowerCase().includes("heupoperatie") && (
                     <> <Link href="/blog/vliegen-na-heupoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een heupoperatie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("heupoperatie") && (
+                    <> <Link href="/blog/vliegen-na-heupoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een heupoperatie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("knieoperatie") && (
+                    <> <Link href="/blog/vliegen-na-knieoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een knieoperatie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("elektrische rolstoel") && (
+                    <> <Link href="/blog/reizen-met-een-elektrische-rolstoel-tips" className="text-primary-600 hover:underline">Lees tips voor reizen met een elektrische rolstoel.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("gebitprothese") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-een-gebitprothese-op-het-vliegveld" className="text-primary-600 hover:underline">Lees meer over een gebitprothese op het vliegveld.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("uitdroging") && (
+                    <> <Link href="/blog/hoe-voorkom-je-uitdroging-tijdens-het-vliegen-als-senior" className="text-primary-600 hover:underline">Lees tips om uitdroging te voorkomen.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("alleen reizen") && (
+                    <> <Link href="/blog/veilig-alleen-reizen-senior" className="text-primary-600 hover:underline">Lees meer over veilig alleen reizen als senior.</Link></>
                   )}
                   {faq.name.toLowerCase().includes("bloedverdunners") && (
                     <> <Link href="/blog/vliegen-met-bloedverdunners" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met bloedverdunners.</Link></>
