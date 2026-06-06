@@ -1,72 +1,166 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Hoe gaat een senior veilig door de security op Schiphol? | Vliegklaar',
-  description: 'Tips voor senioren om vlot en stressvrij door de security op Schiphol te gaan. Over vloeistoffen, elektronica en assistentie.',
+  title: 'Veilig door de Security op Schiphol: Tips voor Senioren (2026) | Vliegklaar',
+  description: 'Hoe gaat u als senior vlot en veilig door de security op Schiphol? Ontdek tips over vloeistoffen, medische hulpmiddelen en assistentie voor een zorgeloze reis.',
 };
 
-export default function SecuritySchipholSeniorPage() {
+export default function SecuritySchipholSeniorenPage() {
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Moeten senioren hun schoenen uitdoen bij de security?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Op Schiphol hoeven schoenen meestal niet uit, tenzij de securitymedewerker hierom vraagt (bijvoorbeeld bij hoge laarzen of schoenen met veel metaal). Draag bij voorkeur instappers of comfortabele sneakers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag mijn pacemaker door de metaaldetector?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Als u een pacemaker of ICD heeft, mag u niet door de traditionele metaaldetector. Meld dit direct bij de medewerker en laat uw pacemaker-pasje zien. U krijgt dan een handmatige controle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe zit het met vloeibare medicijnen bij de security?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vloeibare medicijnen die noodzakelijk zijn tijdens de reis mogen mee, ook als ze meer dan 100ml bevatten. Houd ze apart en toon een medische verklaring of medicatiepaspoort aan de securitymedewerker."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="pt-20">
-      <article className="max-w-4xl mx-auto px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
-          Hoe gaat een senior veilig door de security op Schiphol?
-        </h1>
-        
-        <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-          De security-controle op Schiphol kan voor veel senioren een bron van stress zijn. Lange wachtrijen, bakken die snel gevuld moeten worden en strenge regels kunnen overweldigend aanvoelen. Met de juiste voorbereiding gaat u echter vlot en veilig door de controle.
-        </p>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-primary-800 mb-4">De moderne CT-scanners op Schiphol</h2>
-          <p className="text-gray-600 mb-4">
-            Goed nieuws: Schiphol maakt gebruik van moderne CT-scanners. Dit betekent dat u in de meeste gevallen vloeistoffen en elektronica (zoals laptops of tablets) in uw tas kunt laten zitten. Dit scheelt een hoop gedoe met het in- en uitruimen van uw handbagage.
-          </p>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-primary-800 mb-4">Tips voor een vlotte controle</h2>
-          <ul className="list-disc pl-6 space-y-4 text-gray-600">
-            <li>
-              <strong>Draag gemakkelijke kleding:</strong> Vermijd riemen met grote metalen gespen en draag schoenen die u makkelijk aan en uit kunt trekken, mocht dat gevraagd worden.
-            </li>
-            <li>
-              <strong>Houd uw documenten bij de hand:</strong> Zorg dat uw instapkaart en paspoort makkelijk bereikbaar zijn, maar berg ze direct na de controle weer veilig op.
-            </li>
-            <li>
-              <strong>Medicijnen en verklaringen:</strong> Heeft u vloeibare medicijnen van meer dan 100ml nodig? Neem dan een medisch paspoort of doktersverklaring mee. Geef dit vooraf aan bij de medewerker.
-            </li>
-            <li>
-              <strong>Pacemakers en protheses:</strong> Heeft u een pacemaker, ICD of metalen gewrichtsprothese? Geef dit aan voordat u door de scanpoort loopt. De medewerkers weten precies hoe ze u handmatig kunnen controleren.
-            </li>
-          </ul>
-        </section>
-
-        <section className="mb-12 bg-primary-50 p-6 rounded-xl">
-          <h2 className="text-2xl font-bold text-primary-800 mb-4">Vliegveld assistentie</h2>
-          <p className="text-gray-600 mb-4">
-            Wist u dat u als senior recht heeft op assistentie? Als u slecht ter been bent of de drukte niet prettig vindt, kunt u assistentie aanvragen. U wordt dan vaak via een kortere route of met extra begeleiding door de security geholpen.
-          </p>
-          <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 font-bold hover:underline">
-            Lees hier hoe u vliegveld assistentie aanvraagt &rarr;
+      <article className="max-w-4xl mx-auto px-4 py-16">
+        <header className="mb-12">
+          <Link href="/blog" className="text-primary-600 hover:underline mb-4 inline-block">
+            ← Terug naar blog overzicht
           </Link>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-primary-800 mb-4">Hulp van Vliegklaar</h2>
-          <p className="text-gray-600 mb-6">
-            Ziet u ondanks deze tips nog steeds op tegen de reis? Onze reisbegeleiders gaan met u mee van deur tot deur. Wij dragen de tassen, regelen de bakken bij de security en zorgen dat u ontspannen bij de gate aankomt.
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
+            Hoe gaat u als senior veilig door de security op Schiphol?
+          </h1>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            De securitycontrole op Schiphol kan voor senioren soms overweldigend zijn door de drukte en de technische procedures. Met deze tips weet u precies wat u kunt verwachten en hoe u zonder stress door de controle komt.
           </p>
-          <div className="flex gap-4">
-            <Link href="/contact" className="bg-primary-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-primary-700 transition-colors">
-              Neem contact op
-            </Link>
-            <Link href="/reisbegeleiding-ouderen-amsterdam" className="bg-white border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-bold hover:bg-primary-50 transition-colors">
-              Begeleiding in Amsterdam
-            </Link>
-          </div>
-        </section>
+        </header>
+
+        <div className="relative h-[400px] w-full mb-12 rounded-2xl overflow-hidden shadow-lg">
+          <Image
+            src="https://images.unsplash.com/photo-1540339832862-4745a980538b?w=1200&q=80"
+            alt="Security controle op de luchthaven"
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        <div className="prose prose-lg max-w-none text-gray-700 space-y-8">
+          <section>
+            <h2 className="text-2xl font-bold text-primary-800">De CT-scanners van Schiphol: Goed Nieuws</h2>
+            <p>
+              Schiphol maakt gebruik van geavanceerde CT-scanners. Dit is een groot voordeel voor senioren: in de meeste gevallen hoeven vloeistoffen en elektronica (zoals uw tablet of laptop) <strong>niet</strong> meer uit de tas. Dit scheelt veel gedoe met het in- en uitruimen van uw handbagage.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-primary-800">Medische Hulpmiddelen en Protheses</h2>
+            <p>
+              Heeft u een kunstknie, heupprothese of draagt u een gehoorapparaat? Dit hoeft geen probleem te zijn bij de security:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>Meld het vooraf:</strong> Vertel de medewerker dat u een prothese heeft voordat u door de scanner gaat.</li>
+              <li><strong>De Security Scan:</strong> In plaats van de oude metaaldetector staat u vaak in een &apos;security scan&apos; met de handen omhoog. Deze scanner detecteert protheses maar is volkomen veilig.</li>
+              <li><strong>Pacemaker:</strong> Heeft u een pacemaker? Ga <strong>niet</strong> door de scan of detector, maar vraag om een handmatige controle (&apos;pat-down&apos;).</li>
+            </ul>
+          </section>
+
+          <section className="bg-primary-50 p-8 rounded-xl border-l-4 border-primary-500">
+            <h2 className="text-2xl font-bold text-primary-800 mb-4">Extra hulp nodig bij de controle?</h2>
+            <p>
+              Vindt u het lastig om lang te staan in de rij of begrijpt u de instructies soms niet goed? Onze reisbegeleiders bieden persoonlijke ondersteuning en lopen met u mee door de volledige securityprocedure.
+              <Link href="/reisbegeleiding-ouderen-amsterdam" className="text-primary-600 font-bold hover:underline ml-1">
+                Ontdek onze service op Schiphol.
+              </Link>
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-primary-800">Kleding en Voorbereiding</h2>
+            <p>Maak het uzelf gemakkelijk door slimme kledingkeuzes:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Draag geen riem met een grote metalen gesp.</li>
+              <li>Draag zo min mogelijk sieraden; stop deze liever in uw tas voordat u in de rij gaat staan.</li>
+              <li>Draag comfortabele schoenen die u indien nodig makkelijk aan- en uit kunt trekken.</li>
+              <li>Houd uw instapkaart en paspoort bij de hand, maar berg ze veilig op zodra u de poortjes passeert.</li>
+            </ul>
+          </section>
+
+          <section className="mt-12">
+            <h2 className="text-2xl font-bold text-primary-800 mb-6">Veelgestelde Vragen over Security</h2>
+            <div className="space-y-6">
+              {faqData.mainEntity.map((item, index) => (
+                <div key={index} className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                  <h3 className="text-lg font-bold text-primary-700 mb-2">{item.name}</h3>
+                  <p className="text-gray-600">{item.acceptedAnswer.text}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="bg-gray-50 p-8 rounded-xl">
+            <h2 className="text-2xl font-bold text-primary-800 mb-4 text-center">Zorgeloos op Reis</h2>
+            <p className="text-center italic">
+              &quot;De security is slechts een korte stap naar uw bestemming. Met de juiste voorbereiding is het niets om tegenop te zien.&quot;
+            </p>
+            <div className="mt-8 text-center">
+              <Link
+                href="/contact"
+                className="bg-primary-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-primary-700 transition-colors"
+              >
+                Plan uw begeleide reis
+              </Link>
+            </div>
+          </section>
+        </div>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Veilig door de Security op Schiphol: Tips voor Senioren (2026)",
+              "description": "Praktische gids voor senioren over de securitycontrole op Schiphol. Tips voor medische hulpmiddelen, CT-scanners en vlot reizen.",
+              "image": "https://images.unsplash.com/photo-1540339832862-4745a980538b?w=1200&q=80",
+              "author": {
+                "@type": "Organization",
+                "name": "Vliegklaar"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Vliegklaar",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://vliegklaar.nl/logo.png"
+                }
+              },
+              "datePublished": "2026-06-06"
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+        />
       </article>
     </main>
   );
