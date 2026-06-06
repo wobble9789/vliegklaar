@@ -134,6 +134,78 @@ export default function NijmegenSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Is vliegen met een hoge bloeddruk veilig vanuit de regio Nijmegen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Over het algemeen is vliegen met een goed ingestelde bloeddruk veilig. We raden aan om voor vertrek uw arts te raadplegen en tijdens de vlucht voldoende water te drinken. Onze begeleiders ondersteunen u graag bij een ontspannen reiservaring."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met hartklachten vanuit Nijmegen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij stabiele hartklachten is vliegen meestal mogelijk. Overleg altijd met uw cardioloog en vraag indien nodig vliegveld assistentie aan om fysieke inspanning te beperken. Onze begeleiders ondersteunen u hierbij volledig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen met COPD of astma?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met COPD of astma is vaak mogelijk met de juiste voorbereiding. Het is belangrijk om uw medicatie in uw handbagage te hebben en eventueel extra zuurstof aan te vragen indien nodig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie hulp bij vliegen na een hartoperatie of galblaasoperatie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dit is meestal na enkele weken weer mogelijk, afhankelijk van het herstel. Overleg dit altijd met uw behandelend arts. Wij kunnen u ondersteunen om fysieke inspanning te minimaliseren tijdens uw reis vanuit Nijmegen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn er risico's bij vliegen met glaucoom of staar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In de meeste gevallen is vliegen met glaucoom of staar veilig, maar overleg dit vooraf met uw oogarts. Wij helpen u graag bij het regelen van extra begeleiding op de luchthaven als uw zicht beperkt is."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen met een kunstgebit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, u kunt uw kunstgebit gewoon inhouden tijdens de vlucht en bij de veiligheidscontrole op de luchthaven. Onze begeleiders weten precies hoe ze u hier discreet bij kunnen ondersteunen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen na een beroerte vanuit Nijmegen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen na een beroerte is vaak weer mogelijk mits uw arts toestemming geeft. Onze begeleiders ondersteunen u bij de logistiek en bieden fysieke ondersteuning tijdens de reis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is vliegen met reuma mogelijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met reuma is heel goed mogelijk. Wij adviseren u om tijdens de vlucht regelmatig te bewegen om stijfheid te voorkomen. Onze begeleiders ondersteunen u hierbij volledig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik vliegen met een CPAP-apparaat vanaf de luchthaven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Een CPAP-apparaat mag mee als medische handbagage. Wij helpen u bij het regelen van de juiste documentatie en zorgen dat het apparaat veilig door de security op de luchthaven gaat."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Wat zijn de kosten voor reisbegeleiding in Nijmegen?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -270,6 +342,39 @@ export default function NijmegenSEOPage() {
                   )}
                   {faq.name.includes("rolstoel") && (
                     <> <Link href="/blog/vliegen-met-een-rolstoel" className="text-primary-600 hover:underline">Lees onze complete gids over vliegen met een rolstoel.</Link></>
+                  )}
+                  {faq.name.includes("bloeddruk") && (
+                    <> <Link href="/blog/vliegen-met-bloeddruk-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een hoge bloeddruk.</Link></>
+                  )}
+                  {faq.name.includes("hartklachten") && (
+                    <> <Link href="/blog/vliegen-met-hartklachten" className="text-primary-600 hover:underline">Lees onze gids voor vliegen met hartklachten.</Link></>
+                  )}
+                  {faq.name.includes("COPD") && (
+                    <> <Link href="/blog/vliegen-met-copd-of-astma" className="text-primary-600 hover:underline">Lees meer over vliegen met COPD of astma.</Link></>
+                  )}
+                  {faq.name.includes("hartoperatie") && (
+                    <> <Link href="/blog/vliegen-na-hartoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een hartoperatie.</Link></>
+                  )}
+                  {faq.name.includes("galblaasoperatie") && (
+                    <> <Link href="/blog/vliegen-na-galblaasoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een galblaasoperatie.</Link></>
+                  )}
+                  {faq.name.includes("glaucoom") && (
+                    <> <Link href="/blog/vliegen-met-glaucoom" className="text-primary-600 hover:underline">Lees meer over vliegen met glaucoom.</Link></>
+                  )}
+                  {faq.name.includes("staar") && (
+                    <> <Link href="/blog/vliegen-met-staar" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met staar.</Link></>
+                  )}
+                  {faq.name.includes("kunstgebit") && (
+                    <> <Link href="/blog/vliegen-met-een-kunstgebit" className="text-primary-600 hover:underline">Lees meer over vliegen met een kunstgebit.</Link></>
+                  )}
+                  {faq.name.includes("beroerte") && (
+                    <> <Link href="/blog/vliegen-na-beroerte" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een beroerte.</Link></>
+                  )}
+                  {faq.name.includes("reuma") && (
+                    <> <Link href="/blog/vliegen-met-reuma" className="text-primary-600 hover:underline">Lees onze gids over vliegen met reuma.</Link></>
+                  )}
+                  {faq.name.includes("CPAP") && (
+                    <> <Link href="/blog/vliegen-met-cpap-apparaat" className="text-primary-600 hover:underline">Lees meer over vliegen met een CPAP-apparaat.</Link></>
                   )}
                 </p>
               </div>
