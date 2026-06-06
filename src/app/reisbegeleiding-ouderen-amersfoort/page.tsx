@@ -46,6 +46,14 @@ export default function AmersfoortSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Biedt Vliegklaar ook hulp bij vliegen met parkinson vanaf Amersfoort?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij hebben ruime ervaring met het begeleiden van senioren met de ziekte van Parkinson. Wij zorgen voor een rustig tempo, helpen bij de logistiek op de luchthaven en ondersteunen bij medicatie-inname op de juiste tijden, zodat u ondanks de beperkingen toch kunt genieten van uw reis."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Wordt reisbegeleiding in Amersfoort vergoed?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -172,6 +180,9 @@ export default function AmersfoortSEOPage() {
                   )}
                   {faq.name.includes("medicijnen") && (
                     <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Bekijk tips voor medicijnen op reis.</Link></>
+                  )}
+                  {faq.name.includes("parkinson") && (
+                    <> <Link href="/blog/vliegen-met-parkinson" className="text-primary-600 hover:underline">Lees meer over vliegen met Parkinson.</Link></>
                   )}
                   {faq.name.includes("verzekering") && (
                     <> <Link href="/blog/reisverzekering-voor-senioren" className="text-primary-600 hover:underline">Lees over reisverzekeringen voor senioren.</Link></>
