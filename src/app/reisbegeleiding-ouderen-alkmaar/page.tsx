@@ -149,6 +149,214 @@ const faqData = {
     },
     {
       "@type": "Question",
+      "name": "Kunnen jullie ook helpen bij vliegen met een neuspiercing of sieraden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, onze begeleiders in Alkmaar weten precies hoe de security op Schiphol omgaat met piercings en sieraden. We adviseren u vooraf over welke stukken u het beste in uw handbagage kunt doen en begeleiden u discreet door de controle, zodat u zich geen zorgen hoeft te maken over eventuele meldingen bij de bodyscan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bieden jullie ook hulp bij vliegen na een beroerte vanuit Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, vliegen na een beroerte is vaak weer mogelijk, mits uw behandelend arts hiervoor toestemming geeft. Onze begeleiders ondersteunen u bij de logistiek op de luchthaven, bieden fysieke ondersteuning en zorgen voor een ontspannen reiservaring vanaf uw voordeur in Alkmaar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bieden jullie ook hulp bij vliegen met een stoma vanuit Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, vliegen met een stoma is heel goed mogelijk. Onze begeleiders adviseren u om voldoende reservemateriaal in uw handbagage mee te nemen en kunnen u ondersteunen bij de voorbereiding van uw reisdocumenten voor de security op Schiphol."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bieden jullie ook hulp bij vliegen met incontinentie in de regio Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, vliegen met incontinentie is voor veel senioren een bron van zorg. Onze begeleiders bieden discrete ondersteuning, helpen bij het plannen van toiletbezoeken en adviseren over de juiste materialen en kleding voor tijdens de vlucht, zodat u met een gerust hart op reis kunt vanaf Alkmaar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is vliegen met een CPAP-apparaat mogelijk vanaf Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zeker. Een CPAP-apparaat mag mee als medische handbagage. Onze begeleiders helpen u bij het regelen van de juiste documentatie (zoals een medische verklaring) en zorgen dat het apparaat veilig en volgens de regels door de security op Schiphol gaat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen jullie helpen bij vliegen met kleinkinderen vanuit Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jazeker. Als u als grootouder met uw kleinkinderen wilt vliegen, kunnen wij de extra handen bieden die nodig zijn. Wij helpen bij de logistiek vanaf Alkmaar, de bagage en de zorg voor de kinderen op Schiphol, zodat u optimaal kunt genieten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mag ik vliegen met bloedverdunners vanaf Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, vliegen met bloedverdunners is mogelijk. Het is belangrijk om gehydrateerd te blijven en regelmatig te bewegen tijdens de vlucht vanaf Schiphol. Onze begeleiders ondersteunen u bij uw medicatieschema en helpen met eenvoudige oefeningen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mag ik vliegen na een knieoperatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vliegen na een knieoperatie is meestal na 4 tot 6 weken weer veilig, afhankelijk van uw herstel en het advies van uw chirurg. Onze begeleiders helpen u bij de logistiek vanaf Alkmaar naar Schiphol en zorgen voor een comfortabele zitplaats."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mag ik vliegen met een gebitprothese?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zeker, vliegen met een gebitprothese is geen enkel probleem. Bij de security op Schiphol hoeft u uw prothese niet uit te doen. Onze begeleiders kunnen u adviseren over mondverzorging tijdens de vlucht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe voorkom ik uitdroging tijdens het vliegen als senior?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uitdroging is een risico door de droge lucht in het vliegtuig. Wij adviseren om regelmatig water te drinken en alcohol te vermijden. Onze begeleiders letten hierop tijdens de hele reis vanaf Schiphol."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Begeleiden jullie ook senioren die alleen reizen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, wij bieden juist uitkomst voor senioren uit Alkmaar die graag alleen reizen maar behoefte hebben aan een veilig vangnet. Onze begeleider is uw vertrouwde aanspreekpunt van vertrek tot aankomst."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is vliegen met een hoge bloeddruk veilig vanaf Alkmaar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Over het algemeen is vliegen met een goed ingestelde bloeddruk veilig. We raden aan om voor vertrek uw arts te raadplegen en uw medicatie in uw handbagage te bewaren. Onze begeleiders ondersteunen u bij een ontspannen reiservaring vanaf Schiphol."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mag ik vliegen na een galblaasoperatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Meestal is vliegen na een galblaasoperatie na 1 tot 2 weken weer veilig, afhankelijk van het type ingreep. Onze begeleiders ondersteunen u vanaf Alkmaar om fysieke inspanning te minimaliseren en uw comfort te waarborgen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mag ik vliegen na een hartoperatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vliegen na een hartoperatie is meestal na 4 tot 6 weken weer mogelijk, afhankelijk van het type ingreep en uw herstel. Overleg dit altijd met uw cardioloog. Onze begeleiders kunnen u ondersteunen tijdens de reis om fysieke inspanning op Schiphol te minimaliseren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn er tips voor vliegen met een bril of contactlenzen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, de droge lucht in het vliegtuig kan irriterend zijn voor lensdragers. We adviseren senioren om tijdens de vlucht een bril te dragen, reservebrillen in de handbagage mee te nemen en oogdruppels te gebruiken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen jullie helpen bij valpreventie voor senioren op reis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absoluut. Veiligheid is onze prioriteit. We adviseren over stevig schoeisel, helpen bij het navigeren van vliegvelden en zorgen voor een stabiele ondersteuning vanaf Alkmaar tijdens de hele reis om vallen te voorkomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bieden jullie ook hulp bij vliegen met een heupprothese?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jazeker. Vliegen met een heup- of knieprothese vraagt om extra aandacht bij de security op Schiphol. Onze begeleiders helpen u om comfortabel door de controles te gaan en ondersteunen u bij de afstanden op de luchthaven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen jullie ook helpen bij vliegen met allergieën?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zeker. Reizen met ernstige allergieën vraagt om een goede voorbereiding, zoals het doorgeven van speciale maaltijden en het meenemen van een EpiPen. Onze begeleiders helpen u bij de communicatie met de luchtvaartmaatschappij voor uw reis vanaf Schiphol."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn er risico's bij vliegen met glaucoom of staar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In de meeste gevallen is vliegen met glaucoom of staar veilig, maar het is essentieel om dit vooraf met uw oogarts te bespreken, vooral na een recente operatie. Wij helpen u graag bij het regelen van extra begeleiding op de luchthaven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bieden jullie ook hulp bij vliegangst voor senioren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, vliegangst komt op alle leeftijden voor. Onze begeleiders bieden een rustige aanwezigheid, uitleg over de geluiden van het vliegtuig en afleiding tijdens de vlucht om uw reis vanaf Schiphol zo comfortabel mogelijk te maken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn compressiekousen nodig bij een vlucht?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor veel senioren worden compressiekousen aangeraden tijdens langere vluchten om de bloedsomloop te bevorderen en het risico op trombose te verkleinen. We adviseren u graag over het gebruik hiervan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn er speciale voorzieningen voor senioren met gehoorproblemen op Schiphol?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, Schiphol biedt diverse faciliteiten voor slechthorenden, zoals ringleidingen bij informatiebalies en gates. Wij ondersteunen u ter plaatse om te zorgen dat u geen enkele omroep of belangrijke informatie mist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I fly with rheumatism or other joint complaints?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, vliegen met reuma is heel goed mogelijk. Wij adviseren u om tijdens de vlucht regelmatig te bewegen om stijfheid te voorkomen en eventueel vliegveld assistentie aan te vragen voor de afstanden op Schiphol."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zijn de regels voor een rolstoel in het vliegtuig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uw rolstoel mag vrijwel altijd gratis mee als medische bagage. Het is wel verplicht om deze minimaal 48 uur voor vertrek aan te melden bij de luchtvaartmaatschappij, inclusief afmetingen en type accu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mag ik een hulphond meenemen op reis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, erkende hulphonden mogen vrijwel altijd gratis mee in de cabine. Wij helpen u bij de aanmelding hiervan bij de luchtvaartmaatschappij en zorgen dat de nodige documentatie in orde is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mag ik een CPAP-apparaat meenemen in het vliegtuig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, een CPAP-apparaat mag mee als medische handbagage. Het is verstandig om dit vooraf te melden bij de luchtvaartmaatschappij en een medische verklaring bij u te hebben. Onze begeleiders helpen u hier graag bij op Schiphol."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Is er begeleiding mogelijk vanaf station Alkmaar?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -274,6 +482,87 @@ export default function AlkmaarSEOPage() {
                   )}
                   {item.name.toLowerCase().includes("parkinson") && (
                     <> <Link href="/blog/vliegen-met-parkinson" className="text-primary-600 hover:underline">Lees meer over vliegen met Parkinson.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("neuspiercing") && (
+                    <> <Link href="/blog/vliegen-met-een-neuspiercing-of-sieraden" className="text-primary-600 hover:underline">Lees meer over vliegen met piercings en sieraden.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("beroerte") && (
+                    <> <Link href="/blog/vliegen-na-beroerte" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een beroerte.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("stoma") && (
+                    <> <Link href="/blog/vliegen-met-een-stoma" className="text-primary-600 hover:underline">Lees meer over vliegen met een stoma.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("incontinentie") && (
+                    <> <Link href="/blog/vliegen-met-incontinentie-tips-senioren" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met incontinentie.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("cpap") && (
+                    <> <Link href="/blog/vliegen-met-cpap-apparaat" className="text-primary-600 hover:underline">Lees meer over vliegen met een CPAP-apparaat.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("kleinkinderen") && (
+                    <> <Link href="/blog/vliegen-met-kleinkinderen-tips-voor-grootouders" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met kleinkinderen.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("bloedverdunners") && (
+                    <> <Link href="/blog/vliegen-met-bloedverdunners" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met bloedverdunners.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("knieoperatie") && (
+                    <> <Link href="/blog/vliegen-na-knieoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een knieoperatie.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("gebitprothese") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-een-gebitprothese-op-het-vliegveld" className="text-primary-600 hover:underline">Lees meer over een gebitprothese op het vliegveld.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("uitdroging") && (
+                    <> <Link href="/blog/hoe-voorkom-je-uitdroging-tijdens-het-vliegen-als-senior" className="text-primary-600 hover:underline">Lees tips om uitdroging te voorkomen.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("alleen reizen") && (
+                    <> <Link href="/blog/veilig-alleen-reizen-senior" className="text-primary-600 hover:underline">Lees meer over veilig alleen reizen als senior.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("bloeddruk") && (
+                    <> <Link href="/blog/vliegen-met-bloeddruk-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een hoge bloeddruk.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("galblaasoperatie") && (
+                    <> <Link href="/blog/vliegen-na-galblaasoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een galblaasoperatie.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("hartoperatie") && (
+                    <> <Link href="/blog/vliegen-na-hartoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een hartoperatie.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("bril") && (
+                    <> <Link href="/blog/vliegen-met-bril-of-contactlenzen-tips" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met een bril of contactlenzen.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("valpreventie") && (
+                    <> <Link href="/blog/valpreventie-op-vakantie" className="text-primary-600 hover:underline">Bekijk tips voor valpreventie op reis.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("heupprothese") && (
+                    <> <Link href="/blog/vliegen-met-knie-of-heupprothese" className="text-primary-600 hover:underline">Lees meer over vliegen met een prothese.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("allergieën") && (
+                    <> <Link href="/blog/vliegen-met-allergieen" className="text-primary-600 hover:underline">Lees meer over vliegen met allergieën.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("glaucoom") && (
+                    <> <Link href="/blog/vliegen-met-glaucoom" className="text-primary-600 hover:underline">Lees meer over vliegen met glaucoom.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("staar") && (
+                    <> <Link href="/blog/vliegen-met-staar" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met staar.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("vliegangst") && (
+                    <> <Link href="/blog/vliegangst-bij-ouderen" className="text-primary-600 hover:underline">Bekijk onze tips tegen vliegangst.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("compressiekousen") && (
+                    <> <Link href="/blog/vliegen-met-compressiekousen" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met compressiekousen.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("gehoor") && (
+                    <> <Link href="/blog/vliegen-met-een-gehoorapparaat-vliegveld-tips" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met gehoorproblemen.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("reuma") && (
+                    <> <Link href="/blog/vliegen-met-reuma" className="text-primary-600 hover:underline">Lees onze gids over vliegen met reuma.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("rolstoel") && (
+                    <> <Link href="/blog/vliegen-met-een-rolstoel" className="text-primary-600 hover:underline">Lees onze gids over vliegen met een rolstoel.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("hulphond") && (
+                    <> <Link href="/blog/vliegen-met-een-hulphond-of-huisdier" className="text-primary-600 hover:underline">Lees meer over vliegen met een hulphond.</Link></>
+                  )}
+                  {item.name.toLowerCase().includes("cpap") && (
+                    <> <Link href="/blog/vliegen-met-cpap-apparaat" className="text-primary-600 hover:underline">Lees meer over vliegen met een CPAP-apparaat.</Link></>
                   )}
                 </p>
               </div>
