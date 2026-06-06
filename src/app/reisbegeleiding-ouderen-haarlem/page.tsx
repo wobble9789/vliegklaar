@@ -8,8 +8,51 @@ export const metadata: Metadata = {
 };
 
 export default function HaarlemSEOPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook vanaf Haarlem naar Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij halen u thuis op in Haarlem of omgeving (zoals Heemstede of Bloemendaal) en begeleiden u naar Schiphol. We helpen bij het inchecken, de security en reizen indien gewenst met u mee tot aan de hoteldeur op uw bestemming."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is er vliegveld assistentie mogelijk voor senioren met een beperking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Wij coördineren de officiële vliegveld assistentie voor zaken als rolstoelvervoer naar de gate. Daarnaast biedt uw persoonlijke begeleider van Vliegklaar continue ondersteuning die verder gaat dan de standaard luchthavenservice."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik een medische verklaring hebben om te vliegen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Voor sommige aandoeningen of medische apparatuur is een 'Fit to Fly' verklaring nodig. Wij adviseren u hierover en helpen u bij het aanvragen van de juiste documenten bij uw arts in Haarlem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Komen jullie voor een kennismaking ook langs in Haarlem of Heemstede?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, voor elke reis plannen we een vrijblijvend kennismakingsgesprek bij u thuis in de regio Kennemerland. Zo kunnen we uw wensen en eventuele medische behoeften in alle rust bespreken."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <section className="bg-primary-50 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -77,6 +120,28 @@ export default function HaarlemSEOPage() {
                 Geef uw naasten rust; wij nemen de volledige organisatie en medische reisbegeleiding uit handen.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary-800 mb-12 text-center">Veelgestelde vragen over reisbegeleiding in Haarlem</h2>
+          <div className="space-y-6">
+            {faqSchema.mainEntity.map((faq, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {faq.acceptedAnswer.text}
+                  {faq.name.includes("assistentie") && (
+                    <> <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">Lees onze gids voor assistentie aanvragen.</Link></>
+                  )}
+                  {faq.name.includes("medische verklaring") && (
+                    <> <Link href="/blog/hoe-vraag-je-een-medische-verklaring-aan-voor-vliegen" className="text-primary-600 hover:underline">Lees meer over de medische verklaring.</Link></>
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
