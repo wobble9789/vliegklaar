@@ -332,6 +332,14 @@ export default function RotterdamSEOPage() {
           "text": "Ja, vliegen na een beroerte is vaak weer mogelijk, mits uw behandelend arts hiervoor toestemming geeft. Onze begeleiders ondersteunen u bij de logistiek op de luchthaven, bieden fysieke ondersteuning en zorgen voor een ontspannen reiservaring vanaf uw voordeur in Rotterdam."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Is het mogelijk om te vliegen met ernstige allergieën vanaf Rotterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, reizen met allergieën is goed mogelijk. Het is belangrijk om uw allergie vooraf te melden bij de luchtvaartmaatschappij, vooral bij voedselallergieën. Onze begeleiders helpen u om de juiste voorzorgsmaatregelen te treffen en zorgen voor een veilige omgeving tijdens uw vlucht vanaf Rotterdam The Hague Airport of Schiphol."
+        }
+      },
     ]
   };
 
@@ -522,6 +530,9 @@ export default function RotterdamSEOPage() {
                   )}
                   {faq.name.includes("beroerte") && (
                     <> <Link href="/blog/vliegen-na-beroerte" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een beroerte.</Link></>
+                  )}
+                  {faq.name.includes("allergie") && (
+                    <> <Link href="/blog/vliegen-met-allergieen" className="text-primary-600 hover:underline">Lees onze tips voor vliegen met allergieën.</Link></>
                   )}
                   {faq.name.includes("bloeddruk") && (
                     <> <Link href="/blog/vliegen-met-bloeddruk-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een hoge bloeddruk.</Link></>
