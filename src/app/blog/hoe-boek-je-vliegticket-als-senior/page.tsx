@@ -100,7 +100,7 @@ export default function BlogBoekVliegticket() {
 
           <h2 className="text-2xl font-bold text-primary-800 mt-10 mb-4">Stap 4: Assistentie en Medische Bagage</h2>
           <p>
-            Tijdens het boeken kunt u vaak al aangeven of u hulp nodig heeft op de luchthaven. Dit wordt 'Special Assistance' genoemd. 
+            Tijdens het boeken kunt u vaak al aangeven of u hulp nodig heeft op de luchthaven. Dit wordt &apos;Special Assistance&apos; genoemd. 
             Ook als u reist met een <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">rollator</Link> 
             of een <Link href="/blog/rolstoel-op-het-vliegveld" className="text-primary-600 hover:underline">rolstoel</Link>, 
             is dit het moment om dit aan te melden. Dit is vrijwel altijd gratis.
