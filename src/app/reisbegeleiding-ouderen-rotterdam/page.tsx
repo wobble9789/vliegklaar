@@ -14,6 +14,14 @@ export default function RotterdamSEOPage() {
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "Is vliegen met een scootmobiel mogelijk vanaf Rotterdam The Hague Airport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, u kunt met een scootmobiel reizen vanaf Rotterdam. Het is belangrijk om de afmetingen en het type accu (droog of nat) minimaal 48 uur voor vertrek aan te melden bij de luchtvaartmaatschappij. Onze begeleiders helpen u graag bij deze aanmelding en de logistiek op de luchthaven."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Is vliegen met een gebitprothese veilig vanaf Rotterdam?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -481,6 +489,9 @@ export default function RotterdamSEOPage() {
                   )}
                   {faq.name.includes("jetlag") && (
                     <> <Link href="/blog/hoe-ga-je-om-met-een-jetlag-als-senior" className="text-primary-600 hover:underline">Lees onze tips tegen een jetlag.</Link></>
+                  )}
+                  {faq.name.includes("scootmobiel") && (
+                    <> <Link href="/blog/vliegen-met-een-scootmobiel" className="text-primary-600 hover:underline">Lees meer over vliegen met een scootmobiel.</Link></>
                   )}
                   {faq.name.includes("gebit") && (
                     <> <Link href="/blog/vliegen-met-een-gebit-vliegveld-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een gebit of prothese.</Link></>
