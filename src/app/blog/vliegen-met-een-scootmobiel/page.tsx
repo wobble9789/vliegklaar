@@ -2,37 +2,41 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Vliegen met een scootmobiel: Regels & Tips | Vliegklaar',
-  description: 'Wilt u vliegen met een scootmobiel? Lees alles over accu-regels (lithium vs. droge accu), aanmelden bij de maatschappij en praktische tips voor senioren.',
+  title: 'Hoe bereidt u een vliegreis voor met een scootmobiel? | Vliegklaar',
+  description: 'Wilt u vliegen met een scootmobiel? Lees alles over de regels van luchtvaartmaatschappijen, accu-eisen en hoe u vliegveld assistentie regelt voor senioren.',
 };
 
 export default function VliegenMetScootmobielPage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Hoe bereidt u een vliegreis voor met een scootmobiel?",
+    "description": "Een praktische gids voor senioren die willen reizen met een scootmobiel, inclusief tips over accu's en assistentie.",
+    "author": {
+      "@type": "Organization",
+      "name": "Vliegklaar"
+    },
+    "datePublished": "2026-06-07"
+  };
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Mag een scootmobiel gratis mee in het vliegtuig?",
+        "name": "Mag een scootmobiel mee in het vliegtuig?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja, een scootmobiel wordt gezien als een medisch hulpmiddel. Bij de meeste luchtvaartmaatschappijen mag u deze gratis meenemen, mits u dit minimaal 48 uur van tevoren aanmeldt."
+          "text": "Ja, een scootmobiel mag mee als ruimbagage. U moet dit wel minimaal 48 uur van tevoren aanmelden bij de luchtvaartmaatschappij."
         }
       },
       {
         "@type": "Question",
-        "name": "Welke accu-regels gelden er voor scootmobielen?",
+        "name": "Wat zijn de regels voor de accu van een scootmobiel?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Dit is het belangrijkste punt: droge accu's (gel/AGM) zijn meestal probleemloos. Lithium-accu's mogen vaak alleen mee als ze een bepaalde capaciteit (Wh) niet overschrijden en moeten soms uit de scootmobiel worden gehaald."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Kan ik mijn scootmobiel gebruiken tot aan de gate?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Op veel luchthavens, waaronder Schiphol, kunt u met uw eigen scootmobiel tot aan de gate of zelfs de vliegtuigdeur rijden. Daar wordt hij ingeladen in het ruim."
+          "text": "Lithium-accu's mogen vaak tot een bepaalde capaciteit (Wh) mee. Droge accu's (gel/AGM) zijn meestal geen probleem, maar moeten wel ontkoppeld kunnen worden."
         }
       }
     ]
@@ -42,81 +46,77 @@ export default function VliegenMetScootmobielPage() {
     <main className="pt-20">
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       
-      <article className="max-w-4xl mx-auto px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
-          Vliegen met een scootmobiel: Alles wat u moet weten
-        </h1>
-        
-        <div className="prose prose-lg max-w-none text-gray-700">
-          <p>
-            Een scootmobiel geeft u de vrijheid om de wereld te ontdekken, ook als u minder ter been bent. 
-            Maar vliegen met een elektrisch voertuig vraagt om een goede voorbereiding, vooral vanwege de accu-regels. 
-            In dit artikel leggen we uit hoe u veilig en zonder zorgen met uw scootmobiel op reis gaat.
+      <section className="bg-primary-50 py-12 md:py-20">
+        <div className="max-w-4xl mx-auto px-4">
+          <Link href="/blog" className="text-primary-600 hover:underline mb-4 inline-block">← Terug naar blog overzicht</Link>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
+            Hoe bereidt u een vliegreis voor met een scootmobiel?
+          </h1>
+          <p className="text-xl text-gray-700 leading-relaxed mb-8">
+            Reizen met een scootmobiel opent de wereld voor senioren die minder mobiel zijn. Maar het meenemen van een scootmobiel in het vliegtuig vraagt om een goede voorbereiding. In dit artikel leggen we stap voor stap uit waar u op moet letten.
           </p>
+        </div>
+      </section>
 
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">Aanmelden is verplicht</h2>
-          <p>
-            In tegenstelling tot een gewone koffer, moet u een scootmobiel altijd vooraf aanmelden bij uw luchtvaartmaatschappij. 
-            Doe dit uiterlijk <strong>48 uur voor vertrek</strong>. De maatschappij heeft specifieke informatie nodig, zoals:
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 prose prose-primary">
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">Stap 1: Meld uw scootmobiel op tijd aan</h2>
+          <p className="mb-4">
+            Het belangrijkste is dat u uw scootmobiel direct bij het boeken, maar uiterlijk <strong>48 uur voor vertrek</strong>, aanmeldt bij de luchtvaartmaatschappij. De ruimte in het bagageruim is beperkt, en de bemanning moet weten welk type accu er in uw voertuig zit.
           </p>
-          <ul className="list-disc pl-6 mb-6">
-            <li>De afmetingen (lengte, breedte, hoogte) in ingeklapte of normale stand.</li>
-            <li>Het gewicht van de scootmobiel.</li>
-            <li>Het type accu (Lithium, Droge accu/Gel, of Natte accu).</li>
+          <p className="mb-4">Houd de volgende gegevens bij de hand:</p>
+          <ul className="list-disc pl-6 mb-8 space-y-2">
+            <li>Merk en model van de scootmobiel</li>
+            <li>Afmetingen (ingeklapt/gedemonteerd)</li>
+            <li>Gewicht</li>
+            <li>Type accu (Lithium, Gel, of Droge accu)</li>
           </ul>
 
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">Cruciaal: Het type accu</h2>
-          <p>
-            De veiligheidsregels voor accu&apos;s zijn streng. Zorg dat u het typeplaatje van de accu kunt laten zien.
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">Stap 2: Accu-voorschriften begrijpen</h2>
+          <p className="mb-4">
+            De veiligheidsregels voor accu&apos;s zijn streng. Er wordt onderscheid gemaakt tussen verschillende soorten:
           </p>
-          <ul className="list-disc pl-6 mb-6">
-            <li><strong>Droge accu&apos;s (Gel/AGM):</strong> Deze mogen meestal probleemloos mee. De polen moeten wel worden afgedekt om kortsluiting te voorkomen.</li>
-            <li><strong>Lithium-accu&apos;s:</strong> Hier gelden strikte limieten voor de capaciteit (Wattuur). Vaak moet de accu uit de scootmobiel worden gehaald en in de cabine worden vervoerd.</li>
-            <li><strong>Natte accu&apos;s:</strong> Deze worden zelden meer toegelaten omdat ze kunnen lekken.</li>
+          <ul className="list-disc pl-6 mb-8 space-y-2">
+            <li><strong>Lithium-ion accu&apos;s:</strong> Deze moeten vaak losgekoppeld worden en mee als handbagage als ze een bepaalde capaciteit (Wattuur) overschrijden.</li>
+            <li><strong>Niet-lekkende accu&apos;s (Gel/AGM):</strong> Deze mogen meestal in de scootmobiel blijven zitten, mits de polen zijn afgeplakt en de accu is ontkoppeld zodat de scootmobiel niet per ongeluk aan kan gaan.</li>
           </ul>
 
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">Op de luchthaven</h2>
-          <p>
-            U kunt uw scootmobiel meestal gebruiken tot aan de gate. Hier wordt hij door het grondpersoneel overgenomen. 
-            Zorg dat u weet hoe u de scootmobiel in de &apos;vrijloopstand&apos; zet, zodat het personeel hem handmatig kan verplaatsen 
-            zonder de motor te belasten.
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">Stap 3: Op het vliegveld</h2>
+          <p className="mb-4">
+            U kunt meestal met uw eigen scootmobiel tot aan de gate rijden. Daar wordt de scootmobiel ingenomen door het grondpersoneel en in het ruim geplaatst. Vergeet niet om losse onderdelen (zoals een mandje of een kussen) mee te nemen in de cabine om schade of verlies te voorkomen.
           </p>
-          
-          <h2 className="text-2xl font-bold text-primary-800 mt-8 mb-4">Persoonlijke begeleiding nodig?</h2>
-          <p>
-            Ziet u op tegen de logistiek van het reizen met een scootmobiel? Bij Vliegklaar zijn we gespecialiseerd in 
-            <Link href="/reisbegeleiding-ouderen" className="text-primary-600 underline"> reisbegeleiding voor ouderen</Link>. 
-            Onze begeleiders helpen u bij het inchecken, de security-check en zorgen dat uw hulpmiddel veilig aankomt.
+          <div className="bg-primary-50 p-6 rounded-xl mb-8">
+            <h3 className="text-xl font-bold text-primary-800 mb-3">Checklist voor vertrek:</h3>
+            <ul className="list-none space-y-3">
+              <li>✓ Bevestig een label met uw contactgegevens aan de scootmobiel.</li>
+              <li>✓ Neem de gebruiksaanwijzing mee (voor het ontkoppelen van de accu).</li>
+              <li>✓ Controleer of uw reisverzekering schade aan hulpmiddelen dekt.</li>
+            </ul>
+          </div>
+
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">Hulp van Vliegveld Assistentie</h2>
+          <p className="mb-4">
+            Zodra u uw scootmobiel bij de gate afgeeft, heeft u vervangend vervoer nodig naar uw vliegtuigstoel. Vraag daarom altijd <strong>medische assistentie</strong> aan. Zij helpen u bij het instappen en zorgen dat er op de bestemming weer een rolstoel of uw eigen scootmobiel voor u klaarstaat.
           </p>
 
-          <div className="bg-primary-50 p-8 rounded-2xl my-12 border border-primary-100">
-            <h3 className="text-xl font-bold text-primary-900 mb-4">Checklist Scootmobiel & Vliegen</h3>
-            <p className="mb-4">
-              1. Controleer of uw accu een IATA-certificaat heeft.<br />
-              2. Neem de handleiding mee (of een kopie) waarop staat hoe de accu losgekoppeld moet worden.<br />
-              3. Bevestig een label met instructies voor het personeel aan het stuur.
+          <div className="bg-primary-900 text-white p-8 rounded-2xl shadow-xl mt-12">
+            <h2 className="text-2xl font-bold mb-4">Zorgeloos reizen met uw scootmobiel?</h2>
+            <p className="mb-6">
+              Ziet u op tegen de logistiek van het reizen met een scootmobiel? Vliegklaar neemt de zorg uit handen. Onze reisbegeleiders helpen u bij het inchecken, de security en zorgen dat uw scootmobiel veilig mee gaat.
             </p>
-            <Link href="/contact" className="inline-block bg-primary-600 text-white font-bold px-8 py-3 rounded-xl hover:bg-primary-700 transition-colors">
-              Hulp nodig bij uw reisplanning?
+            <Link href="/contact" className="inline-block bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 px-8 rounded-xl transition-colors">
+              Ontdek onze begeleidingsmogelijkheden
             </Link>
           </div>
         </div>
-
-        <section className="mt-16 border-t pt-12">
-          <h2 className="text-3xl font-bold text-primary-800 mb-8 text-center">Veelgestelde vragen</h2>
-          <div className="space-y-6">
-            {faqSchema.mainEntity.map((faq, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
-                <p className="text-gray-600">{faq.acceptedAnswer.text}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      </article>
+      </section>
     </main>
   );
 }
