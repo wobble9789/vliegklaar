@@ -46,10 +46,34 @@ export default function ZwolleSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met Parkinson vanuit de regio Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij hebben ruime ervaring met het begeleiden van senioren met de ziekte van Parkinson. Wij zorgen voor een rustig tempo, helpen bij de logistiek op de luchthaven en ondersteunen bij medicatie-inname op de juiste tijden, zodat u ondanks de beperkingen toch kunt genieten van uw reis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie ook helpen bij vliegen met een pacemaker vanuit Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Reizen met een pacemaker of ICD vereist extra aandacht bij de security scans. Onze begeleiders weten precies welke documenten u nodig heeft en hoe u vlot door de beveiliging gaat zonder risico voor uw apparaat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen na een knieoperatie vanuit de regio Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij hebben veel ervaring met het ondersteunen van senioren na een knieoperatie. Wij zorgen voor vliegveld assistentie, ondersteunen bij het in- en uitstappen en letten op voldoende beenruimte en beweging tijdens de vlucht om uw herstel te bevorderen."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Wat zijn de kosten voor reisbegeleiding in Zwolle?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "De kosten zijn afhankelijk van uw specifie Crane wensen. We komen graag bij u langs in Zwolle voor een gratis kennismakingsgesprek om een offerte op maat te maken."
+          "text": "De kosten zijn afhankelijk van uw specifieke wensen. We komen graag bij u langs in Zwolle voor een gratis kennismakingsgesprek om een offerte op maat te maken."
         }
       }
     ]
@@ -148,6 +172,15 @@ export default function ZwolleSEOPage() {
                   )}
                   {faq.name.includes("assistentie") && (
                     <> <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">Lees onze gids over vliegveld assistentie.</Link></>
+                  )}
+                  {faq.name.includes("Parkinson") && (
+                    <> <Link href="/blog/vliegen-met-parkinson" className="text-primary-600 hover:underline">Lees meer over vliegen met Parkinson.</Link></>
+                  )}
+                  {faq.name.includes("pacemaker") && (
+                    <> <Link href="/blog/vliegen-met-een-pacemaker-of-icd" className="text-primary-600 hover:underline">Lees meer over vliegen met een pacemaker.</Link></>
+                  )}
+                  {faq.name.includes("knieoperatie") && (
+                    <> <Link href="/blog/vliegen-na-knieoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een knieoperatie.</Link></>
                   )}
                 </p>
               </div>
