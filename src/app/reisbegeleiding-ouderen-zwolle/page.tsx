@@ -75,7 +75,7 @@ export default function ZwolleSEOPage() {
           "@type": "Answer",
           "text": "De kosten zijn afhankelijk van uw specifieke wensen. We komen graag bij u langs in Zwolle voor een gratis kennismakingsgesprek om een offerte op maat te maken."
         }
-      }
+      },
       {
         "@type": "Question",
         "name": "Bieden jullie ook hulp bij vliegen met incontinentie in de regio Zwolle?",
