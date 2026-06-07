@@ -76,6 +76,70 @@ export default function ZwolleSEOPage() {
           "text": "De kosten zijn afhankelijk van uw specifieke wensen. We komen graag bij u langs in Zwolle voor een gratis kennismakingsgesprek om een offerte op maat te maken."
         }
       }
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met incontinentie in de regio Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met incontinentie is voor veel senioren een bron van zorg. Onze begeleiders bieden discrete ondersteuning, helpen bij het plannen van toiletbezoeken en adviseren over de juiste materialen en kleding voor tijdens de vlucht, zodat u met een gerust hart op reis kunt vanuit de regio Zwolle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is vliegen met een CPAP-apparaat mogelijk vanaf Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Een CPAP-apparaat mag mee als medische handbagage. Onze begeleiders in Zwolle helpen u bij het regelen van de juiste documentatie (zoals een medische verklaring) en zorgen dat het apparaat veilig en volgens de regels door de security op de luchthaven gaat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen met bloedverdunners vanaf Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met bloedverdunners is mogelijk. Het is belangrijk om gehydrateerd te blijven en regelmatig te bewegen tijdens de vlucht. Onze begeleiders ondersteunen u bij uw medicatieschema en helpen met eenvoudige oefeningen om de bloedsomloop te stimuleren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook ondersteuning bij vliegangst voor senioren in Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegangst komt op alle leeftijden voor. Onze begeleiders bieden een rustige aanwezigheid, uitleg over de geluiden van het vliegtuig en afleiding tijdens de vlucht om uw reis zo comfortabel mogelijk te maken vanaf Zwolle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn er speciale voorzieningen voor senioren met gehoorproblemen op de luchthaven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, de meeste luchthavens bieden faciliteiten voor slechthorenden, zoals ringleidingen bij informatiebalies en gates. Wij ondersteunen u ter plaatse om te zorgen dat u geen enkele omroep of belangrijke informatie mist tijdens uw vertrek vanuit de regio Zwolle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe voorkom ik uitdroging tijdens het vliegen als senior?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Uitdroging is een risico door de droge lucht in het vliegtuig. Wij adviseren om regelmatig water te drinken en alcohol te vermijden. Onze begeleiders letten hierop en zorgen dat u gehydrateerd blijft tijdens de hele reis vanaf Zwolle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook senioren die alleen reizen vanuit Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij bieden juist uitkomst voor senioren die graag alleen reizen maar behoefte hebben aan een veilig vangnet. Onze begeleider is uw vertrouwde aanspreekpunt van uw voordeur in Zwolle tot uw aankomst op de bestemming."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat zijn de regels voor een rolstoel in het vliegtuig vanaf Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Uw rolstoel mag vrijwel altijd gratis mee als medische bagage. Het is wel verplicht om deze minimaal 48 uur voor vertrek aan te melden bij de luchtvaartmaatschappij, inclusief afmetingen en type accu. Wij regelen dit graag voor u."
+        }
+      },
     ]
   };
 
@@ -181,6 +245,30 @@ export default function ZwolleSEOPage() {
                   )}
                   {faq.name.includes("knieoperatie") && (
                     <> <Link href="/blog/vliegen-na-knieoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een knieoperatie.</Link></>
+                  )}
+                  {faq.name.includes("incontinentie") && (
+                    <> <Link href="/blog/vliegen-met-incontinentie-tips-senioren" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met incontinentie.</Link></>
+                  )}
+                  {faq.name.includes("CPAP") && (
+                    <> <Link href="/blog/vliegen-met-cpap-apparaat" className="text-primary-600 hover:underline">Lees meer over vliegen met een CPAP-apparaat.</Link></>
+                  )}
+                  {faq.name.includes("bloedverdunners") && (
+                    <> <Link href="/blog/vliegen-met-bloedverdunners" className="text-primary-600 hover:underline">Lees onze tips voor vliegen met bloedverdunners.</Link></>
+                  )}
+                  {faq.name.includes("vliegangst") && (
+                    <> <Link href="/blog/vliegangst-bij-ouderen" className="text-primary-600 hover:underline">Bekijk onze tips tegen vliegangst.</Link></>
+                  )}
+                  {faq.name.includes("gehoor") && (
+                    <> <Link href="/blog/vliegen-met-een-gehoorapparaat-vliegveld-tips" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met gehoorproblemen.</Link></>
+                  )}
+                  {faq.name.includes("uitdroging") && (
+                    <> <Link href="/blog/hoe-voorkom-je-uitdroging-tijdens-het-vliegen-als-senior" className="text-primary-600 hover:underline">Lees onze tips om uitdroging te voorkomen.</Link></>
+                  )}
+                  {faq.name.includes("alleen reizen") && (
+                    <> <Link href="/blog/veilig-alleen-reizen-senior" className="text-primary-600 hover:underline">Lees meer over veilig alleen reizen als senior.</Link></>
+                  )}
+                  {faq.name.includes("rolstoel") && (
+                    <> <Link href="/blog/vliegen-met-een-rolstoel" className="text-primary-600 hover:underline">Lees onze gids over vliegen met een rolstoel.</Link></>
                   )}
                 </p>
               </div>
