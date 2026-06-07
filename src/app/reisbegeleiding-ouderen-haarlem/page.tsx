@@ -43,6 +43,118 @@ export default function HaarlemSEOPage() {
           "@type": "Answer",
           "text": "Ja, voor elke reis plannen we een vrijblijvend kennismakingsgesprek bij u thuis in de regio Kennemerland. Zo kunnen we uw wensen en eventuele medische behoeften in alle rust bespreken."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook begeleiding voor senioren met dementie in Haarlem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij hebben veel ervaring met het begeleiden van reizigers met beginnende dementie of geheugenproblemen in de regio Haarlem. Onze begeleiders bieden de nodige structuur, rust en nabijheid om de reis voor zowel de senior als de familie zorgeloos te laten verlopen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen met een rollator vanaf Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, een rollator mag bij vrijwel alle luchtvaartmaatschappijen gratis mee als medische bagage. U kunt uw rollator meestal gebruiken tot aan de gate op Schiphol, waarna deze in het vrachtruim wordt geplaatst. Onze begeleiders uit Haarlem helpen u graag bij de logistiek hiervan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met diabetes vanuit de regio Haarlem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Reizen met diabetes vraagt om extra planning rondom insuline, koeling en maaltijden. Onze begeleiders helpen u om alles volgens schema te laten verlopen en zorgen dat u ontspannen door de controles op Schiphol komt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie ook helpen bij vliegen met parkinson vanaf Haarlem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Reizen met parkinson vraagt om een zorgvuldige planning rondom medicatie-inname en mobiliteit. Onze begeleiders bieden de nodige ondersteuning en zorgen voor een rustig tempo op de luchthaven Schiphol of bij vertrek uit Haarlem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is er begeleiding mogelijk bij vliegen met artrose in Haarlem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Reizigers met artrose hebben vaak baat bij extra ondersteuning en het beperken van loopafstanden. Wij regelen the juiste assistentie op Schiphol en zorgen voor een comfortabel verloop van uw reis vanaf uw voordeur in Haarlem of Heemstede."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook bij vliegen na een operatie vanuit de regio Kennemerland?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij bieden gespecialiseerde ondersteuning voor senioren die kort geleden een ingreep hebben ondergaan. Onze begeleiders zorgen voor een rustig tempo en helpen bij alle fysieke handelingen op de luchthaven Schiphol."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunt u ook helpen bij vliegen met een pacemaker vanaf Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Reizen met een pacemaker of ICD vereist extra aandacht bij de security scans op Schiphol. Onze begeleiders uit Haarlem weten precies welke documenten u nodig heeft en hoe u vlot door de beveiliging gaat zonder risico voor uw apparaat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe zit het met vliegen met een kunstgebit vanaf Haarlem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vliegen met een kunstgebit of prothese is voor senioren in de regio Haarlem geen enkel probleem. Onze begeleiders weten hoe ze hier discreet mee omgaan bij de security op Schiphol en geven praktische tips voor optimaal comfort tijdens de vlucht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik een CPAP-apparaat meenemen in het vliegtuig vanaf Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, een CPAP-apparaat mag mee als medische handbagage vanaf Schiphol. Het is verstandig om dit vooraf te melden bij de luchtvaartmaatschappij en een medische verklaring bij u te hebben. Onze begeleiders helpen u graag om alles rondom uw CPAP-apparaat soepel te laten verlopen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn er risico's bij vliegen met hartklachten vanuit Haarlem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij stabiele hartklachten is vliegen meestal mogelijk, maar de lagere luchtdruk in de cabine kan invloed hebben. Overleg altijd met uw cardioloog en vraag indien nodig vliegveld assistentie aan op Schiphol om fysieke inspanning te beperken. Onze begeleiders kunnen u hierbij volledig ondersteunen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat moet ik regelen voor medicijnen op reis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het is belangrijk om een actueel medicatieoverzicht (AMO) en eventueel een medische verklaring bij u te hebben. Wij kunnen u helpen bij de voorbereiding hiervan zodat u zorgeloos door de security op Schiphol komt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen na een heupoperatie vanuit Haarlem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen na een heupoperatie is vaak weer mogelijk zodra uw arts toestemming geeft. Wij ondersteunen senioren in Haarlem bij het vervoer naar Schiphol, regelen vliegveld assistentie voor minder lopen en bieden fysieke steun tijdens de reis voor een veilig herstel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen na een knieoperatie vanuit de regio Kennemerland?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij hebben veel ervaring met het ondersteunen van senioren na een knieoperatie. Wij zorgen voor vliegveld assistentie op Schiphol, ondersteunen bij het in- en uitstappen en letten op voldoende beenruimte en beweging tijdens de vlucht om uw herstel te bevorderen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe voorkom ik uitdroging tijdens het vliegen als senior?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Uitdroging is een risico door de droge lucht in het vliegtuig. Wij adviseren om regelmatig water te drinken en alcohol te vermijden. Onze begeleiders letten hierop en zorgen dat u gehydrateerd blijft tijdens de hele reis vanaf Schiphol."
+        }
       }
     ]
   };
@@ -133,11 +245,53 @@ export default function HaarlemSEOPage() {
                 <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {faq.acceptedAnswer.text}
+                  {faq.name.toLowerCase().includes("dementie") && (
+                    <> <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">Lees over reizen met dementie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("rollator") && (
+                    <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Lees meer over vliegen met een rollator.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("diabetes") && (
+                    <> <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">Lees onze tips over vliegen met diabetes.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("parkinson") && (
+                    <> <Link href="/blog/vliegen-met-parkinson" className="text-primary-600 hover:underline">Lees meer over vliegen met Parkinson.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("artrose") && (
+                    <> <Link href="/blog/vliegen-met-artrose" className="text-primary-600 hover:underline">Bekijk tips for vliegen met artrose.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("operatie") && (
+                    <> <Link href="/blog/vliegen-na-operatie" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een operatie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("pacemaker") && (
+                    <> <Link href="/blog/vliegen-met-een-pacemaker-of-icd" className="text-primary-600 hover:underline">Lees meer over vliegen met een pacemaker.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("kunstgebit") && (
+                    <> <Link href="/blog/vliegen-met-een-kunstgebit" className="text-primary-600 hover:underline">Lees meer over vliegen met een kunstgebit.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("cpap") && (
+                    <> <Link href="/blog/vliegen-met-cpap-apparaat" className="text-primary-600 hover:underline">Lees meer over vliegen met een CPAP-apparaat.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("hartklachten") && (
+                    <> <Link href="/blog/vliegen-met-hartklachten" className="text-primary-600 hover:underline">Lees onze gids voor vliegen met hartklachten.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("medicijnen") && (
+                    <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Bekijk tips voor medicijnen op reis.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("heupoperatie") && (
+                    <> <Link href="/blog/vliegen-na-heupoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een heupoperatie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("knieoperatie") && (
+                    <> <Link href="/blog/vliegen-na-knieoperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een knieoperatie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("uitdroging") && (
+                    <> <Link href="/blog/hoe-voorkom-je-uitdroging-tijdens-het-vliegen-als-senior" className="text-primary-600 hover:underline">Lees tips om uitdroging te voorkomen.</Link></>
+                  )}
                   {faq.name.includes("assistentie") && (
                     <> <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">Lees onze gids voor assistentie aanvragen.</Link></>
                   )}
                   {faq.name.includes("medische verklaring") && (
-                    <> <Link href="/blog/hoe-vraag-je-een-medische-verklaring-aan-voor-vliegen" className="text-primary-600 hover:underline">Lees meer over de medische verklaring.</Link></>
+                    <> <Link href="/blog/hoe-vraag-je-een-medische-verklaring-aan-for-vliegen" className="text-primary-600 hover:underline">Lees meer over de medische verklaring.</Link></>
                   )}
                 </p>
               </div>
