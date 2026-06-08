@@ -115,6 +115,22 @@ export default function EindhovenSEOPage() {
           "@type": "Answer",
           "text": "Het is belangrijk om een actueel medicatieoverzicht (AMO) bij u te hebben. Onze begeleiders helpen u bij de voorbereiding zodat u zorgeloos door de security op de luchthaven komt."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunt u begeleiden bij vliegen met reuma vanaf Eindhoven Airport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Reizen met reuma kan fysiek zwaar zijn. Onze begeleiders in Eindhoven helpen u met uw bagage, zorgen voor assistentie op de luchthaven zodat u niet ver hoeft te lopen, en bewaken het tempo zodat u ontspannen op uw bestemming aankomt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook senioren die bloedverdunners gebruiken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, dat is geen enkel probleem. Onze begeleiders zijn bekend met de specifieke behoeften van senioren die bloedverdunners gebruiken, zoals het voorkomen van trombose tijdens lange vluchten door middel van beweging of compressiekousen."
+        }
       }
     ]
   };
@@ -233,7 +249,13 @@ export default function EindhovenSEOPage() {
                     <> <Link href="/blog/hoe-gaat-een-senior-veilig-door-de-security-op-schiphol" className="text-primary-600 hover:underline">Bekijk onze gids voor de security op de luchthaven.</Link></>
                   )}
                   {faq.name.includes("medicijnen") && (
-                    <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Bekijk onze tips voor medicijnen op reis.</Link></>
+                    <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Bekijk onze tips for medicijnen op reis.</Link></>
+                  )}
+                  {faq.name.includes("reuma") && (
+                    <> <Link href="/blog/vliegen-met-reuma" className="text-primary-600 hover:underline">Lees meer over vliegen met reuma.</Link></>
+                  )}
+                  {faq.name.includes("bloedverdunners") && (
+                    <> <Link href="/blog/vliegen-met-bloedverdunners" className="text-primary-600 hover:underline">Lees onze tips voor vliegen met bloedverdunners.</Link></>
                   )}
                   {faq.name.includes("kunstgebit") && (
                     <> <Link href="/blog/vliegen-met-een-kunstgebit-vliegveld-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een kunstgebit of prothese.</Link></>
