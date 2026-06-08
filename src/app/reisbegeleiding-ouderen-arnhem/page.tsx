@@ -22,6 +22,14 @@ export default function ArnhemSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Kan ik vliegen met diabetes vanaf Arnhem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Reizen met diabetes vraagt om extra planning rondom insuline, koeling en maaltijden. Onze begeleiders helpen u om alles volgens schema te laten verlopen en zorgen dat u ontspannen door de controles komt."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Moet ik mijn neuspiercing of sieraden uitdoen bij de security op Schiphol?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -183,6 +191,10 @@ export default function ArnhemSEOPage() {
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Moet ik mijn neuspiercing of sieraden uitdoen bij de security op de luchthaven?</h3>
               <p className="text-gray-600">Kleine sieraden en piercings kunnen vaak blijven zitten, maar grotere stukken veroorzaken een alarm. Onze begeleiders helpen u discreet door de controle. Lees onze <Link href="/blog/vliegen-met-een-neuspiercing-of-sieraden" className="text-primary-600 hover:underline">tips voor vliegen met piercings en sieraden</Link>.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-primary-700 mb-2">Kan ik vliegen met diabetes vanaf Arnhem?</h3>
+              <p className="text-gray-600">Jazeker. Reizen met diabetes vraagt om extra planning rondom insuline en maaltijden. Onze begeleiders helpen u om alles volgens schema te laten verlopen. Lees onze <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">gids over vliegen met diabetes</Link>.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-bold text-primary-700 mb-2">Kan ik vliegveld assistentie krijgen bij vliegen met artrose?</h3>
