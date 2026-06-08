@@ -54,6 +54,14 @@ export default function AmersfoortSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Moet ik mijn neuspiercing of sieraden uitdoen bij de security op Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kleine sieraden zoals een trouwring of een kleine neuspiercing kunnen meestal gewoon blijven zitten bij de security op Schiphol. Moderne scanners zijn ingesteld op grotere metalen objecten. Onze begeleiders in Amersfoort adviseren u graag vooraf over welke sieraden u het beste in uw handbagage kunt opbergen om vertraging te voorkomen."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Wordt reisbegeleiding in Amersfoort vergoed?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -183,6 +191,9 @@ export default function AmersfoortSEOPage() {
                   )}
                   {faq.name.includes("parkinson") && (
                     <> <Link href="/blog/vliegen-met-parkinson" className="text-primary-600 hover:underline">Lees meer over vliegen met Parkinson.</Link></>
+                  )}
+                  {faq.name.includes("neuspiercing") && (
+                    <> <Link href="/blog/vliegen-met-een-neuspiercing-of-sieraden" className="text-primary-600 hover:underline">Lees meer over vliegen met piercings en sieraden.</Link></>
                   )}
                   {faq.name.includes("verzekering") && (
                     <> <Link href="/blog/reisverzekering-voor-senioren" className="text-primary-600 hover:underline">Lees over reisverzekeringen voor senioren.</Link></>
