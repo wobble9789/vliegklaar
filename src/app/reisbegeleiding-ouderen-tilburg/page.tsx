@@ -100,6 +100,30 @@ export default function TilburgSEOPage() {
           "text": "Zeker. Vliegen met een kunstgebit of prothese is geen enkel probleem. Onze begeleiders weten precies hoe u hier discreet mee omgaat bij de security op Eindhoven Airport of Schiphol en geven u praktische tips voor comfort tijdens de vlucht."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Zijn er tips voor vliegen met een bril of contactlenzen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, de droge lucht in het vliegtuig kan irriterend zijn voor lensdragers. We adviseren senioren om tijdens de vlucht een bril te dragen, reservebrillen in de handbagage mee te nemen en oogdruppels te gebruiken. Onze begeleiders kunnen u helpen bij het herinneren aan oogzorg tijdens een lange vlucht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie ook helpen bij vliegen met diabetes vanaf Tilburg?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Reizen met diabetes vraagt om extra planning rondom insuline, koeling en maaltijden. Onze begeleiders helpen u om alles volgens schema te laten verlopen en zorgen dat u ontspannen door de controles komt, of u nu vanaf Eindhoven of Schiphol vliegt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe voorkom ik uitdroging tijdens een lange vlucht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De droge lucht in de vliegtuigcabine kan snel leiden tot uitdroging, wat bij senioren extra risico's met zich meebrengt. Wij raden aan om voor vertrek al goed te drinken, cafeïne en alcohol te vermijden, en tijdens de vlucht elk uur een glas water te nemen. Onze begeleiders herinneren u hier regelmatig aan."
+        }
+      },
     ]
   };
 
@@ -212,6 +236,15 @@ export default function TilburgSEOPage() {
                     )}
                     {faq.name.includes("pacemaker") && (
                       <Link href="/blog/vliegen-met-een-pacemaker-of-icd" className="text-primary-600 hover:underline">→ Lees meer over vliegen met een pacemaker.</Link>
+                    )}
+                    {faq.name.includes("bril") && (
+                      <Link href="/blog/vliegen-met-bril-of-contactlenzen-tips" className="text-primary-600 hover:underline">→ Bekijk onze tips voor vliegen met een bril of contactlenzen.</Link>
+                    )}
+                    {faq.name.includes("diabetes") && (
+                      <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">→ Lees onze uitgebreide gids over vliegen met diabetes.</Link>
+                    )}
+                    {faq.name.includes("uitdroging") && (
+                      <Link href="/blog/hoe-voorkom-je-uitdroging-tijdens-het-vliegen-als-senior" className="text-primary-600 hover:underline">→ Lees onze tips om uitdroging te voorkomen.</Link>
                     )}
                   </div>
                 </div>
