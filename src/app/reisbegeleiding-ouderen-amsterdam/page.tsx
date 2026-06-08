@@ -78,6 +78,30 @@ export default function AmsterdamSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Zijn er speciale douane-regels voor senioren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Er zijn geen specifieke douane-regels op basis van leeftijd, maar senioren hebben vaak vaker te maken met het meenemen van medicijnen of medische hulpmiddelen. Het is belangrijk om voor deze zaken de juiste verklaringen bij u te hebben om vertraging bij de douane te voorkomen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vloeibare medicijnen boven de 100ml meenemen door de security?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vloeibare medicijnen, dieetvoeding en babyvoeding die noodzakelijk zijn voor de reis mogen in verpakkingen groter dan 100ml mee in de handbagage. U moet deze wel apart aanbieden bij de security check op Schiphol, bij voorkeur vergezeld van een medische verklaring of recept."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe herken ik de douane op het vliegveld?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De douane bevindt zich meestal na de bagagehal bij de uitgang van de luchthaven. U ziet daar twee doorgangen: 'Niets aan te geven' (groen) en 'Goederen aan te geven' (rood). Als u twijfelt over uw medicijnen of aankopen, kunt u het beste de rode doorgang kiezen voor advies."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Mag ik vliegen met een rollator vanaf Schiphol?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -547,6 +571,12 @@ export default function AmsterdamSEOPage() {
                   )}
                   {faq.name.includes("rolstoel") && (
                     <> <Link href="/blog/rolstoel-op-het-vliegveld" className="text-primary-600 hover:underline">Bekijk tips voor rolstoel op het vliegveld.</Link></>
+                  )}
+                  {faq.name.includes("douane") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-douane-controles-als-senior" className="text-primary-600 hover:underline">Lees onze uitgebreide gids over douane-controles voor senioren.</Link></>
+                  )}
+                  {faq.name.includes("vloeibare medicijnen") && (
+                    <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Lees meer over het meenemen van medicijnen op reis.</Link></>
                   )}
                   {faq.name.includes("rollator") && (
                     <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Lees meer over vliegen met een rollator.</Link></>
