@@ -114,6 +114,17 @@ export default function GehoorprotheseBlog() {
               Met een glimlach en een korte uitleg over uw gehoorprothese is er vrijwel altijd begrip.
             </p>
           </section>
+          <section>
+            <h2 className="text-2xl font-bold text-primary-800">5. Veelgestelde vragen</h2>
+            <div className="space-y-4">
+              {faqSchema.mainEntity.map((faq, index) => (
+                <div key={index} className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm">
+                  <h3 className="font-bold text-primary-700">{faq.name}</h3>
+                  <p className="text-gray-600 mt-2">{faq.acceptedAnswer.text}</p>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
 
         <section className="mt-16 pt-12 border-t border-gray-200">
