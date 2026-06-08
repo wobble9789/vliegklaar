@@ -1,89 +1,122 @@
-import { BlogLayout } from "@/components/BlogLayout";
-import { Metadata } from "next";
+import Link from 'next/link';
+import Image from 'next/image';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Vliegen met een pacemaker of ICD: Alles wat u moet weten | Vliegklaar",
-  description: "Kunt u veilig vliegen met een pacemaker of ICD? Lees onze uitgebreide gids over de security check, medische verklaringen en tips voor een zorgeloze vlucht.",
+  title: 'Blog: Reizen met een ICD of Pacemaker - Tips voor Senioren | Vliegklaar',
+  description: 'Gaat u vliegen met een ICD of pacemaker? Lees onze praktische tips over security-controles, medische verklaringen en veilig reizen als senior.',
 };
 
-export default function Page() {
-  const jsonLd = {
+export default function BlogICDPacemakerPage() {
+  const blogSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Vliegen met een pacemaker of ICD: Tips voor senioren",
-    "description": "Een complete gids voor reizigers met een pacemaker of ICD, inclusief informatie over de security op Schiphol en medische documentatie.",
+    "@type": "BlogPosting",
+    "headline": "Vliegen met een ICD of Pacemaker: Alles wat u als senior moet weten",
+    "description": "Een complete gids voor senioren die reizen met een ICD of pacemaker. Van Schiphol security tips tot de benodigde documentatie.",
     "author": {
       "@type": "Organization",
       "name": "Vliegklaar"
     },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://vliegklaar.nl/blog/vliegen-met-een-pacemaker-of-icd"
-    }
+    "datePublished": "2026-06-08",
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dad99978?w=800&q=80"
   };
 
   return (
-    <BlogLayout
-      title="Vliegen met een pacemaker of ICD: Veilig en ontspannen op reis"
-      publishDate="5 juni 2026"
-      description="Veel senioren met een pacemaker of ICD vragen zich af of vliegen wel veilig is en wat er gebeurt bij de veiligheidscontrole op het vliegveld. In dit artikel beantwoorden we de meest gestelde vragen."
-    >
+    <main className="pt-20">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
       />
       
-      <section>
-        <h2>Is vliegen veilig met een pacemaker of ICD?</h2>
-        <p>
-          In de meeste gevallen is vliegen met een pacemaker of ICD (Implantable Cardioverter Defibrillator) volkomen veilig. Moderne apparaten zijn goed beschermd tegen de drukverschillen in de cabine en de elektronica van het vliegtuig. Het is echter altijd essentieel om voor vertrek contact op te nemen met uw cardioloog of technicus om te bevestigen dat uw specifieke situatie stabiel genoeg is voor een vliegreis.
-        </p>
-      </section>
+      <article className="max-w-4xl mx-auto px-4 py-16">
+        <header className="mb-12 text-center">
+          <Link href="/blog" className="text-primary-600 hover:underline mb-4 inline-block">
+            &larr; Terug naar alle blogs
+          </Link>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
+            Vliegen met een ICD of Pacemaker: Tips voor een zorgeloze reis
+          </h1>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            Reizen met een hartimplantaat zoals een ICD of pacemaker roept vaak vragen op. 
+            Mag u wel door de security-scan? Welke documenten heeft u nodig? Bij Vliegklaar 
+            helpen we senioren dagelijks om veilig en ontspannen door de controles op Schiphol te komen.
+          </p>
+        </header>
 
-      <section>
-        <h2>De security check op het vliegveld</h2>
-        <p>
-          Dit is vaak het punt waar de meeste zorgen over bestaan. Hoewel de nieuwste generatie pacemakers en ICD&apos;s vaak niet meer reageren op de metaaldetectiepoortjes, blijft het advies om voorzichtig te zijn.
-        </p>
-        <ul>
-          <li><strong>Meld het direct:</strong> Geef bij de beveiligingsbeambte aan dat u een geïmplanteerd medisch apparaat heeft voordat u door het poortje loopt.</li>
-          <li><strong>De scan:</strong> Vaak mag u de normale metaaldetector passeren, maar de voorkeur gaat vaak uit naar de &apos;body scan&apos; (die geen magnetische velden gebruikt) of een handmatige controle.</li>
-          <li><strong>Handmatige metaaldetector:</strong> De beveiliging gebruikt soms een handscanner. Vraag hen om deze niet te lang direct boven uw apparaat te houden.</li>
-        </ul>
-      </section>
+        <div className="relative h-[400px] w-full rounded-2xl overflow-hidden mb-12 shadow-lg">
+          <Image
+            src="https://images.unsplash.com/photo-1576091160550-2173dad99978?w=1200&q=80"
+            alt="Medische zorg en reizen"
+            fill
+            className="object-cover"
+          />
+        </div>
 
-      <section>
-        <h2>Het belang van de pacemakerpas</h2>
-        <p>
-          Draag uw pacemakerpas of ICD-identificatiekaart altijd bij u in uw handbagage, of nog beter: in uw borstzak of portemonnee. Deze kaart is internationaal erkend en bevat cruciale informatie over uw apparaat. Toon deze kaart bij de security check; dit voorkomt onnodige discussies en zorgt voor een snellere afhandeling.
-        </p>
-      </section>
+        <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+          <h2 className="text-2xl font-bold text-primary-800">1. De Security-controle op Schiphol</h2>
+          <p>
+            De belangrijkste zorg voor veel reizigers is de metaaldetector of de bodyscan bij de security. 
+            Hoewel moderne scanners op Schiphol vaak veilig zijn, is het advies van cardiologen eenduidig: 
+            <strong> loop niet door een klassieke metaaldetector-poort</strong>. De magnetische velden kunnen 
+            (hoewel de kans klein is) de instellingen van uw apparaat tijdelijk beïnvloeden.
+          </p>
+          <p>
+            Meld bij de beveiligingsbeambte dat u een ICD of pacemaker draagt. U kunt dan kiezen voor een 
+            handmatige controle (fouilleren). Op Schiphol wordt ook veel gewerkt met de Security Scan (de &quot;glazen cabine&quot; 
+            waarbij u uw handen omhoog houdt). Deze scan maakt gebruik van millimetergolven en is veilig voor 
+            uw implantaat, maar meld het ook hier altijd vooraf.
+          </p>
 
-      <section>
-        <h2>Tips voor tijdens de vlucht</h2>
-        <p>
-          Eenmaal aan boord gelden de normale adviezen voor senioren, met een paar extra aandachtspunten:
-        </p>
-        <ul>
-          <li><strong>Blijf in beweging:</strong> Loop regelmatig een stukje door het gangpad om de bloedsomloop te stimuleren en trombose te voorkomen.</li>
-          <li><strong>Hydratatie:</strong> Drink voldoende water en beperk alcohol en cafeïne.</li>
-          <li><strong>Medicatie:</strong> Houd uw hartmedicatie altijd binnen handbereik in uw handbagage.</li>
-        </ul>
-      </section>
+          <h2 className="text-2xl font-bold text-primary-800">2. Het Identificatiebewijs (Pacemakerpas)</h2>
+          <p>
+            Draag uw implantaat-identificatiekaart (ook wel pacemakerpas genoemd) altijd bij u in uw handbagage. 
+            Dit kaartje bevat cruciale informatie over het type apparaat dat u heeft en de fabrikant. Dit is niet 
+            alleen handig bij de security, maar ook essentieel mocht u in het buitenland medische hulp nodig hebben.
+          </p>
 
-      <section>
-        <h2>Wanneer moet u extra oppassen?</h2>
-        <p>
-          Als u onlangs een operatie heeft ondergaan voor het plaatsen of vervangen van de pacemaker/ICD, wordt vaak geadviseerd om 2 tot 6 weken te wachten met vliegen. Dit is om de wond te laten genezen en te controleren of de draden goed op hun plek blijven zitten. Overleg dit altijd met uw arts.
-        </p>
-      </section>
+          <h2 className="text-2xl font-bold text-primary-800">3. Tijdens de vlucht</h2>
+          <p>
+            Eenmaal in het vliegtuig is er geen enkel risico voor uw ICD of pacemaker. De elektronica in de cabine 
+            stoort uw apparaat niet. Wel is het voor senioren met hartklachten extra belangrijk om tijdens de vlucht 
+            voldoende te blijven drinken en regelmatig even de benen te strekken om de bloedsomloop te stimuleren.
+          </p>
 
-      <section>
-        <h2>Reisbegeleiding van Vliegklaar</h2>
-        <p>
-          Vindt u het spannend om alleen te reizen met een pacemaker? De reisbegeleiders van Vliegklaar hebben ervaring met het ondersteunen van senioren met medische behoeften. Wij helpen u bij de security check, dragen uw koffers en zorgen ervoor dat u zich geen moment zorgen hoeft te maken over de praktische zaken van uw reis.
-        </p>
-      </section>
-    </BlogLayout>
+          <h2 className="text-2xl font-bold text-primary-800">4. Hoe Vliegklaar u kan ondersteunen</h2>
+          <p>
+            Ziet u op tegen de drukte en de communicatie bij de security? Een <Link href="/reisbegeleiding-ouderen" className="text-primary-600 hover:underline">persoonlijke reisbegeleider</Link> van Vliegklaar 
+            kan u begeleiden vanaf uw voordeur tot in het vliegtuig. Wij zorgen dat u de juiste documenten bij de hand heeft, 
+            voeren het woord bij de beveiliging en zorgen voor een rustig tempo op de luchthaven.
+          </p>
+          <p>
+            Of u nu vertrekt vanuit <Link href="/reisbegeleiding-ouderen-amsterdam" className="text-primary-600 hover:underline">Amsterdam</Link>, 
+            <Link href="/reisbegeleiding-ouderen-rotterdam" className="text-primary-600 hover:underline">Rotterdam</Link> of 
+            <Link href="/reisbegeleiding-ouderen-eindhoven" className="text-primary-600 hover:underline">Eindhoven</Link>, 
+            wij zijn er om de stress weg te nemen.
+          </p>
+        </div>
+
+        <div className="mt-16 bg-primary-50 p-8 rounded-2xl border border-primary-100">
+          <h3 className="text-xl font-bold text-primary-900 mb-4">Wilt u meer weten?</h3>
+          <p className="text-gray-700 mb-6">
+            Heeft u specifieke vragen over uw reis met een medisch implantaat of wilt u vrijblijvend 
+            overleggen over reisbegeleiding?
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="tel:0618769492"
+              className="bg-primary-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-primary-700 transition-colors text-center"
+            >
+              Bel: 06-18769492
+            </a>
+            <Link
+              href="/contact"
+              className="bg-white border-2 border-primary-600 text-primary-600 font-bold px-6 py-3 rounded-xl hover:bg-primary-50 transition-colors text-center"
+            >
+              Neem contact op
+            </Link>
+          </div>
+        </div>
+      </article>
+    </main>
   );
 }
