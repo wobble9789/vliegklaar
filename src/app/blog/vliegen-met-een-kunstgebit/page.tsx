@@ -4,181 +4,111 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Vliegen met een Kunstgebit: 7 Onmisbare Tips | Vliegklaar',
-  description: 'Zorgen over uw kunstgebit bij de security op Schiphol? Lees onze 7 praktische tips over vliegen met een gebitsprothese voor een zorgeloze reis.',
+  description: 'Gaat u vliegen met een kunstgebit of gebitsprothese? Lees onze 7 praktische tips over security, luchtdruk en comfort voor senioren op reis.',
 };
 
-export default function VliegenKunstgebitPage() {
-  const articleTitle = "Vliegen met een Kunstgebit: 7 Tips voor een Zorgeloze Vliegreis";
-  const publishDate = "2026-05-18";
-
-  const faqSchema = {
+export default function VliegenMetKunstgebitPage() {
+  const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Mag een kunstgebit in blijven tijdens de security check?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ja, u kunt uw kunstgebit gewoon inhouden tijdens de veiligheidscontrole op de luchthaven. De scanners reageren niet op de kleine hoeveelheid metaal in een gebitsprothese."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Moet ik mijn gebitsbakje in mijn handbagage meenemen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ja, het is sterk aanbevolen om uw gebitsbakje, reinigingstabletten en een reserve-gebit (indien u dat heeft) in uw handbagage te bewaren, voor het geval uw ruimbagage vertraagd is."
-        }
-      }
-    ]
+    "@type": "Article",
+    "headline": "Vliegen met een Kunstgebit: 7 Onmisbare Tips voor Senioren",
+    "description": "Praktische gids voor senioren over vliegen met een kunstgebit, inclusief tips voor de security check op Schiphol en comfort tijdens lange vluchten.",
+    "author": {
+      "@type": "Organization",
+      "name": "Vliegklaar"
+    },
+    "datePublished": "2026-06-09",
+    "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=80"
   };
 
   return (
     <main className="pt-20">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <article className="max-w-4xl mx-auto px-4 py-16">
-        <header className="mb-12">
-          <Link href="/blog" className="text-primary-600 hover:underline mb-4 inline-block">
-            ← Terug naar blog overzicht
-          </Link>
+      <section className="bg-primary-50 py-12 md:py-20">
+        <div className="max-w-4xl mx-auto px-4">
+          <Link href="/blog" className="text-primary-600 hover:underline mb-4 inline-block">← Terug naar blog overzicht</Link>
           <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
-            {articleTitle}
+            Vliegen met een Kunstgebit: 7 Onmisbare Tips voor Senioren
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
-            Reizen met een kunstgebit of gebitsprothese roept bij veel senioren vragen op. Piept het gebit bij de security scan? Wat als ik mijn gebit onderweg moet schoonmaken? Met deze 7 tips stapt u vol zelfvertrouwen het vliegtuig in.
+          <p className="text-xl text-gray-700 leading-relaxed mb-8">
+            Vliegen met een kunstgebit of gebitsprothese is voor veel senioren een bron van lichte zorg. Gaat het alarm af bij de security? Wat doet de luchtdruk met de pasvorm? Geen zorgen: met deze 7 tips gaat u met een stralende lach aan boord.
           </p>
-        </header>
-
-        <div className="relative h-[400px] w-full mb-12 rounded-2xl overflow-hidden shadow-lg">
-          <Image
-            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=80"
-            alt="Een stralende lach van een senior op reis"
-            fill
-            className="object-cover"
-          />
         </div>
+      </section>
 
-        <div className="prose prose-lg max-w-none text-gray-700 space-y-8">
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">1. Security op de luchthaven</h2>
-            <p>
-              Een van de grootste zorgen is de veiligheidscontrole. Wees gerust: u hoeft uw kunstgebit <strong>niet</strong> uit te doen. De moderne scanners op luchthavens zoals Schiphol zijn niet ingesteld op de minimale hoeveelheid metaal die soms in een prothese zit. Mocht er toch een uitgebreidere controle nodig zijn, dan gebeurt dit altijd discreet.
-            </p>
-          </section>
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 prose prose-primary">
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">1. Het alarm bij de Security Check</h2>
+          <p className="mb-4">
+            De meest gestelde vraag: &quot;Moet ik mijn gebit uitdoen bij de beveiliging?&quot; Het antwoord is simpel: <strong>Nee</strong>. De metaaldetectors en bodysscanners op vliegvelden zoals Schiphol zijn niet ingesteld op de kleine hoeveelheden metaal in een gebitsprothese. U kunt uw gebit gewoon inhouden.
+          </p>
 
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">2. Handbagage is essentieel</h2>
-            <p>
-              Bewaar alles wat met uw gebit te maken heeft in uw handbagage. Denk aan:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Uw gebitsbakje</li>
-              <li>Reinigingstabletten of borstel</li>
-              <li>Kleefpasta (let op de 100ml regel voor vloeistoffen!)</li>
-              <li>Een eventueel reservegebit</li>
-            </ul>
-            <p>
-              Mocht uw koffer onverhoopt niet aankomen op de bestemming, dan kunt u in ieder geval uw gebit blijven verzorgen.
-            </p>
-          </section>
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">2. Droge lucht en hechting</h2>
+          <p className="mb-4">
+            De lucht in een vliegtuigcabine is erg droog. Dit kan leiden tot een droge mond, wat weer invloed heeft op de natuurlijke zuigkracht van uw kunstgebit. 
+          </p>
+          <ul className="list-disc pl-6 mb-8">
+            <li>Drink regelmatig water tijdens de vlucht.</li>
+            <li>Neem voor de zekerheid een kleine tube kleefpasta mee in uw handbagage (max. 100ml).</li>
+          </ul>
 
-          <section className="bg-primary-50 p-8 rounded-xl border-l-4 border-primary-500">
-            <h2 className="text-2xl font-bold text-primary-800 mb-4">Hulp nodig bij de voorbereiding?</h2>
-            <p>
-              Onze reisbegeleiders helpen u graag met het inpakken en controleren van uw medische benodigdheden. Zo weet u zeker dat u niets belangrijks vergeet. 
-              <Link href="/reisbegeleiding-ouderen" className="text-primary-600 font-bold hover:underline ml-1">
-                Ontdek onze reisbegeleiding.
-              </Link>
-            </p>
-          </section>
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">3. De invloed van luchtdruk</h2>
+          <p className="mb-4">
+            Drukverschillen tijdens het stijgen en dalen kunnen soms zorgen voor een licht drukkend gevoel onder de prothese. Dit komt doordat kleine luchtbelletjes onder het gebit uitzetten. Even kort uw gebit &quot;lossen&quot; en weer vastzetten kan dit gevoel direct verhelpen.
+          </p>
 
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">3. Luchtdruk en pasvorm</h2>
-            <p>
-              Door de verandering in luchtdruk in de cabine kunnen uw tandvlees en kaken soms licht opzetten. Hierdoor kan uw kunstgebit iets strakker of juist losser gaan zitten. Gebruik indien nodig een beetje extra kleefpasta voor vertrek om ongemak tijdens het praten of eten te voorkomen.
-            </p>
-          </section>
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">4. Reiniging tijdens lange vluchten</h2>
+          <p className="mb-4">
+            Bij een lange vlucht is het prettig om uw gebit even op te frissen. Gebruik hiervoor het toilet aan boord, maar let op: <strong>gebruik nooit het kraanwater uit de wasbak</strong> om uw gebit te spoelen of uw mond te spoelen. Dit water is geen drinkwater. Gebruik altijd mineraalwater uit een flesje.
+          </p>
 
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">4. Drink voldoende water</h2>
-            <p>
-              De droge lucht in het vliegtuig kan leiden tot een droge mond. Dit is niet alleen onprettig, maar kan er ook voor zorgen dat een kunstgebit minder goed blijft zitten (speeksel fungeert als een natuurlijke kleeflaag). Drink regelmatig kleine slokjes water tijdens de vlucht.
-            </p>
-          </section>
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">5. Reservegebit in de handbagage</h2>
+          <p className="mb-4">
+            Het is de nachtmerrie van elke reiziger: uw koffer raakt kwijt en uw reservegebit zat daarin. Draag een eventueel reservegebit daarom altijd in uw handbagage, verpakt in een stevige, herkenbare doos.
+          </p>
 
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">5. Eten aan boord</h2>
-            <p>
-              Vliegtuigmaaltijden kunnen soms taai vlees of plakkerige bijgerechten bevatten. Als u twijfelt over de stevigheid van uw gebit, kunt u bij het boeken van uw ticket vaak kiezen voor een &apos;zachte maaltijd&apos; of een medisch dieet. Dit maakt eten tijdens een lange vlucht een stuk ontspannender.
-            </p>
-          </section>
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">6. Eten aan boord</h2>
+          <p className="mb-4">
+            Vliegtuigmaaltijden kunnen soms taai vlees of plakkerige broodjes bevatten. Als u twijfelt over de pasvorm van uw gebit, kunt u bij het boeken van uw vlucht vaak kiezen voor een &apos;soft meal&apos; of medisch dieet.
+          </p>
 
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">6. Reinigen tijdens een tussenstop</h2>
-            <p>
-              Bij een lange reis met een tussenstop is het fijn om uw gebit even op te frissen. Gebruik hiervoor altijd flessenwater in plaats van kraanwater in het vliegtuig of op onbekende luchthavens, om elk risico op bacteriële infecties te vermijden.
-            </p>
-          </section>
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">7. Reisbegeleiding voor extra rust</h2>
+          <p className="mb-4">
+            Vindt u de hele logistiek rondom de security en de reis toch spannend? Een reisbegeleider van Vliegklaar kan u ondersteunen. Wij weten precies hoe we discreet om moeten gaan met medische hulpmiddelen en zorgen dat u zich nergens zorgen over hoeft te maken.
+          </p>
 
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">7. Vertel het uw begeleider</h2>
-            <p>
-              Reist u met een begeleider van Vliegklaar? Het is handig om even te melden dat u een prothese draagt. Mocht er iets gebeuren (zoals een breuk aan het gebit), dan kan uw begeleider direct helpen bij het vinden van een lokale tandarts of technicus op uw bestemming.
+          <div className="bg-primary-50 p-8 rounded-2xl border-2 border-primary-200 mt-12">
+            <h3 className="text-2xl font-bold text-primary-900 mb-4">Wist u dat?</h3>
+            <p className="text-gray-700 mb-0">
+              Op Schiphol werken medewerkers die speciaal getraind zijn om senioren met medische protheses discreet te helpen. U bent dus in goede handen!
             </p>
-          </section>
+          </div>
 
-          <section className="bg-gray-50 p-8 rounded-xl">
-            <h2 className="text-2xl font-bold text-primary-800 mb-4 text-center">Zorgeloos op reis met Vliegklaar</h2>
-            <p className="text-center">
-              Of het nu gaat om praktische tips voor uw kunstgebit of volledige ondersteuning van deur tot deur: wij staan voor u klaar. 
-            </p>
-            <div className="mt-8 text-center flex flex-col sm:flex-row justify-center gap-4">
-              <Link
-                href="/contact"
-                className="bg-primary-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-primary-700 transition-colors"
-              >
-                Vrijblijvend adviesgesprek
-              </Link>
-              <Link
-                href="/blog/medicijnen-mee-op-reis"
-                className="bg-white border-2 border-primary-600 text-primary-600 font-bold px-8 py-4 rounded-xl hover:bg-primary-50 transition-colors"
-              >
-                Tips voor medicijnen
-              </Link>
-            </div>
-          </section>
+          <div className="mt-12 flex flex-wrap gap-4">
+            <Link href="/blog/hoe-ga-je-om-met-een-gebitprothese-op-het-vliegveld" className="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+              Gids: Gebit op het vliegveld
+            </Link>
+            <Link href="/blog/vliegen-met-een-kunstgebit-vliegveld-tips" className="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+              Vliegveld tips
+            </Link>
+          </div>
         </div>
+      </section>
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": articleTitle,
-              "description": "7 praktische tips voor senioren die reizen met een kunstgebit. Over security, handbagage, luchtdruk en verzorging onderweg.",
-              "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=80",
-              "author": {
-                "@type": "Organization",
-                "name": "Vliegklaar"
-              },
-              "publisher": {
-                "@type": "Organization",
-                "name": "Vliegklaar",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://vliegklaar.nl/logo.png"
-                }
-              },
-              "datePublished": publishDate
-            })
-          }}
-        />
-      </article>
+      <section className="py-16 bg-primary-900 text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Zorgeloos reizen met Vliegklaar</h2>
+          <p className="text-xl mb-10 text-primary-100">
+            Wilt u persoonlijke begeleiding tijdens uw volgende reis? Wij helpen senioren van deur tot deur.
+          </p>
+          <Link href="/contact" className="inline-block bg-white text-primary-900 font-bold px-10 py-4 rounded-xl shadow-lg hover:bg-primary-50 transition-colors">
+            Vraag een kennismaking aan
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }
