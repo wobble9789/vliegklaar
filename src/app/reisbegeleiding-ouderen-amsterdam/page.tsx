@@ -484,6 +484,14 @@ export default function AmsterdamSEOPage() {
           "text": "Zeker. Net als bij een pacemaker vereist reizen met een ICD (Implanteerbare Cardioverter Defibrillator) extra aandacht bij de security op Schiphol. Wij zorgen dat u de juiste medische paspoorten bij de hand heeft en begeleiden u veilig langs de security-scanners."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Is het pijnlijk om te vliegen met een kunstgebit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In principe niet. Echter, door de luchtdrukverschillen in de cabine kunnen uw tandvlees of kaken iets opzetten, wat irritatie kan veroorzaken bij een knellend gebit. Wij adviseren om voor een lange vlucht een kleefpasta mee te nemen voor extra stabiliteit en comfort."
+        }
+      },
     ]
   };
 
@@ -731,6 +739,9 @@ export default function AmsterdamSEOPage() {
                   )}
                   {faq.name.includes("gebit") && (
                     <> <Link href="/blog/vliegen-met-een-gebit" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met een gebit.</Link></>
+                  )}
+                  {faq.name.includes("kunstgebit") && (
+                    <> <Link href="/blog/vliegen-met-een-kunstgebit" className="text-primary-600 hover:underline">Lees meer over vliegen met een kunstgebit.</Link></>
                   )}
                   {faq.name.includes("bril") && (
                     <> <Link href="/blog/vliegen-met-bril-of-contactlenzen-tips" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met een bril of contactlenzen.</Link></>
