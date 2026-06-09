@@ -207,6 +207,9 @@ export default function AmersfoortSEOPage() {
                   {faq.name.includes("gebit") && (
                     <> <Link href="/blog/vliegen-met-een-gebit" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met een gebit.</Link></>
                   )}
+                  {faq.name.includes("stoma") && (
+                    <> <Link href="/blog/vliegen-met-een-stoma" className="text-primary-600 hover:underline">Lees meer over vliegen met een stoma.</Link></>
+                  )}
                 </p>
               </div>
             ))}
