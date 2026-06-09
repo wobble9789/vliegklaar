@@ -3,8 +3,8 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: &apos;Vliegen met rugklachten of een hernia: Tips voor senioren | Vliegklaar&apos;,
-  description: &apos;Lees onze praktische tips voor senioren die vliegen met rugklachten of een hernia. Zo reist u comfortabel en pijnvrij naar uw bestemming.&apos;,
+  title: 'Vliegen met rugklachten of een hernia: Tips voor senioren | Vliegklaar',
+  description: 'Lees onze praktische tips voor senioren die vliegen met rugklachten of een hernia. Zo reist u comfortabel en pijnvrij naar uw bestemming.',
 };
 
 export default function VliegenRugklachtenPage() {
