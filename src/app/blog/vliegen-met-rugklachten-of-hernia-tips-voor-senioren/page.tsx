@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { Metadata } from 'next';
+import Link from &apos;next/link&apos;;
+import Image from &apos;next/image&apos;;
+import { Metadata } from &apos;next&apos;;
 
 export const metadata: Metadata = {
-  title: 'Vliegen met rugklachten of een hernia: Tips voor senioren | Vliegklaar',
-  description: 'Lees onze praktische tips voor senioren die vliegen met rugklachten of een hernia. Zo reist u comfortabel en pijnvrij naar uw bestemming.',
+  title: &apos;Vliegen met rugklachten of een hernia: Tips voor senioren | Vliegklaar&apos;,
+  description: &apos;Lees onze praktische tips voor senioren die vliegen met rugklachten of een hernia. Zo reist u comfortabel en pijnvrij naar uw bestemming.&apos;,
 };
 
 export default function VliegenRugklachtenPage() {
@@ -62,7 +62,7 @@ export default function VliegenRugklachtenPage() {
           <p>
             De positie in het vliegtuig maakt een groot verschil. Een stoel aan het gangpad is vaak de beste keuze voor mensen met rugklachten. 
             U kunt hierdoor makkelijker opstaan om even te wandelen of te rekken zonder dat u over medepassagiers heen hoeft te klimmen. 
-            Overweeg indien mogelijk een stoel met extra beenruimte of een 'Economy Comfort' optie voor meer verstelmogelijkheden.
+            Overweeg indien mogelijk een stoel met extra beenruimte of een &apos;Economy Comfort&apos; optie voor meer verstelmogelijkheden.
           </p>
 
           <h2 className="text-2xl font-bold text-primary-800 mt-12 mb-6">2. Gebruik rugsteun</h2>
