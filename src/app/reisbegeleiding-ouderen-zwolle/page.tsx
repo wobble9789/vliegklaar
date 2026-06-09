@@ -140,6 +140,46 @@ export default function ZwolleSEOPage() {
           "text": "Uw rolstoel mag vrijwel altijd gratis mee als medische bagage. Het is wel verplicht om deze minimaal 48 uur voor vertrek aan te melden bij de luchtvaartmaatschappij, inclusief afmetingen en type accu. Wij regelen dit graag voor u."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie ook helpen bij vliegen met een gebit of prothese vanaf Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Vliegen met een (kunst)gebit of prothese is geen enkel probleem, maar het kan bij de security soms vragen oproepen. Onze begeleiders weten precies hoe u hier discreet mee omgaat en geven u praktische tips voor comfort tijdens een lange vlucht vanaf Zwolle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook bij vliegen na een operatie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij bieden gespecialiseerde ondersteuning voor senioren in Zwolle die kort geleden een ingreep hebben ondergaan. Onze begeleiders zorgen voor een rustig tempo en helpen bij alle fysieke handelingen op de luchthaven."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Biedt Vliegklaar ook begeleiding bij vliegen met diabetes vanaf Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Reizen met diabetes vraagt om extra planning rondom insuline, koeling en maaltijden. Onze begeleiders in Zwolle helpen u om alles volgens schema te laten verlopen en zorgen dat u ontspannen door de controles komt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag een kunstgebit in blijven bij de security?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, u kunt uw kunstgebit gewoon inhouden tijdens de veiligheidscontrole. De scanners zijn niet ingesteld op de kleine hoeveelheden metaal in een gebitsprothese. Onze begeleiders in Zwolle weten precies hoe ze u hierbij discreet kunnen ondersteunen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is vliegen met een hoge bloeddruk veilig vanaf Zwolle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Over het algemeen is vliegen met een goed ingestelde bloeddruk veilig. We raden aan om voor vertrek uw arts te raadplegen, uw medicatie in uw handbagage te bewaren en tijdens de vlucht voldoende water te drinken. Onze begeleiders uit Zwolle ondersteunen u graag bij een ontspannen reiservaring."
+        }
+      },
     ]
   };
 
@@ -269,6 +309,18 @@ export default function ZwolleSEOPage() {
                   )}
                   {faq.name.includes("rolstoel") && (
                     <> <Link href="/blog/vliegen-met-een-rolstoel" className="text-primary-600 hover:underline">Lees onze gids over vliegen met een rolstoel.</Link></>
+                  )}
+                  {faq.name.includes("gebit") && (
+                    <> <Link href="/blog/vliegen-met-een-gebit-vliegveld-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een gebit of prothese.</Link></>
+                  )}
+                  {faq.name.includes("vliegen na een operatie") && (
+                    <> <Link href="/blog/vliegen-na-operatie" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een operatie.</Link></>
+                  )}
+                  {faq.name.includes("diabetes") && (
+                    <> <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">Lees onze uitgebreide gids over vliegen met diabetes.</Link></>
+                  )}
+                  {faq.name.includes("bloeddruk") && (
+                    <> <Link href="/blog/vliegen-met-bloeddruk-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een hoge bloeddruk.</Link></>
                   )}
                 </p>
               </div>
