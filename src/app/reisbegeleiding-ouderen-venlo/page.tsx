@@ -8,8 +8,75 @@ export const metadata: Metadata = {
 };
 
 export default function VenloSEOPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook vanaf vliegveld Düsseldorf of Weeze?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Vanuit Venlo zijn de Duitse luchthavens Düsseldorf en Weeze vaak erg praktisch. Wij begeleiden u vanaf uw huis in Venlo, Tegelen of Blerick naar de luchthaven en helpen u bij alle controles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is er begeleiding mogelijk voor senioren met een mobiliteitsbeperking in Venlo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absoluut. Wij zijn gespecialiseerd in het ondersteunen van ouderen die minder mobiel zijn. We regelen assistentie op de luchthaven en zorgen dat het vervoer in Venlo naadloos aansluit op uw behoeften."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe werkt de deur-tot-deur begeleiding in Venlo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Onze begeleider komt op de dag van vertrek bij u thuis in Venlo. We helpen met de koffers, reizen samen naar het vliegveld (Schiphol, Eindhoven of Düsseldorf) en blijven bij u tot u veilig op uw eindbestemming bent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik hulp krijgen bij vliegen met een rollator vanaf Venlo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met een rollator is geen probleem. Wij helpen u bij de aanmelding bij de luchtvaartmaatschappij en zorgen dat u uw rollator op de luchthaven kunt gebruiken tot aan het vliegtuig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met Parkinson in de regio Venlo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij hebben ervaring met het begeleiden van reizigers met de ziekte van Parkinson. We zorgen voor een rustig tempo, helpen bij de logistiek en ondersteunen bij medicatieherinneringen tijdens de reis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat zijn de kosten voor reisbegeleiding in Venlo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De kosten hangen af van de duur en intensiteit van de begeleiding. Na een vrijblijvend kennismakingsgesprek in Venlo maken we een heldere offerte op maat voor u."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook senioren met dementie in Noord-Limburg?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij begeleiden regelmatig ouderen met beginnende dementie. Onze aanwezigheid biedt rust en structuur, wat essentieel is voor een geslaagde reiservaring vanuit Venlo."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <section className="bg-primary-50 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -76,6 +143,31 @@ export default function VenloSEOPage() {
                 U hoeft zich geen zorgen te maken over de complexiteit van modern reizen; wij regelen alles voor u.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary-800 mb-12 text-center">Veelgestelde vragen over reisbegeleiding in Venlo</h2>
+          <div className="space-y-6">
+            {faqSchema.mainEntity.map((faq, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {faq.acceptedAnswer.text}
+                  {faq.name.includes("rollator") && (
+                    <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Lees meer over vliegen met een rollator.</Link></>
+                  )}
+                  {faq.name.includes("Parkinson") && (
+                    <> <Link href="/blog/vliegen-met-parkinson" className="text-primary-600 hover:underline">Lees meer over vliegen met Parkinson.</Link></>
+                  )}
+                  {faq.name.includes("dementie") && (
+                    <> <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">Lees over reizen met dementie.</Link></>
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
