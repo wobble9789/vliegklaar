@@ -29,10 +29,66 @@ const faqData = {
     },
     {
       "@type": "Question",
+      "name": "Hoe gaat een senior veilig door de security op Schiphol?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Senioren kunnen vlot door de security op Schiphol door gebruik te maken van de moderne CT-scanners (vloeistoffen mogen vaak in de tas blijven), gemakkelijke kleding te dragen en medische protheses of pacemakers vooraf te melden. Onze begeleiders ondersteunen u hierbij stap voor stap."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik ETIAS aanvragen voor mijn reis in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vanaf 2026 is voor reizen naar veel landen buiten de EU een ETIAS-reistoestemming verplicht. Onze begeleiders in Almere help u bij de digitale aanvraag en zorgen dat u alle documenten op orde heeft voor vertrek vanaf Schiphol of Lelystad Airport."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is vliegen met een kunstgebit of prothese veilig vanaf Almere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, vliegen met een kunstgebit of gebitprothese is volkomen veilig. Bij de security check hoeft u uw prothese niet uit te doen; de scanners herkennen dit als medisch hulpmiddel. Onze begeleiders kunnen u discreet ondersteunen bij de controles op de luchthaven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bieden jullie ook hulp bij vliegen met parkinson vanuit Almere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jazeker. Reizen met parkinson vraagt om een zorgvuldige planning rondom medicatie-inname en mobiliteit. Onze begeleiders bieden de nodige ondersteuning en zorgen voor een rustig tempo op de luchthaven van Schiphol of Lelystad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mag ik een CPAP-apparaat meenemen in het vliegtuig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, een CPAP-apparaat mag mee als medische handbagage vanaf Schiphol of Lelystad. Het is verstandig om dit vooraf te melden bij de luchtvaartmaatschappij en een medische verklaring bij u te hebben. Onze begeleiders helpen u graag om alles rondom uw CPAP-apparaat soepel te laten verlopen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen senioren veilig alleen reizen vanuit Almere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Veilig alleen reizen is mogelijk met de juiste voorbereiding. Vliegklaar biedt de nodige back-up en begeleiding tot aan de gate of zelfs tot aan de eindbestemming, zodat u nooit echt alleen bent. Onze begeleiders uit de regio Almere zorgen voor een vertrouwd gevoel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Begeleidt Vliegklaar ook senioren met dementie in Almere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, wij hebben specifieke ervaring met het begeleiden van senioren met beginnende dementie of geheugenproblemen. Onze begeleiders bieden structuur en rust vanaf het vertrek in Almere tot de aankomst op de bestemming."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Hoe zit het met vliegen met een rollator vanaf Almere?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wij begeleiden veel senioren die een rollator gebruiken. We zorgen voor de juiste aanmelding bij de luchtvaartmaatschappij en begeleiden u op Schiphol of Lelystad Airport tot aan de gate. Lees meer in ons artikel over vliegen met een rollator."
+        "text": "Wij begeleiden veel senioren die een rollator gebruiken. We zorgen voor de juiste aanmelding bij de luchtvaartmaatschappij en begeleiden u op Schiphol of Lelystad Airport tot aan de gate."
       }
     },
     {
@@ -40,7 +96,7 @@ const faqData = {
       "name": "Is er begeleiding voor slechthorenden in Almere?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, onze begeleiders zijn getraind in het ondersteunen van senioren met een gehoorapparaat. We helpen bij de communicatie op de luchthaven en zorgen dat u geen enkele omroep mist. Bekijk onze tips voor vliegen met een gehoorapparaat."
+        "text": "Ja, onze begeleiders zijn getraind in het ondersteunen van senioren met een gehoorapparaat. We helpen bij de communicatie op de luchthaven en zorgen dat u geen enkele omroep mist."
       }
     },
     {
@@ -49,6 +105,14 @@ const faqData = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Een jetlag kan vermoeiend zijn, zeker op latere leeftijd. Wij adviseren om direct het lokale ritme van Almere aan te houden, veel water te drinken en overdag buiten te zijn in het daglicht. Onze begeleiders kunnen u helpen om de eerste dagen na aankomst weer in het juiste ritme te komen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I fly with rheumatism or other joint complaints?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, vliegen met reuma is heel goed mogelijk. Wij adviseren u om tijdens de vlucht regelmatig te bewegen om stijfheid te voorkomen en eventueel vliegveld assistentie aan te vragen voor de afstanden op de luchthaven. Onze begeleiders kunnen u hierbij volledig ondersteunen."
       }
     },
     {
