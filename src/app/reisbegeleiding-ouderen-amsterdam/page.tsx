@@ -468,6 +468,22 @@ export default function AmsterdamSEOPage() {
           "text": "Zeker. Reizen met ernstige allergieën vraagt om een goede voorbereiding, zoals het doorgeven van speciale maaltijden en het meenemen van een EpiPen. Onze begeleiders helpen u bij de communicatie met de luchtvaartmaatschappij en zorgen dat u veilig op reis gaat vanaf Schiphol."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met artritis vanuit Amsterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met artritis kan uitdagend zijn door stijfheid en pijn. Onze begeleiders in Amsterdam helpen u bij het regelen van extra beenruimte, ondersteunen bij het in- en uitstappen op Schiphol en zorgen voor een comfortabel reistempo dat past bij uw fysieke mogelijkheden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie helpen bij vliegen met een ICD vanaf Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Net als bij een pacemaker vereist reizen met een ICD (Implanteerbare Cardioverter Defibrillator) extra aandacht bij de security op Schiphol. Wij zorgen dat u de juiste medische paspoorten bij de hand heeft en begeleiden u veilig langs de security-scanners."
+        }
+      },
     ]
   };
 
@@ -557,6 +573,12 @@ export default function AmsterdamSEOPage() {
                 <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {faq.acceptedAnswer.text}
+                  {faq.name.includes("artritis") && (
+                    <> <Link href="/blog/vliegen-met-artritis-tips" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met artritis.</Link></>
+                  )}
+                  {faq.name.includes("ICD") && (
+                    <> <Link href="/blog/vliegen-met-een-pacemaker-of-icd" className="text-primary-600 hover:underline">Lees meer over vliegen met een ICD of pacemaker.</Link></>
+                  )}
                   {faq.name.includes("neuspiercing") && (
                     <> <Link href="/blog/vliegen-met-een-neuspiercing-of-sieraden" className="text-primary-600 hover:underline">Lees meer over vliegen met piercings en sieraden.</Link></>
                   )}
