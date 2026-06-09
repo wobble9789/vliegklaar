@@ -22,6 +22,14 @@ export default function VliegenMetStomaPage() {
       },
       {
         "@type": "Question",
+        "name": "Bieden jullie ook hulp bij vliegen met een stoma vanuit Amsterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met een stoma is heel goed mogelijk. Wij adviseren u om voldoende reservemateriaal in uw handbagage mee te nemen en een stoma-paspoort bij u te hebben. Onze begeleiders in Amsterdam kunnen u helpen bij de voorbereiding en zorgen voor een ontspannen reis vanaf Schiphol."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Mag ik stoma-materiaal en schaartjes meenemen in de handbagage?",
         "acceptedAnswer": {
           "@type": "Answer",
