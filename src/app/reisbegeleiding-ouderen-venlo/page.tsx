@@ -67,6 +67,46 @@ export default function VenloSEOPage() {
           "@type": "Answer",
           "text": "Ja, wij begeleiden regelmatig ouderen met beginnende dementie. Onze aanwezigheid biedt rust en structuur, wat essentieel is voor een geslaagde reiservaring vanuit Venlo."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vloeibare medicijnen meenemen vanaf Weeze of Düsseldorf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vloeibare medicijnen die noodzakelijk zijn voor de reis mogen in verpakkingen groter dan 100ml mee. Wij adviseren om een medische verklaring of medicijnenpaspoort bij u te hebben. Onze begeleiders helpen u graag bij de voorbereiding hiervan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe zit het met de security check voor senioren met een pacemaker?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reizen met een pacemaker of ICD is veilig. U moet dit wel melden bij de security op de luchthaven (zoals Weeze of Düsseldorf). Onze begeleiders weten precies welke documenten u nodig heeft en begeleiden u discreet door de controle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook bij vliegen met diabetes vanuit Venlo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Reizen met diabetes vraagt om extra planning rondom insuline en maaltijden. Onze begeleiders helpen u om alles volgens schema te laten verlopen en zorgen dat u ontspannen door de controles komt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik begeleiding krijgen bij vliegangst?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegangst komt op alle leeftijden voor. Onze begeleiders bieden een rustige aanwezigheid en afleiding tijdens de vlucht om uw reis zo comfortabel mogelijk te maken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is er hulp bij vliegen na een operatie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij bieden gespecialiseerde ondersteuning voor senioren die kort geleden een ingreep hebben ondergaan (zoals een heup- of knieoperatie). Onze begeleiders zorgen voor een rustig tempo en helpen bij alle fysieke handelingen."
+        }
       }
     ]
   };
@@ -164,6 +204,21 @@ export default function VenloSEOPage() {
                   )}
                   {faq.name.includes("dementie") && (
                     <> <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">Lees over reizen met dementie.</Link></>
+                  )}
+                  {faq.name.includes("medicijnen") && (
+                    <> <Link href="/blog/medicijnen-mee-op-reis" className="text-primary-600 hover:underline">Lees meer over medicijnen mee op reis.</Link></>
+                  )}
+                  {faq.name.includes("pacemaker") && (
+                    <> <Link href="/blog/vliegen-met-een-pacemaker-of-icd" className="text-primary-600 hover:underline">Lees meer over vliegen met een pacemaker.</Link></>
+                  )}
+                  {faq.name.includes("diabetes") && (
+                    <> <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">Bekijk onze gids voor vliegen met diabetes.</Link></>
+                  )}
+                  {faq.name.includes("vliegangst") && (
+                    <> <Link href="/blog/vliegangst-bij-ouderen" className="text-primary-600 hover:underline">Bekijk onze tips tegen vliegangst.</Link></>
+                  )}
+                  {faq.name.includes("operatie") && (
+                    <> <Link href="/blog/vliegen-na-operatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een operatie.</Link></>
                   )}
                 </p>
               </div>
