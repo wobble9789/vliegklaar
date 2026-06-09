@@ -14,6 +14,22 @@ export default function RotterdamSEOPage() {
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "Moet ik ETIAS aanvragen voor mijn reis in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vanaf 2026 is voor reizen naar veel landen buiten de EU een ETIAS-reistoestemming verplicht. Dit proces verloopt volledig digitaal. Onze begeleiders in Rotterdam kunnen u helpen bij de aanvraag en zorgen dat u alle benodigde documenten op orde heeft voor vertrek vanaf Rotterdam The Hague Airport of Schiphol."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat verandert er door het nieuwe Entry/Exit Systeem (EES) in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het EES vervangt het stempelen van paspoorten door biometrische registratie (gezichtsscan en vingerafdrukken) bij de grens. Voor senioren kan dit de eerste keer spannend zijn bij de digitale kiosken. Wij begeleiden u stap voor stap door dit proces op the luchthaven, zodat u zorgeloos de grens passeert."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Is vliegen met een scootmobiel mogelijk vanaf Rotterdam The Hague Airport?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -429,6 +445,12 @@ export default function RotterdamSEOPage() {
                 <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {faq.acceptedAnswer.text}
+                  {faq.name.includes("ETIAS") && (
+                    <> <Link href="/blog/schengen-regels-2026" className="text-primary-600 hover:underline">Lees alles over de nieuwe ETIAS-reistoestemming in 2026.</Link></>
+                  )}
+                  {faq.name.includes("Entry/Exit") && (
+                    <> <Link href="/blog/schengen-regels-2026" className="text-primary-600 hover:underline">Meer informatie over het Entry/Exit Systeem (EES).</Link></>
+                  )}
                   {faq.name.includes("gehoorapparaat") && (
                     <> <Link href="/blog/vliegen-met-een-gehoorapparaat-vliegveld-tips" className="text-primary-600 hover:underline">Bekijk onze vliegveld tips voor gehoorapparaten.</Link></>
                   )}
