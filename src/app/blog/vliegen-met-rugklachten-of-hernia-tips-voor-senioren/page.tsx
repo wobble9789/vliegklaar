@@ -1,6 +1,6 @@
-import Link from &apos;next/link&apos;;
-import Image from &apos;next/image&apos;;
-import { Metadata } from &apos;next&apos;;
+import Link from "next/link";
+import Image from "next/image";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: &apos;Vliegen met rugklachten of een hernia: Tips voor senioren | Vliegklaar&apos;,
