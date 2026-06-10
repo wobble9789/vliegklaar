@@ -86,6 +86,46 @@ export default function AmersfoortSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Biedt Vliegklaar ook begeleiding bij vliegen met diabetes vanaf Amersfoort?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Reizen met diabetes vraagt om extra planning rondom insuline, koeling en maaltijden. Onze begeleiders helpen u om alles volgens schema te laten verlopen en zorgen dat u ontspannen door de controles komt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe ga ik om met een rolstoel in het vliegtuig vanaf Amersfoort?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Uw rolstoel mag vrijwel altijd gratis mee als medische bagage. Het is wel verplicht om deze minimaal 48 uur voor vertrek aan te melden bij de luchtvaartmaatschappij. Wij regelen dit proces graag voor u en zorgen voor de juiste begeleiding op de luchthaven."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie ook helpen bij vliegen met een stoma?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vliegen met een stoma is heel goed mogelijk. Wij adviseren u om voldoende reservemateriaal in uw handbagage mee te nemen en een stoma-paspoort bij u te hebben. Onze begeleiders kunnen u helpen bij de voorbereiding en zorgen voor een ontspannen reis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook ondersteuning bij het boeken van de reis zelf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Naast de fysieke begeleiding kunnen we u ook adviseren bij het uitzoeken van een geschikte accommodatie en vlucht die past bij uw wensen en eventuele beperkingen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe ga ik om met een tussenstop als senior?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een tussenstop kan vermoeiend zijn. Wij raden aan om vliegveld assistentie aan te vragen voor het vervoer tussen gates en voldoende overstaptijd te plannen. Onze begeleiders kunnen u hierbij volledig ondersteunen."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Mag een kunstgebit in blijven bij de security op Schiphol?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -209,6 +249,18 @@ export default function AmersfoortSEOPage() {
                   )}
                   {faq.name.includes("stoma") && (
                     <> <Link href="/blog/vliegen-met-een-stoma" className="text-primary-600 hover:underline">Lees meer over vliegen met een stoma.</Link></>
+                  )}
+                  {faq.name.includes("diabetes") && (
+                    <> <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">Lees onze uitgebreide gids over vliegen met diabetes.</Link></>
+                  )}
+                  {faq.name.includes("rolstoel") && (
+                    <> <Link href="/blog/vliegen-met-een-rolstoel" className="text-primary-600 hover:underline">Bekijk onze complete gids voor vliegen met een rolstoel.</Link></>
+                  )}
+                  {faq.name.includes("boeken") && (
+                    <> <Link href="/blog/hoe-boek-je-vliegticket-als-senior" className="text-primary-600 hover:underline">Lees meer over het boeken van een vliegticket.</Link></>
+                  )}
+                  {faq.name.includes("tussenstop") && (
+                    <> <Link href="/blog/hoe-ga-je-om-met-een-tussenstop-als-senior" className="text-primary-600 hover:underline">Lees onze tips over tussenstops.</Link></>
                   )}
                 </p>
               </div>
