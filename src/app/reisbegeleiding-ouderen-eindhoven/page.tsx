@@ -54,6 +54,14 @@ export default function EindhovenSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Hoe voorkom ik uitdroging tijdens een lange vlucht vanaf Eindhoven Airport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De droge lucht in de vliegtuigcabine kan snel leiden tot uitdroging, wat bij senioren extra risico's met zich meebrengt. Wij raden aan om voor vertrek al goed te drinken, cafeïne en alcohol te vermijden, en tijdens de vlucht regelmatig water te nemen. Onze begeleiders herinneren u hier graag aan."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Kunnen jullie ook helpen bij vliegen met parkinson vanaf Eindhoven Airport?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -229,6 +237,9 @@ export default function EindhovenSEOPage() {
                   )}
                   {faq.name.includes("dementie") && (
                     <> <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">Lees meer over reizen met dementie.</Link></>
+                  )}
+                  {faq.name.includes("uitdroging") && (
+                    <> <Link href="/blog/hoe-voorkom-je-uitdroging-tijdens-het-vliegen-als-senior" className="text-primary-600 hover:underline">Lees onze tips om uitdroging te voorkomen tijdens het vliegen.</Link></>
                   )}
                   {faq.name.includes("rollator") && (
                     <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met een rollator.</Link></>
