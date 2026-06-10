@@ -41,7 +41,15 @@ export default function GebitsprothekeVliegveldPage() {
         "name": "Wat zijn tips voor comfort met een gebit tijdens een lange vlucht?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Door de droge lucht in de cabine kan uw mond droger worden, wat irritatie onder de prothese kan veroorzaken. Drink voldoende water en overweeg om een kleine hoeveelheid extra kleefpasta mee te nemen voor extra grip tijdens het eten aan boord."
+          "text": "Door de droge lucht in de cabine kan uw mond droger worden, wat irritatie onder de prothese kan verooraken. Drink voldoende water en overweeg om een kleine hoeveelheid extra kleefpasta mee te nemen voor extra grip tijdens het eten aan boord."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe maak ik mijn kunstgebit schoon tijdens de reis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gebruik reinigingstabletten en een zachte borstel. Op vliegvelden en in het vliegtuig kunt u het beste flessenwater gebruiken voor het spoelen als u twijfelt over de waterkwaliteit. Onze begeleiders kunnen u helpen met de juiste benodigdheden."
         }
       }
     ]
@@ -115,6 +123,7 @@ export default function GebitsprothekeVliegveldPage() {
           <p>
             Vergeet niet een stevig bewaardoosje mee te nemen voor als u de prothese &apos;s nachts uitdoet. Gebruik op uw vakantiebestemming 
             bij voorkeur flessenwater (geen kraanwater) om uw prothese te reinigen als de kwaliteit van het lokale drinkwater onduidelijk is.
+            Lees onze tips over <Link href="/blog/vliegen-met-een-gebit-schoonmaken-tips" className="text-primary-600 hover:underline">het schoonmaken van uw gebit op reis</Link>.
           </p>
 
           <h2 className="text-2xl font-bold text-primary-800">5. Begeleiding in uw regio</h2>
@@ -132,7 +141,12 @@ export default function GebitsprothekeVliegveldPage() {
             {faqSchema.mainEntity.map((faq, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-primary-100">
                 <h3 className="text-lg font-bold text-primary-800 mb-2">{faq.name}</h3>
-                <p className="text-gray-700">{faq.acceptedAnswer.text}</p>
+                <p className="text-gray-700">
+                  {faq.acceptedAnswer.text}
+                  {faq.name.includes("schoon") && (
+                    <> <Link href="/blog/vliegen-met-een-gebit-schoonmaken" className="text-primary-600 hover:underline">Lees meer over schoonmaaktips.</Link></>
+                  )}
+                </p>
               </div>
             ))}
           </div>
