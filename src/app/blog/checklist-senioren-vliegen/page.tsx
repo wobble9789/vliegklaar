@@ -113,6 +113,27 @@ export default function ChecklistSeniorenVliegenPage() {
                   <p className="text-gray-600">{item.acceptedAnswer.text}</p>
                 </div>
               ))}
+              <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">Hoe ga ik om met een gehoorapparaat op het vliegveld?</h3>
+                <p className="text-gray-600">
+                  U kunt uw gehoorapparaat gewoon inhouden tijdens de security scan. Het is wel verstandig om reservebatterijen in uw handbagage mee te nemen. 
+                  <Link href="/blog/hoe-ga-je-om-met-een-gehoorapparaat-op-het-vliegveld" className="text-primary-600 hover:underline ml-1">Lees hier onze volledige gids.</Link>
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">Mag een kunstgebit in blijven bij de security?</h3>
+                <p className="text-gray-600">
+                  Ja, een kunstgebit of prothese hoeft niet uit bij de veiligheidscontrole op Schiphol. De apparatuur reageert hier doorgaans niet op. 
+                  <Link href="/blog/vliegen-met-een-gebit-vliegveld-tips" className="text-primary-600 hover:underline ml-1">Lees meer tips over vliegen met een gebit.</Link>
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">Hoe bereid ik me voor op een lange vlucht?</h3>
+                <p className="text-gray-600">
+                  Zorg voor comfortabele kleding, blijf goed gehydrateerd en probeer elke twee uur even te bewegen. 
+                  <Link href="/blog/hoe-voorbereiden-on-lange-vlucht-senior" className="text-primary-600 hover:underline ml-1">Bekijk onze uitgebreide voorbereidingstips.</Link>
+                </p>
+              </div>
             </div>
           </section>
 
