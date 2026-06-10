@@ -88,9 +88,26 @@ export default function SecuritySchipholSeniorenPage() {
             <p>
               Vindt u het lastig om lang te staan in de rij of begrijpt u de instructies soms niet goed? Onze reisbegeleiders bieden persoonlijke ondersteuning en lopen met u mee door de volledige securityprocedure.
               <Link href="/reisbegeleiding-ouderen-amsterdam" className="text-primary-600 font-bold hover:underline ml-1">
-                Ontdek onze service op Schiphol.
+                Ontdek onze service op Schiphol (Amsterdam).
               </Link>
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-primary-800">Assistentie in andere steden</h2>
+            <p>
+              Vliegklaar biedt niet alleen begeleiding op Schiphol, maar in heel Nederland. Woont u in de regio? Wij halen u thuis op en begeleiden u tot in het vliegtuig.
+            </p>
+            <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm mt-4">
+              <Link href="/reisbegeleiding-ouderen-rotterdam" className="text-primary-600 hover:underline">Rotterdam</Link>
+              <Link href="/reisbegeleiding-ouderen-den-haag" className="text-primary-600 hover:underline">Den Haag</Link>
+              <Link href="/reisbegeleiding-ouderen-utrecht" className="text-primary-600 hover:underline">Utrecht</Link>
+              <Link href="/reisbegeleiding-ouderen-eindhoven" className="text-primary-600 hover:underline">Eindhoven</Link>
+              <Link href="/reisbegeleiding-ouderen-tilburg" className="text-primary-600 hover:underline">Tilburg</Link>
+              <Link href="/reisbegeleiding-ouderen-groningen" className="text-primary-600 hover:underline">Groningen</Link>
+              <Link href="/reisbegeleiding-ouderen-nijmegen" className="text-primary-600 hover:underline">Nijmegen</Link>
+              <Link href="/reisbegeleiding-ouderen-arnhem" className="text-primary-600 hover:underline">Arnhem</Link>
+            </div>
           </section>
 
           <section>
