@@ -126,6 +126,22 @@ export default function AmsterdamSEOPage() {
       },
       {
         "@type": "Question",
+        "name": "Is vliegen met een visuele beperking mogelijk vanaf Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Schiphol biedt uitstekende faciliteiten voor reizigers met een visuele beperking, zoals tactiele gidslijnen en gespecialiseerde assistentie. Onze begeleiders in Amsterdam ondersteunen u bij elke stap: van het navigeren door de terminal tot het voorlezen van boordinformatie, zodat u veilig en ontspannen op reis gaat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik vliegen na een staaroperatie vanuit Amsterdam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In de meeste gevallen mag u na een staaroperatie al vrij snel weer vliegen (vaak al na 24 tot 48 uur), mits er geen complicaties zijn en uw oogarts toestemming geeft. Onze begeleiders kunnen u helpen bij de logistiek op Schiphol and zorgen dat u uw oogdruppels volgens schema kunt toedienen tijdens de reis."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Hoe lang van tevoren moet ik een reisbegeleider boeken?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -655,6 +671,12 @@ export default function AmsterdamSEOPage() {
                   )}
                   {faq.name.includes("gehoor") && (
                     <> <Link href="/blog/vliegen-met-een-gehoorapparaat-vliegveld-tips" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met gehoorproblemen.</Link></>
+                  )}
+                  {faq.name.includes("visuele beperking") && (
+                    <> <Link href="/blog/vliegen-met-visuele-beperking" className="text-primary-600 hover:underline">Lees meer over vliegen met een visuele beperking.</Link></>
+                  )}
+                  {faq.name.includes("staaroperatie") && (
+                    <> <Link href="/blog/vliegen-na-staaroperatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een staaroperatie.</Link></>
                   )}
                   {faq.name.includes("gehoor") && (
                     <> <Link href="/blog/vliegen-met-een-gehoorapparaat-senioren" className="text-primary-600 hover:underline">Lees meer over vliegen met een gehoorapparaat als senior.</Link></>
