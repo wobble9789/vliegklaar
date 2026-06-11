@@ -182,10 +182,18 @@ export default function AmsterdamSEOPage() {
       },
       {
         "@type": "Question",
-        "name": "Begeleiden jullie ook bij vliegen na een operatie?",
+        "name": "Wanneer mag ik weer vliegen na een heupoperatie?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja, wij bieden gespecialiseerde ondersteuning voor senioren die kort geleden een ingreep hebben ondergaan. Onze begeleiders zorgen voor een rustig tempo en helpen bij alle fysieke handelingen op de luchthaven."
+          "text": "Meestal is vliegen na een heupoperatie na 6 tot 12 weken weer veilig, afhankelijk van uw herstel en het advies van uw chirurg. Voor kortere vluchten kan dit soms sneller. Onze begeleiders in Amsterdam helpen u graag bij een comfortabele reis vanaf Schiphol, inclusief het regelen van extra beenruimte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe ga ik om met een heupprothese bij de security op Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een heupprothese zal vrijwel zeker de metaaldetector activeren. Meld dit vooraf bij de beveiligingsbeambte en houd uw prothesepashoudertje bij de hand. U wordt dan meestal handmatig gecontroleerd of via een bodyscan. Onze begeleiders ondersteunen u bij dit proces voor een vlotte doorgang."
         }
       },
       {
@@ -635,6 +643,12 @@ export default function AmsterdamSEOPage() {
                   )}
                   {faq.name.includes("vliegen na een operatie") && (
                     <> <Link href="/blog/vliegen-na-operatie" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een operatie.</Link></>
+                  )}
+                  {faq.name.includes("heupoperatie") && (
+                    <> <Link href="/blog/vliegen-na-heupoperatie" className="text-primary-600 hover:underline">Lees onze uitgebreide gids over vliegen na een heupoperatie.</Link></>
+                  )}
+                  {faq.name.includes("heupprothese") && (
+                    <> <Link href="/blog/vliegen-met-knie-of-heupprothese" className="text-primary-600 hover:underline">Lees meer over vliegen met een heupprothese.</Link></>
                   )}
                   {faq.name.includes("dementie") && (
                     <> <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">Lees over reizen met dementie.</Link></>
