@@ -107,6 +107,14 @@ export default function VenloSEOPage() {
           "@type": "Answer",
           "text": "Ja, wij bieden gespecialiseerde ondersteuning voor senioren die kort geleden een ingreep hebben ondergaan (zoals een heup- of knieoperatie). Onze begeleiders zorgen voor een rustig tempo en helpen bij alle fysieke handelingen."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Wanneer mag ik vliegen na een heupoperatie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meestal mag u na 6 tot 12 weken weer vliegen na een totale heupvervanging. Dit hangt echter af van uw herstel en de duur van de vlucht. Wij kunnen u tijdens de reis ondersteunen met extra beenruimte en mobiliteitshulp."
+        }
       }
     ]
   };
@@ -219,6 +227,9 @@ export default function VenloSEOPage() {
                   )}
                   {faq.name.includes("operatie") && (
                     <> <Link href="/blog/vliegen-na-operatie" className="text-primary-600 hover:underline">Lees meer over vliegen na een operatie.</Link></>
+                  )}
+                  {faq.name.includes("heupoperatie") && (
+                    <> <Link href="/blog/vliegen-na-heupoperatie" className="text-primary-600 hover:underline">Lees onze specifieke gids over vliegen na een heupoperatie.</Link></>
                   )}
                 </p>
               </div>
