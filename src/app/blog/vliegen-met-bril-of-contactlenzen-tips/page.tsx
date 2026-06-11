@@ -127,7 +127,7 @@ export default function BrilContactlenzenBlog() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="bg-primary-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-700 transition-colors shadow-lg">
               Vrijblijvend advies aanvragen
-            </li>
+            </Link>
             <Link href="/reisbegeleiding-ouderen-amsterdam" className="bg-white border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-xl font-bold hover:bg-primary-50 transition-colors">
               Reisbegeleiding in Amsterdam
             </Link>
