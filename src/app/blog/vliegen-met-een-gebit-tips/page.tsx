@@ -1,101 +1,112 @@
-import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Vliegen met een Gebitsprothese: Tips voor Senioren | Vliegklaar',
-  description: 'Reizen met een kunstgebit of gebitsprothese? Lees onze praktische tips over drukverschillen, reiniging en douane-controle voor een zorgeloze vlucht.',
+  title: 'Vliegen met een gebit of kunstgebit: Tips voor senioren | Vliegklaar',
+  description: 'Gaat u vliegen met een kunstgebit of gebitsprothese? Lees hier alles over security checks, comfort tijdens de vlucht en handige tips voor senioren.',
 };
 
-export default function VliegenMetGebitTipsPage() {
+export default function VliegenMetGebitBlog() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Vliegen met een gebit of kunstgebit: Tips voor senioren",
+    "description": "Praktische gids voor senioren die vliegen met een kunstgebit. Alles over de security op Schiphol, drukverschillen in de cabine en mondverzorging op reis.",
+    "author": {
+      "@type": "Organization",
+      "name": "Vliegklaar"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Vliegklaar",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vliegklaar.nl/logo.png"
+      }
+    },
+    "datePublished": "2026-06-11"
+  };
+
   return (
     <main className="pt-20">
-      <article className="max-w-4xl mx-auto px-4 py-12">
-        <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
-            Vliegen met een Gebitsprothese: Praktische Tips voor een Zorgeloze Reis
-          </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
-            Voor veel senioren is een kunstgebit of gebitsprothese een onderdeel van het dagelijks leven. 
-            Wanneer u gaat vliegen, roept dit soms vragen op: Heeft de luchtdruk invloed? Wat mag er mee in de handbagage? 
-            In dit artikel geven we praktische tips voor reizigers met een gebitsprothese.
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      
+      <article className="max-w-4xl mx-auto px-4 py-16">
+        <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-8">
+          Vliegen met een gebit of kunstgebit: Alles wat u moet weten
+        </h1>
+        
+        <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+          Voor veel senioren is een kunstgebit of gebitsprothese een vast onderdeel van de dagelijkse verzorging. 
+          Toch krijgen wij vaak de vraag: &quot;Levert een kunstgebit problemen op bij de security?&quot; of 
+          &quot;Kan ik last krijgen van de luchtdruk in het vliegtuig?&quot;. In dit artikel geven we antwoord op de meest 
+          gestelde vragen en delen we praktische tips voor een zorgeloze vlucht.
+        </p>
+
+        <h2 className="text-2xl font-bold text-primary-800 mt-12 mb-6">Het kunstgebit bij de security check</h2>
+        <p className="text-gray-600 mb-6 leading-relaxed">
+          De meest gestelde vraag is of een kunstgebit de metaaldetectiepoortjes op het vliegveld laat afgaan. 
+          Het korte antwoord is: <strong>nee</strong>. Moderne gebitsprotheses bevatten meestal geen of slechts 
+          minimale hoeveelheden metaal die niet genoeg zijn om de alarmen te activeren.
+        </p>
+        <p className="text-gray-600 mb-6 leading-relaxed">
+          Zelfs als u een frameprothese heeft met meer metaal, is de beveiliging op Schiphol gewend aan medische hulpmiddelen. 
+          Mocht de bodyscan toch iets signaleren, dan wordt dit discreet afgehandeld door de beveiligingsmedewerkers. 
+          U hoeft uw gebit nooit uit te doen voor de controle.
+        </p>
+
+        <h2 className="text-2xl font-bold text-primary-800 mt-12 mb-6">Drukverschillen en uw gebit</h2>
+        <p className="text-gray-600 mb-6 leading-relaxed">
+          Wanneer het vliegtuig stijgt of daalt, verandert de luchtdruk in de cabine. Dit kan invloed hebben op uw tandvlees. 
+          Sommige senioren ervaren dat hun tandvlees licht opzwelt, waardoor de prothese strakker kan gaan zitten of juist 
+          iets losser komt te zitten als er lucht onder de prothese komt.
+        </p>
+        <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">
+          <li><strong>Gebruik kleefpasta:</strong> Zorg voor een goede fixatie voor vertrek. Dit voorkomt dat luchtbellen irritatie veroorzaken.</li>
+          <li><strong>Hydratatie:</strong> Drink voldoende water. Een droge mond (vaak versterkt door de droge vliegtuiglucht) kan ervoor zorgen dat een prothese minder goed blijft zitten.</li>
+          <li><strong>Vermijd gasvormende dranken:</strong> Koolzuurhoudende dranken kunnen zorgen voor extra lucht in de maag en mond, wat het comfort niet ten goede komt.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-primary-800 mt-12 mb-6">Mondverzorging tijdens een lange vlucht</h2>
+        <p className="text-gray-600 mb-6 leading-relaxed">
+          Reist u naar een verre bestemming? Dan is mondhygiëne extra belangrijk. In de droge lucht van de cabine 
+          vermenigvuldigen bacteriën zich sneller, wat kan leiden tot een onfrisse smaak of irritaties onder het gebit.
+        </p>
+        <p className="text-gray-600 mb-6 leading-relaxed">
+          Neem een kleine reisset mee in uw handbagage met een tandenborstel, een kleine tube tandpasta en eventueel 
+          reinigingstabletten. Let op: vloeibare gebitsreinigers moeten voldoen aan de 100ml regels voor vloeistoffen, 
+          tenzij u een medische verklaring heeft.
+        </p>
+
+        <h2 className="text-2xl font-bold text-primary-800 mt-12 mb-6">Handbagage Checklist</h2>
+        <div className="bg-primary-50 p-6 rounded-xl border border-primary-100 mb-12">
+          <h3 className="text-lg font-bold text-primary-900 mb-4">Wat neemt u mee in uw tas?</h3>
+          <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
+            <li className="flex items-start gap-2"><span>✅</span> Reserve-kleefpasta</li>
+            <li className="flex items-start gap-2"><span>✅</span> Een stevig gebitsdoosje</li>
+            <li className="flex items-start gap-2"><span>✅</span> Uw vertrouwde reinigingsborstel</li>
+            <li className="flex items-start gap-2"><span>✅</span> Pijnstillers (voor het geval van druk op het tandvlees)</li>
+          </ul>
+        </div>
+
+        <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+          <h2 className="text-2xl font-bold text-primary-900 mb-4">Zorgeloos op reis met Vliegklaar</h2>
+          <p className="text-gray-700 mb-6">
+            Ziet u op tegen de logistiek of de kleine ongemakken van het reizen als senior? Onze reisbegeleiders 
+            zijn er om u te ondersteunen. Van de security op Schiphol tot aan de aankomst op uw bestemming; 
+            wij zorgen dat u zich nergens zorgen over hoeft te maken.
           </p>
-        </header>
-
-        <div className="prose prose-lg max-w-none text-gray-700 space-y-8">
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">1. De Invloed van Luchtdruk op uw Gebit</h2>
-            <p>
-              Tijdens het stijgen en dalen van het vliegtuig verandert de luchtdruk in de cabine. Hoewel een goed passend 
-              gebit hier meestal geen last van heeft, kan lucht die vastzit onder de prothese soms voor een licht drukkend 
-              gevoel zorgen.
-            </p>
-            <p>
-              <strong>Tip:</strong> Zorg ervoor dat uw gebit voor vertrek goed is aangemeten door uw tandarts of protheticus. 
-              Een loszittend gebit kan door drukverschillen sneller irritatie veroorzaken.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">2. Handbagage en Reinigingsmiddelen</h2>
-            <p>
-              Vloeistofregels op vliegvelden zijn streng. Als u gebitscleaner (vloeibaar) of kleefpasta meeneemt, moet dit 
-              voldoen aan de 100ml regel.
-            </p>
-            <ul>
-              <li><strong>Kleefpasta:</strong> Neem een kleine tube mee in uw doorzichtige vloeistofzakje.</li>
-              <li><strong>Bruistabletten:</strong> Deze vallen onder vaste stoffen en mogen onbeperkt mee in de handbagage.</li>
-              <li><strong>Bakje:</strong> Neem een stevig afsluitbaar bakje mee als u uw gebit tijdens een lange nachtvlucht wilt uitdoen.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">3. Eten en Drinken aan Boord</h2>
-            <p>
-              Vliegtuigmaaltijden kunnen soms taai of juist erg plakkerig zijn. Met een gebitsprothese is het verstandig 
-              om voorzichtig te zijn met harde broodjes of plakkerige snacks die tijdens de vlucht worden geserveerd.
-            </p>
-            <p>
-              Vraag indien nodig om een zachtere maaltijdoptie bij de stewardess, of neem zelf een zachte snack mee voor de zekerheid.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">4. Hygiëne op de Luchthaven</h2>
-            <p>
-              Het reinigen van uw gebit in een klein vliegtuigtoilet is niet ideaal. Probeer uw gebit grondig te reinigen 
-              vlak voor het boarden op de luchthaven. Op veel grote vliegvelden zoals Schiphol zijn de toiletten ruim en 
-              schoon genoeg om dit comfortabel te doen.
-            </p>
-          </section>
-
-          <section className="bg-primary-50 p-8 rounded-2xl border border-primary-100">
-            <h2 className="text-2xl font-bold text-primary-800 mb-4">Hulp nodig bij uw reis?</h2>
-            <p className="mb-6">
-              Ziet u op tegen de logistiek van het vliegen, met of zonder medische hulpmiddelen? 
-              De begeleiders van Vliegklaar ondersteunen u van deur tot deur.
-            </p>
-            <Link 
-              href="/reisbegeleiding-ouderen" 
-              className="inline-block bg-primary-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-primary-700 transition-colors"
-            >
-              Ontdek onze reisbegeleiding
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link href="/contact" className="bg-primary-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-primary-700 transition-colors text-center">
+              Vrijblijvend advies aanvragen
             </Link>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-primary-800">Gerelateerde artikelen</h2>
-            <div className="grid md:grid-cols-2 gap-4 mt-4">
-              <Link href="/blog/checklist-senioren-vliegen" className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
-                <span className="font-semibold text-primary-700">Checklist Senioren Vliegen</span>
-                <p className="text-sm text-gray-500">Alles wat u moet weten voor vertrek.</p>
-              </Link>
-              <Link href="/blog/vliegen-met-een-kunstgebit" className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
-                <span className="font-semibold text-primary-700">Vliegen met een kunstgebit</span>
-                <p className="text-sm text-gray-500">Aanvullende informatie over protheses.</p>
-              </Link>
-            </div>
-          </section>
+            <Link href="/diensten" className="bg-white border-2 border-primary-600 text-primary-600 font-bold px-8 py-4 rounded-xl hover:bg-primary-50 transition-colors text-center">
+              Bekijk onze diensten
+            </Link>
+          </div>
         </div>
       </article>
     </main>
