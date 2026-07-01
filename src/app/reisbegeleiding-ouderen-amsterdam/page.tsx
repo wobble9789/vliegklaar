@@ -337,7 +337,7 @@ export default function AmsterdamSEOPage() {
         "name": "Zijn er risico's bij vliegen met hartklachten vanuit Amsterdam?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Bij stabiele hartklachten is vliegen meestal mogelijk, maar de lagere luchtdruk in de cabine kan invloed hebben. Overleg altijd met uw cardioloog en vraag indien nodig vliegveld assistentie aan op Schiphol om fysieke inspanning te beperken. Onze begeleiders kunnen u hierbij volledig ondersteunen."
+          "text": "Bij stabiele hartklachten is vliegen meestal mogelijk, maar de lagere luchtdruk in de cabine kan invloed hebben. Overleg altijd met uw cardioloog and vraag indien nodig vliegveld assistentie aan op Schiphol om fysieke inspanning te beperken. Onze begeleiders kunnen u hierbij volledig ondersteunen."
         }
       },
       {
@@ -516,6 +516,38 @@ export default function AmsterdamSEOPage() {
           "text": "In principe niet. Echter, door de luchtdrukverschillen in de cabine kunnen uw tandvlees of kaken iets opzetten, wat irritatie kan veroorzaken bij een knellend gebit. Wij adviseren om voor een lange vlucht een kleefpasta mee te nemen voor extra stabiliteit en comfort."
         }
       },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie helpen bij vliegen met rugklachten of een hernia vanaf Schiphol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Vliegen met rugklachten of een hernia vraagt om specifieke ondersteuning, zoals hulp bij tillen en het regelen van een comfortabele zitplaats. Onze begeleiders ondersteunen u bij elke stap op Schiphol om fysieke belasting te voorkomen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bieden jullie ook ondersteuning bij incontinentie tijdens de vlucht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij bieden discrete ondersteuning bij incontinentie. Wij helpen bij de planning, adviseren over de juiste hulpmiddelen en zorgen voor rust en privacy tijdens de reis vanaf Amsterdam, zodat u zich nergens zorgen over hoeft te maken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat zijn de regels voor vliegen met gips of een blessure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vliegen met gips mag meestal alleen als het gips 'gespleten' is (vanwege mogelijke zwelling) of als u een medische verklaring heeft. Wij helpen u bij het checken van de specifieke eisen van uw luchtvaartmaatschappij op Schiphol."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is vliegen met een urinekatheter mogelijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Reizen met een urinekatheter is heel goed mogelijk met de juiste voorbereiding. Onze begeleiders kunnen u helpen bij de logistiek en zorgen voor de nodige privacy en hygiëne tijdens uw reis vanuit Amsterdam."
+        }
+      },
     ]
   };
 
@@ -624,7 +656,7 @@ export default function AmsterdamSEOPage() {
                     <> <Link href="/blog/vliegen-met-cpap-apparaat" className="text-primary-600 hover:underline">Lees meer over vliegen met een CPAP-apparaat.</Link></>
                   )}
                   {faq.name.includes("rolstoel") && (
-                    <> <Link href="/blog/rolstoel-op-het-vliegveld" className="text-primary-600 hover:underline">Bekijk tips voor rolstoel op het vliegveld.</Link></>
+                    <> <Link href="/blog/rolstoel-op-het-vliegveld" className="text-primary-600 hover:underline">Bekijk tips for rolstoel op het vliegveld.</Link></>
                   )}
                   {faq.name.includes("douane") && (
                     <> <Link href="/blog/hoe-ga-je-om-met-douane-controles-als-senior" className="text-primary-600 hover:underline">Lees onze uitgebreide gids over douane-controles voor senioren.</Link></>
@@ -782,6 +814,18 @@ export default function AmsterdamSEOPage() {
                   {faq.name.includes("bril") && (
                     <> <Link href="/blog/vliegen-met-bril-of-contactlenzen-tips" className="text-primary-600 hover:underline">Bekijk onze tips voor vliegen met een bril of contactlenzen.</Link></>
                   )}
+                  {faq.name.includes("rugklachten") && (
+                    <> <Link href="/blog/vliegen-met-rugklachten-of-hernia-tips-voor-senioren" className="text-primary-600 hover:underline">Lees meer over vliegen met rugklachten of een hernia.</Link></>
+                  )}
+                  {faq.name.includes("incontinentie") && (
+                    <> <Link href="/blog/vliegen-met-incontinentie-tips-senioren" className="text-primary-600 hover:underline">Lees onze tips voor vliegen met incontinentie.</Link></>
+                  )}
+                  {faq.name.includes("gips") && (
+                    <> <Link href="/blog/vliegen-met-gips-of-blessure-senioren" className="text-primary-600 hover:underline">Lees meer over vliegen met gips of een blessure.</Link></>
+                  )}
+                  {faq.name.includes("urinekatheter") && (
+                    <> <Link href="/blog/vliegen-met-een-urinekatheter" className="text-primary-600 hover:underline">Lees meer over vliegen met een urinekatheter.</Link></>
+                  )}
                 </p>
               </div>
             ))}
@@ -820,7 +864,7 @@ export default function AmsterdamSEOPage() {
           </p>
           <a
             href="tel:0618769492"
-            className="inline-block bg-primary-500 hover:bg-primary-600 text-white font-bold text-2xl px-12 py-6 rounded-2xl shadow-xl transition-all hover:scale-105"
+            className="bg-white text-primary-900 font-bold px-10 py-5 rounded-2xl shadow-xl hover:bg-primary-50 transition-all inline-block text-2xl"
           >
             06-18769492
           </a>
