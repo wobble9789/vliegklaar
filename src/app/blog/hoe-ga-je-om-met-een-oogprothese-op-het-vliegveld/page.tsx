@@ -54,7 +54,7 @@ export default function OogprotheseVliegveldPage() {
 
           <h2>Tijdens de vlucht</h2>
           <p>
-            Door de lage luchtvochtigheid in de cabine kan de oogholte droger aanvoelen dan normaal. Gebruik regelmatig uw oogdruppels. Als u een lange vlucht maakt en gewend bent de prothese 's nachts uit te doen, kunt u dit gewoon doen, maar zorg wel voor een hygiënische omgeving.
+            Door de lage luchtvochtigheid in de cabine kan de oogholte droger aanvoelen dan normaal. Gebruik regelmatig uw oogdruppels. Als u een lange vlucht maakt en gewend bent de prothese &apos;s nachts uit te doen, kunt u dit gewoon doen, maar zorg wel voor een hygiënische omgeving.
           </p>
 
           <div className="bg-primary-50 p-8 rounded-2xl my-12">
