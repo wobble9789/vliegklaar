@@ -22,10 +22,114 @@ export default function DenBoschSEOPage() {
       },
       {
         "@type": "Question",
-        "name": "Begeleidt Vliegklaar ook vanaf Eindhoven Airport?",
+        "name": "Begeleidt Vliegklaar ook vanaf Eindhoven Airport voor reizigers uit Den Bosch?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Zeker, voor reizigers uit Den Bosch begeleiden wij senioren vaak naar Eindhoven Airport of Schiphol, inclusief hulp bij bagage en de incheckprocedure."
+          "text": "Zeker, voor reizigers uit Den Bosch begeleiden wij senioren vaak naar Eindhoven Airport of Schiphol. We helpen bij het inchecken, de security en reizen indien gewenst mee tot aan de eindbestemming."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe zit het met vliegveld assistentie op de luchthaven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Luchthavens bieden gratis assistentie voor minder mobiele reizigers. Wij raden aan dit minimaal 48 uur van tevoren aan te vragen. Onze begeleiders kunnen u helpen bij de coördinatie hiervan, zodat u zorgeloos op reis gaat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook senioren met dementie in Den Bosch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij hebben veel ervaring met het ondersteunen van reizigers met geheugenproblemen. Onze begeleiders bieden de nodige rust en structuur tijdens de gehele reis vanaf uw voordeur in Den Bosch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is vliegen met een rollator mogelijk vanaf Den Bosch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Wij zorgen dat uw rollator mee kan en dat u op de luchthaven de juiste ondersteuning krijgt bij het instappen. We regelen de logistiek vanaf uw woning in Den Bosch naar de gate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie ook helpen bij vliegen met parkinson vanuit de regio Den Bosch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Reizen met parkinson vraagt om een zorgvuldige planning rondom medicatie-inname en mobiliteit. Onze begeleiders bieden de nodige ondersteuning en zorgen voor een rustig tempo op de luchthaven."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook bij vliegen na een operatie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wij bieden gespecialiseerde ondersteuning voor senioren die kort geleden een ingreep hebben ondergaan. Onze begeleiders zorgen voor een rustig tempo en helpen bij alle fysieke handelingen op de luchthaven."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunt u ook helpen bij vliegen met een pacemaker?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Reizen met een pacemaker of ICD vereist extra aandacht bij de security scans op de luchthaven. Onze begeleiders weten precies welke documenten u nodig heeft en hoe u vlot door de beveiliging gaat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe zit het met vliegen met een kunstgebit op het vliegveld?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vliegen met een kunstgebit of prothese is geen enkel probleem. Onze begeleiders weten hoe ze hier discreet mee omgaan bij de security en geven praktische tips voor optimaal comfort tijdens de vlucht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook bij vliegen met diabetes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jazeker. Reizen met diabetes vraagt om extra planning rondom insuline, koeling en maaltijden. Onze begeleiders helpen u om alles volgens schema te laten verlopen en zorgen dat u ontspannen door de controles komt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is vliegen met een CPAP-apparaat mogelijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, een CPAP-apparaat mag mee als medische handbagage. Het is verstandig om dit vooraf te melden bij de luchtvaartmaatschappij en een medische verklaring bij u te hebben. Wij helpen u graag om alles soepel te laten verlopen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie helpen bij valpreventie voor senioren op reis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absoluut. Veiligheid is onze prioriteit. We adviseren over stevig schoeisel, helpen bij het navigeren op de luchthaven en zorgen voor een stabiele ondersteuning tijdens de hele reis om vallen te voorkomen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat zijn de regels voor vliegen met bloedverdunners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Als u bloedverdunners gebruikt, is het belangrijk om extra aandacht te besteden aan hydratatie en beweging tijdens de vlucht. Wij ondersteunen u bij het op tijd innemen van uw medicatie en helpen met eenvoudige oefeningen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Begeleiden jullie ook bij vliegen met reuma?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zeker. Reizen met reuma kan fysiek zwaar zijn. Onze begeleiders helpen u met uw bagage, zorgen voor assistentie op de luchthaven zodat u niet ver hoeft te lopen, en bewaken het tempo zodat u ontspannen aankomt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe gaat een senior veilig door de security op de luchthaven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Senioren kunnen vlot door de security door gebruik te maken van de moderne CT-scanners, gemakkelijke kleding te dragen en medische protheses of pacemakers vooraf te melden. Onze begeleiders ondersteunen u stap voor stap."
         }
       }
     ]
@@ -103,6 +207,61 @@ export default function DenBoschSEOPage() {
                 Geen stress over inchecken, gate-wijzigingen of bagage. Wij wijken niet van uw zijde.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary-800 mb-12 text-center">Veelgestelde vragen over reisbegeleiding in Den Bosch</h2>
+          <div className="space-y-6">
+            {faqSchema.mainEntity.map((faq, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                <h3 className="text-lg font-bold text-primary-700 mb-2">{faq.name}</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {faq.acceptedAnswer.text}
+                  {faq.name.toLowerCase().includes("assistentie") && (
+                    <> <Link href="/blog/hoe-vraag-je-vliegveld-assistentie-aan" className="text-primary-600 hover:underline">Lees onze gids voor assistentie aanvragen.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("dementie") && (
+                    <> <Link href="/blog/reizen-met-dementie" className="text-primary-600 hover:underline">Lees over reizen met dementie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("rollator") && (
+                    <> <Link href="/blog/vliegen-met-een-rollator" className="text-primary-600 hover:underline">Lees meer over vliegen met een rollator.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("parkinson") && (
+                    <> <Link href="/blog/vliegen-met-parkinson" className="text-primary-600 hover:underline">Lees meer over vliegen met Parkinson.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("operatie") && (
+                    <> <Link href="/blog/vliegen-na-operatie" className="text-primary-600 hover:underline">Lees meer over veilig vliegen na een operatie.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("pacemaker") && (
+                    <> <Link href="/blog/vliegen-met-een-pacemaker-of-icd" className="text-primary-600 hover:underline">Lees meer over vliegen met een pacemaker.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("kunstgebit") && (
+                    <> <Link href="/blog/vliegen-met-een-kunstgebit-vliegveld-tips" className="text-primary-600 hover:underline">Lees meer over vliegen met een kunstgebit.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("diabetes") && (
+                    <> <Link href="/blog/vliegen-met-diabetes" className="text-primary-600 hover:underline">Lees onze tips over vliegen met diabetes.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("cpap") && (
+                    <> <Link href="/blog/vliegen-met-cpap-apparaat" className="text-primary-600 hover:underline">Lees meer over vliegen met een CPAP-apparaat.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("valpreventie") && (
+                    <> <Link href="/blog/valpreventie-op-vakantie" className="text-primary-600 hover:underline">Bekijk tips voor valpreventie op reis.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("bloedverdunners") && (
+                    <> <Link href="/blog/vliegen-met-bloedverdunners" className="text-primary-600 hover:underline">Bekijk tips voor vliegen met bloedverdunners.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("reuma") && (
+                    <> <Link href="/blog/vliegen-met-reuma" className="text-primary-600 hover:underline">Lees onze gids over vliegen met reuma.</Link></>
+                  )}
+                  {faq.name.toLowerCase().includes("security") && (
+                    <> <Link href="/blog/hoe-gaat-een-senior-veilig-door-de-security-op-schiphol" className="text-primary-600 hover:underline">Bekijk onze gids voor de security op de luchthaven.</Link></>
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
